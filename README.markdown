@@ -11,5 +11,5 @@ Our application will be dating based.
 
 ###Versions:
 + Ruby: 1.9.3
-+ Rails: 3.2
++ Rails: 3.2.1
 + Gems/etc considered to be up-to-date
