@@ -1,8 +1,7 @@
-*****************************************
-* Welcome fellow Off The Railers! :D    *
-* This is our project GIT repro for the *
-* CS2512 Group Assessment.              *
-* Our application will be dating based. *
+### Welcome fellow Off The Railers! :D
+This is our project GIT repro for the 
+CS2512 Group Assessment.
+Our application will be dating based. 
 *****************************************
 
 ###Members of the group:
