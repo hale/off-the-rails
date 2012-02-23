@@ -13,3 +13,5 @@ Our application will be dating based.
 + Ruby: 1.9.3
 + Rails: 3.2.1
 + Gems/etc considered to be up-to-date
+
+[Markdown reference for editing this page](http://support.mashery.com/docs/customizing_your_portal/Markdown_Cheat_Sheet)
