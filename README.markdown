@@ -5,11 +5,11 @@ Our application will be dating based.
 *****************************************
 
 ###Members of the group:
-Philip Hale
-Joseph Heskett
-Giedrius Leščinskas
++ Philip Hale
++ Joseph Heskett
++ Giedrius Leščinskas
 
 ###Versions:
-Ruby: 1.9.2
-Rails: 3.2
-Gems/etc considered to be up-to-date
++ Ruby: 1.9.3
++ Rails: 3.2
++ Gems/etc considered to be up-to-date
