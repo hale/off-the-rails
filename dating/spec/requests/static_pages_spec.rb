@@ -6,7 +6,7 @@ describe "Static pages" do
   describe "GET /static_pages" do
 
     it "should return http success" do
-      get static_pages_index_path
+      get '/static_pages/home'
       response.status.should be(200)
     end
 
@@ -15,6 +15,6 @@ describe "Static pages" do
       page.should have_content 'Dating'
     end
 
-    
+
   end
 end
