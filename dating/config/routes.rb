@@ -2,10 +2,13 @@ Dating::Application.routes.draw do
   get "static_pages/home"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   get "static_pages/help"
 
 =======
 >>>>>>> 59fdd64feb8566d3b4de08cd7da46e7295fa7a3b
+=======
+>>>>>>> c5570080867cb4bd81e737e09ecbc5e2a5de7a66
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
