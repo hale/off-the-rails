@@ -1,14 +1,8 @@
 Dating::Application.routes.draw do
   get "static_pages/home"
 
-<<<<<<< HEAD
-<<<<<<< HEAD
   get "static_pages/help"
 
-=======
->>>>>>> 59fdd64feb8566d3b4de08cd7da46e7295fa7a3b
-=======
->>>>>>> c5570080867cb4bd81e737e09ecbc5e2a5de7a66
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -58,11 +52,11 @@ Dating::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+   root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id))(.:format)'
+   match ':controller(/:action(/:id))(.:format)'
 end
