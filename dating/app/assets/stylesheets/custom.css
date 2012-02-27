@@ -1,0 +1,60 @@
+body{
+  background-color: white;
+}
+
+div.container{
+  width: 940px;
+  margin: 10px auto;
+  min-height: 100%;
+}
+
+div.sidebar{
+  height: 500px;
+  width: 200px;
+  float: left;
+  background-color: #E7DBD5;
+}
+
+div.signup{
+  width: 150px;
+  border: 1px solid black;
+  margin: 50px 25px 0 25px;
+}
+
+div.main{
+  width: 740px;
+  height: 500px;
+  float: right;
+  background-color: #F2F2E6;
+}
+
+div.banner{
+  width: 700px;
+  height: 200px;
+  margin: 30px 10px 5px 10px;
+  font-size: 10em;
+  text-align: center;
+
+}
+
+div.information{
+  margin: 50px 10px 5px 10px;
+  height: 200px;
+  padding: 0 20px 0 20px;
+}
+
+div.info_box{
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 150px;
+  border: 1px solid black;
+  padding: 0 0 0 0;
+  margin: 0 10px 0 10px;
+
+}
+
+div.footer{
+  margin: 315px 10px 5px 10px;
+  text-align: center;
+}

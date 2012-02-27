@@ -9,5 +9,9 @@ module ApplicationHelper
     end
   end
 
+  def banner
+    image_tag("banner.png", :alt => "Dating App")
+  end
+
 
 end
