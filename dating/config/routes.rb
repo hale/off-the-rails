@@ -1,7 +1,14 @@
 Dating::Application.routes.draw do
-  get "static_pages/home"
+  get "pages/home"
+  get "pages/help"
+  get "pages/about"
 
-  get "static_pages/help"
+  root              :to => 'pages#home'
+  match '/help',    :to => 'pages#help'
+  match '/about',   :to => 'pages#about'
+
+  resource :users
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

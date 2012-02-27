@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
 	attr_accessible :name, :email, :password, :password_confirmation
 
 	#Rails 3.1 built in authentication
-	has_secure_pasword
+	has_secure_password
 
 	EMAIL_REGEX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
   

@@ -18,6 +18,8 @@ end
 
 group :test do
     gem 'capybara'
+    gem 'guard-rspec'
+    # gem 'webrat'
 end
 
 group :production do
