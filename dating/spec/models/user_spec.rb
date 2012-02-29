@@ -6,7 +6,6 @@ describe User do
     @attr = {
       :first_name => "Example",
       :last_name => "User",
-      :username => "exUser234",
       :email => "user@example.com",
       :password => "foobar",
       :password_confirmation => "foobar" 

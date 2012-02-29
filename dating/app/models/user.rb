@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 	attr_accessible :first_name, :last_name, 
-									:username, :email, :password_digest, :password, :password_confirmation
+									:email, :password_digest, :password, :password_confirmation
 
 	#Rails 3.1 built in authentication
 	has_secure_password
@@ -12,9 +12,6 @@ class User < ActiveRecord::Base
 
 	validates :last_name,  :presence     => true, 
 												 :length       => { :maximum => 50 }
-												 
-	validates :username,   :length       => { :within => 5..25 }, 
-												 :uniqueness   => true
 
 	validates :email,      :presence     => true, 
 	                       :length       => { :maximum => 100 },

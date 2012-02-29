@@ -1,0 +1,14 @@
+<% if @user.errors.any? %>
+  <strong>YESSSSS :D:D:D:D:D</strong>
+    <div class="error">
+      <h2 class='loud'>Oops!</h2>
+        <%= pluralize(@user.errors.count, "problem") %>
+            were found: 
+      </h2>
+      <ul>
+        <% for message in @user.errors.full_messages %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
