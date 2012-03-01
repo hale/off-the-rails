@@ -4,8 +4,7 @@ describe User do
   
   before(:each) do
     @attr = {
-      :first_name => "Example",
-      :last_name => "User",
+      :name => "Example",
       :email => "user@example.com",
       :password => "foobar",
       :password_confirmation => "foobar" 
@@ -16,8 +15,8 @@ describe User do
     User.create!(@attr)
   end
 
-  it "should require a first name" do
-    no_name_user = User.new(@attr.merge(:first_name => ''))
+  it "should require a name" do
+    no_name_user = User.new(@attr.merge(:name => ''))
     no_name_user.should_not be_valid
   end
 
@@ -26,9 +25,9 @@ describe User do
     no_email_user.should_not be_valid
   end
 
-  it "should reject first names that are too long" do
+  it "should reject names that are too long" do
     long_name = 'a' * 51
-    long_name_user = User.new(@attr.merge(:first_name => long_name))
+    long_name_user = User.new(@attr.merge(:name => long_name))
     long_name_user.should_not be_valid
   end
 

@@ -1,7 +1,6 @@
 <div class="container">
 
   <div class="sidebar">
-    <!-- This will presently just display an error.  Full messages would necessitate moving the 'create' action from the users to the pages controller.  I figured handling input errors is best done with javascript anyway.  If we do decide to move the create action, the form_for helper under shared/sign_up will need a new option ':url => pages_path' -->
       <% flash.each do |key,value| %>
         <div class="flash <%= key %>"><%= value %> </div>
       <% end -%>

@@ -1,22 +1,19 @@
 class User < ActiveRecord::Base
-	attr_accessible :first_name, :last_name, 
-									:email, :password_digest, :password, :password_confirmation
+	attr_accessible :name, :email, :password, :password_confirmation
 
 	#Rails 3.1 built in authentication
 	has_secure_password
 
 	EMAIL_REGEX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
   
-	validates :first_name, :presence     => true, 
+	validates :name, 			 :presence     => true, 
 												 :length       => { :maximum => 25 }
-
-	validates :last_name,  :presence     => true, 
-												 :length       => { :maximum => 50 }
 
 	validates :email,      :presence     => true, 
 	                       :length       => { :maximum => 100 },
 	                       :format       => EMAIL_REGEX, 
-	                       :confirmation => true
+	                       :confirmation => true,
+	                       :uniqueness   => true
 	    
 	validates :password,   :presence     => true,
 												 :length => { :within => 6..25}, 

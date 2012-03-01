@@ -1,5 +1,4 @@
-<% if @user.errors.any? %>
-  <strong>YESSSSS :D:D:D:D:D</strong>
+<% if !@user.nil? and @user.errors.any? %>
     <div class="error">
       <h2 class='loud'>Oops!</h2>
         <%= pluralize(@user.errors.count, "problem") %>
