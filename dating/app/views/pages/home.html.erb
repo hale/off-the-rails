@@ -1,9 +1,10 @@
 <div class="container">
 
   <div class="sidebar">
-      <%= render 'shared/flash_messages' %>
+      <%= render(:partial => "shared/flash_messages" ) %>
+        <%= error_messages_for(@user) %>
     <div class="signup">
-      <%= render 'shared/sign_up' %> 
+      <%= render(:partial => "users/sign_up") %> 
       <h3>Log in</h3>
         <p>render 'shared/log_in'</p>
     </div>
