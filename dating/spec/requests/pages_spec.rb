@@ -15,6 +15,7 @@ describe "Pages" do
       page.should have_selector('title', :text => @base_title + 'Home')
     end
 
+
   end
 
   describe "The about page" do

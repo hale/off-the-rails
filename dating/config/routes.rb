@@ -9,7 +9,7 @@ Dating::Application.routes.draw do
   match '/about',   :to => 'pages#about'
 
   resources :users
-  resources :sessions
+  resources :sessions, only: [:new, :create, :destroy]
 
 
   # The priority is based upon order of creation:
