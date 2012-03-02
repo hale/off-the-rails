@@ -1,13 +1,16 @@
 <h1>Log in</h1>
 <%= render 'shared/flash_messages' %>
-<%= form_tag sessions_path do %>
-	<div class="field">
-		<%= label_tag :email %>
-		<%= text_field_tag :email, params[:email] %>
-	</div>
-	<div class="field>
-		<%= label_tag :password %>
-		<%= password_field_tag :password %>
-	</div>
-	<div class="actions"><%= submit_tag "Log in" %></div>
+
+<%= form_for(:session, url: sessions_path) do |f| %>
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Log in" %>
+  </div>
 <% end %>
