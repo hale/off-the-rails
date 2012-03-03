@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+
+	has_many :relationships
 	attr_accessible :name, :email, :password, :password_confirmation
 
 	#Rails 3.1 built in authentication
