@@ -17,7 +17,7 @@ div.sidebar{
 
 div.signup{
   width: 150px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   margin: 50px 25px 0 25px;
 }
 
@@ -55,9 +55,13 @@ div.info_box{
 }
 
 div.footer{
-  margin: 315px 10px 5px 10px;
   text-align: center;
 }
+
+div.login div.field, div.actions{
+  display: inline-block;
+}
+
 
 input.text{
   width: 50px;

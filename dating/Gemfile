@@ -12,15 +12,11 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-group :production, :test do
-    gem 'rspec-rails'
-    # gem 'ap'
-end
-
 group :test do
-    gem 'capybara'
+    gem 'rspec-rails'
     gem 'guard-rspec'
-    # gem 'webrat'
+    gem 'cucumber-rails'
+    gem 'factory_girl'
 end
 
 group :production do
