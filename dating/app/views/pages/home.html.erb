@@ -1,4 +1,5 @@
 <div class="container">
+  <%= render(:partial => "shared/flash_messages" ) %>
 
   <div class="sidebar">
       
@@ -12,7 +13,7 @@
   </div>
 
   <div class="main">
-    <%= render(:partial => "shared/flash_messages" ) %>
+    
     <div class = "login">
       <%= render(:partial => "sessions/login") %>
     </div>
