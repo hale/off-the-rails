@@ -63,6 +63,9 @@ GEM
       multi_json (~> 1.0)
     factory_girl (2.6.0)
       activesupport (>= 2.3.9)
+    factory_girl_rails (1.7.0)
+      factory_girl (~> 2.6.0)
+      railties (>= 3.0.0)
     ffi (1.0.11)
     gherkin (2.9.0)
       json (>= 1.4.6)
@@ -161,7 +164,7 @@ DEPENDENCIES
   bcrypt-ruby (~> 3.0.0)
   coffee-rails (~> 3.2.1)
   cucumber-rails
-  factory_girl
+  factory_girl_rails
   guard-rspec
   jquery-rails
   rails (= 3.2.1)

@@ -16,7 +16,7 @@ group :test do
     gem 'rspec-rails'
     gem 'guard-rspec'
     gem 'cucumber-rails'
-    gem 'factory_girl'
+    gem 'factory_girl_rails'
 end
 
 group :production do
