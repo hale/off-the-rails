@@ -9,7 +9,7 @@ div.container{
 }
 
 div.sidebar{
-  height: 500px;
+  min-height: 500px;
   width: 200px;
   float: left;
   background-color: #E7DBD5;
@@ -17,13 +17,13 @@ div.sidebar{
 
 div.signup{
   width: 150px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   margin: 50px 25px 0 25px;
 }
 
 div.main{
   width: 740px;
-  height: 500px;
+  min-height: 500px;
   float: right;
   background-color: #F2F2E6;
 }
@@ -55,9 +55,13 @@ div.info_box{
 }
 
 div.footer{
-  margin: 315px 10px 5px 10px;
   text-align: center;
 }
+
+div.login div.field, div.actions{
+  display: inline-block;
+}
+
 
 input.text{
   width: 50px;
