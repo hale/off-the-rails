@@ -7,6 +7,8 @@ Dating::Application.routes.draw do
   root              :to => 'pages#home'
   match '/help',    :to => 'pages#help'
   match '/about',   :to => 'pages#about'
+  match '/login',   :to => 'pages#home'
+  match '/signup',  :to => 'pages#home'
 
   resources :users
   resources :sessions, only: [:new, :create, :destroy]

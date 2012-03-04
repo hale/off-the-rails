@@ -6,6 +6,7 @@ Feature: Messaging
 
   Background:
     Given I have an account
+    And I am logged in
     And I have 'Sarah' in my match list 
     And I am on the 'inbox' page 
 
