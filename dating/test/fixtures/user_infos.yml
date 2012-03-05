@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fname: MyString
+  lname: MyString
+  dob: 2012-03-05
+  location: MyString
+  gender: MyString
+  interested_in: MyString
+  looking_for: MyString
+  about: MyString
+  status: MyString
+  last_visit: 2012-03-05 10:55:41
+  user: 
+
+two:
+  fname: MyString
+  lname: MyString
+  dob: 2012-03-05
+  location: MyString
+  gender: MyString
+  interested_in: MyString
+  looking_for: MyString
+  about: MyString
+  status: MyString
+  last_visit: 2012-03-05 10:55:41
+  user: 
