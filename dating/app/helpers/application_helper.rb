@@ -1,7 +1,7 @@
 module ApplicationHelper
 
   def title
-    base_title = "Off the Rails Dating App"
+    base_title = "Coitus Cupid"
     if @title.nil?
       base_title
     else
@@ -10,7 +10,7 @@ module ApplicationHelper
   end
 
   def banner
-    image_tag("banner.png", :alt => "Dating App")
+    image_tag("banner.png", :alt => "Coitus Cupid")
   end
 
   def error_messages_for(object)

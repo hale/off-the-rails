@@ -9,7 +9,7 @@ div.container{
 }
 
 div.sidebar{
-  min-height: 500px;
+  height: 500px;
   width: 200px;
   float: left;
   background-color: #E7DBD5;
@@ -23,7 +23,7 @@ div.signup{
 
 div.main{
   width: 740px;
-  min-height: 500px;
+  height: 500px;
   float: right;
   background-color: #F2F2E6;
 }

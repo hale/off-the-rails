@@ -4,18 +4,10 @@ require 'spec_helper'
 
 describe "Pages" do
 
-  before(:each) do
-    @base_title = "Off the Rails Dating App | "
-  end
-
   describe "The home page" do
 
     before(:each) do
       visit '/'
-    end
-
-    it "should have the right title" do
-      page.should have_selector('title', :text => 'Home')
     end
 
     describe "Signup" do
@@ -79,20 +71,6 @@ describe "Pages" do
 
 
 
-  end
-
-  describe "The about page" do
-    it "should have the right title" do
-      visit '/about'
-      page.should have_selector('title', :text => @base_title + 'About')
-    end
-  end
-
-  describe "The help page" do
-    it "should have the right title" do
-      visit '/help'
-      page.should have_selector('title', :text => @base_title + 'Help')
-   end
   end
 
 end
