@@ -7,7 +7,7 @@ describe User do
       :name => "Example",
       :email => "user@example.com",
       :password => "foobar",
-      :password_confirmation => "foobar" 
+      :password_confirmation => "foobar"
     }
   end
 
@@ -26,7 +26,7 @@ describe User do
   end
 
   it "should reject names that are too long" do
-    long_name = 'a' * 51
+    long_name = 'a' * 26
     long_name_user = User.new(@attr.merge(:name => long_name))
     long_name_user.should_not be_valid
   end
@@ -80,7 +80,7 @@ describe User do
     end
 
     it "should reject long passwords" do
-      long = 'a' * 41
+      long = 'a' * 26
       long_password_user = @attr.merge(:password => long, :password_confirmation => long)
       User.new(long_password_user).should_not be_valid
     end
