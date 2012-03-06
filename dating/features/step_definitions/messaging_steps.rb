@@ -10,6 +10,7 @@ Given /^I have an account$/ do
 end
 
 Given /^I am logged in$/ do
+  step 'I have an account'
   visit '/login'
   within 'div.login' do
     fill_in( 'Email', :with => 'user@example.com' )
@@ -18,11 +19,15 @@ Given /^I am logged in$/ do
   end
 end
 
+# Find a way of refactoring this so that we don't need steps for every route.
+Given /^I (?:visit|go to|am on) the 'home' page$/ do
+  visit ('/')
+end
 
 # NB: keep these steps at the bottom because they mess with syntax hilighting
 
-Given /^I am on the \'(\w*)\' page$/ do |page|
-  visit ('/' + page)
+Then /^I should see \'(.*)\'$/ do |content|
+  page.body.should =~ /content/i
 end
 
 Given /^I have \'(\w*)\' in my match list$/ do |match_name|
