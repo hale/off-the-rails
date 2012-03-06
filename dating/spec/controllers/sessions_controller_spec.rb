@@ -1,48 +1,58 @@
-require 'spec_helper'
+# require 'spec_helper'
 
-describe SessionsController do
-  render_views
+# describe SessionsController do
+#   render_views
 
-  before(:each) do
-    @user = FactoryGirl.create(:user)
-  end
+#   before(:all) do
+#     User.create!(:name => 'user', :email => 'user@example.com', :password => 'foobar', :password_confirmation => 'foobar')
+#   end
 
-  describe "DELETE 'destroy'" do
-  end
 
-  describe "POST 'create'" do
-    describe 'success' do
-      before(:each) do
-        @attr = {:email => 'user@example.com', :password => 'foobar'}
-      end
+#   describe "DELETE 'destroy'" do
+#   end
 
-      it "should log the user in" do
-        post :create, :user => @attr
-        # response.should change(session, :count).by 1
-      end
+#   describe "POST 'create'" do
+#     describe 'success: it should log the user in' do
+#       before(:each) do
+#         params[:session][:email] = 'user@example.com'
+#         params[:session][:password] = 'foobar'
+#       end
 
-      xit "should redirect to the user's home page" do
-      end
+#       it "should redirect to the user's home page" do
+#         post(:create)
+#         current_url.should =~ /users\/(\d*)\/home/
+#       end
 
-      xit "should show a welcome message" do
-      end
+#       it "should show a welcome message" do
+#         post(:create)
+#         flash[:success].should =~ /welcome/i
+#       end
 
-    end
+#       it "should show a log out button" do
+#         post(:create)
+#         response.body.should have_content('Log out')
+#       end
 
-    describe 'failure' do
-      before(:each) do
-        @attr = {:email => '', :password => ''}
-      end
+#     end
 
-      xit "should not log the user in" do
-      end
+#     describe 'failure: it should not log the user in' do
+#       before(:each) do
+#         visit '/'
+#         within 'div.login' do
+#           fill_in "Email",    :with => ''
+#           fill_in "Password", :with => ''
+#           click_button 'Log in'
+#         end
+#       end
 
-      xit "should redirect to the home page" do
-      end
+#       it "should redirect to the login page" do
+#         current_url.should == login_url
+#       end
 
-      xit "should show an error message" do
-      end
-    end
-  end
+#       it "should show an error message" do
+#         flash[:error].should =~ /username or password/
+#       end
+#     end
+#   end
 
-end
+# end
