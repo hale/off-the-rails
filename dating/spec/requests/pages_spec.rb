@@ -6,11 +6,11 @@ describe "Pages" do
 
   describe "The home page" do
 
-    before(:each) do
-      visit '/'
-    end
-
     describe "Signup" do
+      before(:each) do
+        visit signup_url
+      end
+
       describe "failure" do
         it "should not make a new user" do
           within 'div.signup' do
@@ -45,6 +45,10 @@ describe "Pages" do
     end
 
     describe "Login" do
+      before(:each) do
+        visit login_url
+      end
+      
       describe "incorrect credentials" do
         it "should not sign the user in" do
           within 'div.login' do
@@ -53,6 +57,7 @@ describe "Pages" do
             click_button "Log in"
           end
           page.should have_selector('div.flash.error', :text => "Invalid")
+          page.body.should have_selector('div.signup')
         end
       end
       describe "correct credentials" do
@@ -64,7 +69,8 @@ describe "Pages" do
             click_button 'Log in'
           end
           page.should have_selector("div.flash.success", text: 'Welcome back')
-          # page.should have_selector("title", text: ) TODO: INSERT TITLE OF THE USER'S HOME PAGE
+          current_url.should =~ /users\/(\d*)\/home/
+          page.should have_content("Log out")
         end
       end
     end
