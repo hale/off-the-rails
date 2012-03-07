@@ -12,7 +12,7 @@ end
 Given /^I am logged in$/ do
   step 'I have an account'
   visit '/login'
-  within 'div.login' do
+  within 'div#login' do
     fill_in( 'Email', :with => 'user@example.com' )
     fill_in( 'Password', :with => 'foobar' )
     click_button 'Log in'
@@ -21,7 +21,7 @@ end
 
 Given /^I mistype my password$/ do
   visit login_url
-  within 'div.login' do
+  within 'div#login' do
     fill_in( 'Email', :with => 'user@example.com' )
     fill_in( 'Password', :with => 'FOOBAR' )
   end
@@ -30,7 +30,7 @@ end
 Given /^I enter my username and password$/ do
   step 'I have an account'
   visit login_url
-  within 'div.login' do
+  within 'div#login' do
     fill_in( 'Email', :with => 'user@example.com' )
     fill_in( 'Password', :with => 'foobar' )
   end
