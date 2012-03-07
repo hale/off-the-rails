@@ -1,40 +1,34 @@
-<div class="container">
-  <%= render(:partial => "shared/flash_messages" ) %>
+<% content_for :header do %>
+  <div id="login">
+    <%= render( :partial => 'sessions/login' ) %>  
+  </div>
+<% end -%>
 
-  <div class="sidebar">
-      
-    <%= error_messages_for(@user) %>
+<% content_for :sidebar do %>
+  <%= error_messages_for( @user ) %>  
+
     <div class="signup">
-      <%= render(:partial => "users/sign_up") %> 
+      <%= render( :partial => 'users/sign_up' ) %>
     </div>
+<% end -%>
 
 
+  <div class = "banner"><%= link_to banner, root_path %></div>
     
+  <div class="information">
+    <h3>About</h3>
+    <div class="info_box">
+      Sample Image 1
+    </div>
+    <div class="info_box">
+      Sample Image 2
+    </div>
+    <div class="info_box">
+      Sample Image 3
+    </div>
   </div>
 
-  <div class="main">
-    
-    <div class = "login">
-      <%= render(:partial => "sessions/login") %>
-    </div>
-    <div class = "banner"><%= link_to banner, root_path %></div>
-    
-    <div class="information">
-      <h3>About</h3>
-      <div class="info_box">
-        Sample Image 1
-      </div>
-      <div class="info_box">
-        Sample Image 2
-      </div>
-      <div class="info_box">
-        Sample Image 3
-      </div>
-    </div>
 
-  </div>
 
-  <div class="footer">
-  </div>
-
-</div>
+<% content_for :footer do %>
+<% end -%>

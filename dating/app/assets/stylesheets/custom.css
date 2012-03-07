@@ -1,39 +1,71 @@
+/* Adapted from a layout by Keith Donegan of Code-Sucks.com */
+
 body{
   background-color: white;
 }
 
-div.container{
+#container{
   width: 940px;
   margin: 10px auto;
   min-height: 100%;
 }
 
-div.sidebar{
-  height: 500px;
-  width: 200px;
+#header {
+  color: #333;
+  width: 900px;
   float: left;
-  background-color: #E7DBD5;
+  padding: 10px;
+  border: 1px solid #ccc;
+  height: 100px;
+  margin: 10px 0px 5px 0px;
+  background: #BD9C8C;
+}
+
+#logo{
+  position: absolute;
+}
+
+#messages{
+  float: left;
+  width: 900px;
+}
+
+#sidebar{
+ color: #333;
+ border: 1px solid #ccc;
+ background: #E7DBD5;
+ margin: 0px 5px 5px 0px;
+ padding: 10px;
+ height: 600px;
+ width: 195px;
+ float: left;
 }
 
 div.signup{
   width: 150px;
-  /*border: 1px solid black;*/
-  margin: 50px 25px 0 25px;
+  padding: 10px;
 }
 
-div.main{
-  width: 740px;
-  height: 500px;
+#main{
   float: right;
-  background-color: #F2F2E6;
+  color: #333;
+  border: 1px solid #ccc;
+  background: #F2F2E6;
+  margin: 0px 0px 5px 0px;
+  padding: 10px;
+  height: 600px;
+  width: 678px;
+  display: inline;
+  overflow: hidden;
 }
 
 div.banner{
-  width: 700px;
+  width: 600px;
   height: 200px;
-  margin: 30px 10px 5px 10px;
+  /*margin: 10px 5px 5px 5px;*/
   font-size: 10em;
   text-align: center;
+  overflow: hidden;
 
 }
 
@@ -46,20 +78,35 @@ div.information{
 div.info_box{
   position: relative;
   float: left;
-  width: 200px;
-  height: 150px;
+  width: 180px;
+  height: 130px;
   border: 1px solid black;
   padding: 0 0 0 0;
   margin: 0 10px 0 10px;
 
 }
 
-div.footer{
+#footer{
   text-align: center;
+  width: 900px;
+  clear: both;
+  color: #333;
+  border: 1px solid #ccc;
+  background: #BD9C8C;
+  margin: 0px 0px 10px 0px;
+  padding: 10px;
 }
 
-div.login div.field, div.actions{
+#login{
+  float: right;
+}
+
+div.field{
   display: inline-block;
+}
+div.actions{
+  clear: both;
+  float: right;
 }
 
 

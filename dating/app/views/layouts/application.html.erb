@@ -17,9 +17,32 @@
 
 </head>
 <body>
+  <div id="container">
+    
+    <div id="header">
+      <div id="logo">
+        <%= link_to logo, root_path %>
+      </div>
+      <%= yield :header %>
+    </div>
 
+    <div id="messages">
+      <%= render( :partial => 'shared/flash_messages' ) %>
+    </div>
 
-<%= yield %>
+    <div id="sidebar">
+      <%= yield :sidebar %>      
+    </div>
+
+    <div id="main">   
+      <%= yield %>
+    </div>
+
+    <div id="footer">
+      <%= yield :footer %>
+    </div>
+
+  </div>
 
 <%= debug(params) if Rails.env.development? %>
 </body>

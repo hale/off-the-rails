@@ -51,7 +51,7 @@ describe "Pages" do
       
       describe "incorrect credentials" do
         it "should not sign the user in" do
-          within 'div.login' do
+          within 'div#login' do
             fill_in "Email",    :with => ""
             fill_in "Password", :with => ""
             click_button "Log in"
@@ -63,7 +63,7 @@ describe "Pages" do
       describe "correct credentials" do
         it "should sign the user in" do
           User.create!(:name => 'user', :email => 'user@example.com', :password => 'foobar', :password_confirmation => 'foobar')
-          within 'div.login' do
+          within 'div#login' do
             fill_in "Email",    :with => "user@example.com"
             fill_in "Password", :with => 'foobar'
             click_button 'Log in'

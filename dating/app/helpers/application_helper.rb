@@ -13,6 +13,10 @@ module ApplicationHelper
     image_tag("banner.png", :alt => "Coitus Cupid")
   end
 
+  def logo
+    image_tag("logo.png", :alt => "Coitus Cupid")
+  end
+
   def error_messages_for(object)
     render(:partial => 'shared/error_messages', :locals => {:object => object})
   end
