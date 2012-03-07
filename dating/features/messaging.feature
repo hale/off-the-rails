@@ -16,12 +16,12 @@ Feature: Messaging
     Then I should be on the 'send message' page
     And 'To' should contain 'Sarah'
 
-  Scenario: Read a message
+  Scenario: Read a message 'Happy birthday!'
     Given I have been sent a message by 'Sarah'
     When I click on the message
-    Then I should see it is from 'Sarah'
-    And I should see when it was sent
-    And I should see the message content
+    Then I should see it is 'from Sarah'
+    And I should see what 'time' it was sent
+    And I should see the message 'Happy birthday!'
 
   Scenario: Reply to a message
     Given I have been sent a message by 'Sarah'
