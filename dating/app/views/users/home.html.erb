@@ -1,5 +1,10 @@
 <h3>Placeholder for the Users' home page</h3
 <br />
-<!-- THIS IS WRONG! -->
+
+Logout button doesn't work.
 
 <%= link_to "log out", session_path( session[:user_id] ), :via => 'delete' %>
+
+<% content_for :header do %>
+  <%= link_to "Edit profile", edit_user_path(session[:user_id] ) %>
+<% end -%>

@@ -23,7 +23,9 @@
       <div id="logo">
         <%= link_to logo, root_path %>
       </div>
-      <%= yield :header %>
+      <div id="header-content">
+        <%= yield :header %>
+      </div>
     </div>
 
     <div id="messages">

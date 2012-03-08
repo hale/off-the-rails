@@ -20,9 +20,20 @@ body{
   background: #BD9C8C;
 }
 
+
 #logo{
-  position: absolute;
+  position: relative;
+  float: left;
 }
+
+/*Used to separate logo from header*/
+#header-content{
+  position: relative;
+  float: left;
+  padding: 10px;
+  display: inline;
+}
+
 
 #messages{
   float: left;

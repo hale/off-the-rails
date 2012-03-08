@@ -18,12 +18,17 @@ class User < ActiveRecord::Base
 	                       :uniqueness   => { :case_sensitive => false }
 	    
 	validates :password,   :presence     => true,
-												 :length => { :within => 6..25}, 
-												 :on => :create
+												 :length => { :within => 6..25} 
+												 # :on => :create
+
+
 
 	# User profile attributes
 
-	has_attached_file :avatar, :styles => { :medium => "100x100>",
+	has_attached_file :avatar, :styles => { :medium => "150x150>",
 																				  :thumb => "50x50>" }
+
+	validates_attachment_size :avatar, :less_than => 5.megabytes  
+	validates_attachment_content_type :avatar, :content_type => ['image/jpeg', 'image/png']  
 
 end
