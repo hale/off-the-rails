@@ -55,7 +55,7 @@ div.signup{
   padding: 10px;
   height: 600px;
   width: 678px;
-  display: inline;
+  /*display: inline;*/
   overflow: hidden;
 }
 

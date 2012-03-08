@@ -2,8 +2,6 @@ class UsersController < ApplicationController
 
 def show
 	@user = User.find(params[:id])
-	puts '@user is nil' if @user.nil?
-	puts '@user.name is nil' if @user.name.nil?
   @title = @user.name
 end
 
@@ -21,5 +19,26 @@ end
 def home
 	# @title = session[]
 end
-	
+
+def edit
+	@user = User.find(params[:id])
+	@title = "#{@user.name} - Edit"	
+end
+
+def update
+	@user = User.find(params[:id])
+	if @user.update_attributes(params[:user])
+		flash[:success] = "Profile updated"
+		# sign_in @user
+		redirect_to @user
+	else
+		render 'edit'
+	end
+end
+
+
+
+
+
+
 end

@@ -2,6 +2,4 @@
 <br />
 <!-- THIS IS WRONG! -->
 
-<%= link_to "Log out", :controller => "sessions", :action => "destroy" %>
-
-
+<%= link_to "log out", session_path( session[:user_id] ), :via => 'delete' %>

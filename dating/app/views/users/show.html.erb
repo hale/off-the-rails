@@ -1,3 +1,6 @@
-<h3>Placeholder for users#show</h3>
+<% content_for :sidebar  do %>
+  <div id='avatar_side'>
 
-<%= render 'shared/flash_messages' %>
+    <%= image_tag @user.avatar.url(:medium) %>
+  </div>
+<% end %>

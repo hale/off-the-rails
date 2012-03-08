@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
 
 	has_many :relationships
-	attr_accessible :name, :email, :password, :password_confirmation
+	attr_accessible :name, :email, :password, :password_confirmation, :avatar
 
 	#Rails 3.1 built in authentication
 	has_secure_password
@@ -20,5 +20,10 @@ class User < ActiveRecord::Base
 	validates :password,   :presence     => true,
 												 :length => { :within => 6..25}, 
 												 :on => :create
+
+	# User profile attributes
+
+	has_attached_file :avatar, :styles => { :medium => "100x100>",
+																				  :thumb => "50x50>" }
 
 end

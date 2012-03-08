@@ -4,13 +4,14 @@ Dating::Application.routes.draw do
   match '/about',   :to => 'pages#about'
   match '/login',   :to => 'pages#home'
   match '/signup',  :to => 'pages#home'
-  match '/logout',  :to => 'sessions#destroy', via: :delete
 
   resources :users do
     get 'home'
   end
 
   resources :sessions, only: [:create, :destroy]
+  # match '/logout',  :to => 'sessions#destroy', :via  => :delete, :as => :logout
+
 
 
   # The priority is based upon order of creation:

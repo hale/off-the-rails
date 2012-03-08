@@ -87,6 +87,20 @@ describe User do
 
   end
 
+  describe "user profiles" do
+    before(:each) do
+      User.create!(@attr)
+    end
+
+    it "should have a default profile picture" do
+      user = User.find_by_email 'user@example.com'
+      user.should respond_to :avatar
+    end
+
+  end
+
+
+
 
 
 end
