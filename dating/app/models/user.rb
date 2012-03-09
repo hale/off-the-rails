@@ -1,7 +1,8 @@
 class User < ActiveRecord::Base
 
 	has_many :relationships
-	attr_accessible :name, :email, :password, :password_confirmation, :avatar
+	attr_accessible :name, :email, :password, :password_confirmation, :avatar,
+									:dob, :gender, :location, :about
 
 	#Rails 3.1 built in authentication
 	has_secure_password
@@ -21,6 +22,11 @@ class User < ActiveRecord::Base
 												 :length => { :within => 6..25} 
 												 # :on => :create
 
+	validates :about,			:length => { :maximum => 100000 }
+
+
+
+
 
 
 	# User profile attributes
@@ -30,5 +36,8 @@ class User < ActiveRecord::Base
 
 	validates_attachment_size :avatar, :less_than => 5.megabytes  
 	validates_attachment_content_type :avatar, :content_type => ['image/jpeg', 'image/png']  
+
+
+
 
 end

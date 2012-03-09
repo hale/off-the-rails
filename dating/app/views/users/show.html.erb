@@ -1,6 +1,44 @@
 <% content_for :sidebar  do %>
+  <h2><%= @user.name %></h2>
   <div id='avatar_side'>
-
     <%= image_tag @user.avatar.url(:medium) %>
   </div>
+
+<h3>a/s/l</h3>
+  <ul id="info_side">
+    <strong>Age</strong>
+    <li><%= age(@user.dob) %></li>
+    <strong>Gender</strong>
+    <li><%= @user.gender %></li>
+    <strong>Location</strong>
+    <li><%= @user.location %></li>
+    <br />
+    <strong>Match &#37;</strong>
+    <li>[0..100%]</li>
+  </ul>
+
 <% end %>
+
+<% content_for :header do %>
+  <nav>
+    <ul>
+      <li><%= link_to "Home",             user_home_path(session[:user_id] ) %></li>
+      <li><%= link_to "Edit profile",     edit_user_path(session[:user_id] ) %></li>
+      <li><%= link_to "Inbox",            '#'                                %></li>       
+      <li><%= link_to "Find New Matches", '#'                                %></li>
+      <li><%= link_to "Search",           '#'                                %></li>
+      <li><%= link_to "Log Out", 
+                                 :controller=> 'users',
+                                 :action=> 'destroy',
+                                 :id => session[:user_id]                    %></li>
+
+    </ul>
+  </nav>
+<% end -%>
+
+
+  
+<div id="match_score">
+  <h3>About Me</h3>
+  <p><%= @user.about.nil? ? default_about_me : @user.about %><p>
+</div>

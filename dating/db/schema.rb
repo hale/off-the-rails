@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120308153429) do
+ActiveRecord::Schema.define(:version => 20120309010000) do
 
   create_table "relationships", :force => true do |t|
     t.integer "user1_id"
@@ -28,6 +28,10 @@ ActiveRecord::Schema.define(:version => 20120308153429) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.date     "dob"
+    t.string   "gender"
+    t.string   "location"
+    t.string   "about"
   end
 
 end
