@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
       # Print a welcome message
       flash[:success] = "Welcome back"
       # Rediret to their homepage
-      redirect_to :controller => 'users', :user_id => user.id, :action => 'home' 
+      redirect_to :controller => 'users', :id => session[:user_id], :action => 'home' 
     else
       #print an error
       flash.now[:error] = "Invalid email or password."

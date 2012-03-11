@@ -21,7 +21,11 @@
     
     <div id="header">
       <div id="logo">
-        <%= link_to logo, root_path %>
+  <% if session[:user_id].nil? %>
+      <%=  link_to logo, root_path %>
+    <% else %>
+      <%= link_to logo, home_user_path(session[:user_id]) %>
+    <% end %>
       </div>
       <div id="header-content">
         <%= yield :header %>
