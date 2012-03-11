@@ -12,6 +12,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+<<<<<<< HEAD
 group :test, :development do
     gem 'rspec-rails'
     gem 'guard-rspec'
@@ -19,6 +20,14 @@ group :test, :development do
     gem 'factory_girl_rails'
     gem 'database_cleaner'
     gem 'paperclip'
+=======
+group :development, :test do
+    gem 'rspec-rails'
+    gem 'guard-rspec'
+    gem 'cucumber-rails'
+    gem 'factory_girl'
+    gem 'railroady'
+>>>>>>> c9119771415d897300a8d9bf69fea1ffbd07a822
 end
 
 group :production do
