@@ -24,7 +24,7 @@
 <% content_for :header do %>
   <nav>
     <ul>
-      <li><%= link_to "Home",             user_home_path(session[:user_id] ) %></li>
+      <li><%= link_to "Home",             home_user_path(session[:user_id] ) %></li>
       <li><%= link_to "Edit profile",     edit_user_path(session[:user_id] ) %></li>
       <li><%= link_to "Inbox",            '#'                                %></li>       
       <li><%= link_to "Find New Matches", '#'                                %></li>
