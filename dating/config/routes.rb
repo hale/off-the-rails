@@ -6,7 +6,10 @@ Dating::Application.routes.draw do
   match '/signup',  :to => 'pages#home'
 
   resources :users do
-    get 'home'
+    member do
+      get :home
+      get :matches, :interested
+    end
   end
 
   resources :sessions, only: [:create, :destroy]
