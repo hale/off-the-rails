@@ -11,18 +11,70 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120311015718) do
+ActiveRecord::Schema.define(:version => 20120311131002) do
+
+  create_table "interests", :force => true do |t|
+    t.integer  "interest"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "messages", :force => true do |t|
+    t.integer  "relationship_id"
+    t.string   "message"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  add_index "messages", ["relationship_id"], :name => "index_messages_on_relationship_id"
 
   create_table "relationships", :force => true do |t|
-    t.integer  "follower_id"
-    t.integer  "followed_id"
+    t.integer  "user_id"
+    t.integer  "match_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "relationships", ["match_id"], :name => "index_relationships_on_followed_id"
+  add_index "relationships", ["user_id", "match_id"], :name => "index_relationships_on_follower_id_and_followed_id", :unique => true
+  add_index "relationships", ["user_id"], :name => "index_relationships_on_follower_id"
+
+  create_table "timeline_updates", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "message"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "timeline_updates", ["user_id"], :name => "index_timeline_updates_on_user_id"
+
+  create_table "user_infos", :force => true do |t|
+    t.string   "fname"
+    t.string   "lname"
+    t.date     "dob"
+    t.string   "location"
+    t.string   "gender"
+    t.string   "interested_in"
+    t.string   "looking_for"
+    t.string   "about"
+    t.string   "status"
+    t.datetime "last_visit"
+    t.integer  "user_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "user_infos", ["user_id"], :name => "index_user_infos_on_user_id"
+
+  create_table "user_interests", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "interest_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
 
-  add_index "relationships", ["followed_id"], :name => "index_relationships_on_followed_id"
-  add_index "relationships", ["follower_id", "followed_id"], :name => "index_relationships_on_follower_id_and_followed_id", :unique => true
-  add_index "relationships", ["follower_id"], :name => "index_relationships_on_follower_id"
+  add_index "user_interests", ["interest_id"], :name => "index_user_interests_on_interest_id"
+  add_index "user_interests", ["user_id"], :name => "index_user_interests_on_user_id"
 
   create_table "users", :force => true do |t|
     t.datetime "created_at",          :null => false

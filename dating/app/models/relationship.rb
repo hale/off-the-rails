@@ -1,9 +1,9 @@
 class Relationship < ActiveRecord::Base
-  attr_accessible :followed_id
+  attr_accessible :match_id
 
-  belongs_to :follower, class_name: 'User'
-  belongs_to :followed, class_name: 'User'
+  belongs_to :user, class_name: 'User'
+  belongs_to :match, class_name: 'User'
 
-  validates :follower_id, presence: true
-  validates :followed_id, presence: true
+  validates :user_id, presence: true
+  validates :match_id, presence: true
 end

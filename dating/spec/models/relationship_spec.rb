@@ -2,34 +2,34 @@ require 'spec_helper'
 
 describe Relationship do
 
-  let(:follower) { FactoryGirl.create(:user_bob) }
-  let(:followed) { FactoryGirl.create(:user_mary) }
+  let(:user) { FactoryGirl.create(:user_bob) }
+  let(:match) { FactoryGirl.create(:user_mary) }
   let(:relationship) do
-    follower.relationships.build(followed_id: followed.id)
+    user.relationships.build(match_id: match.id)
   end
 
   subject { relationship }
 
   it { should be_valid }
 
-  describe "follower methods" do
+  describe "user match methods" do
     before { relationship.save }
 
-    it { should respond_to(:follower) }
-    it { should respond_to(:followed) }
-    its(:follower) { should == follower }
-    its(:followed) { should == followed }
+    it { should respond_to(:user) }
+    it { should respond_to(:match) }
+    its(:user) { should == user }
+    its(:match) { should == match }
   end
 
-  describe "when followed id is not present" do
-    before { relationship.followed_id = nil }
+  describe "when match id is not present" do
+    before { relationship.match_id = nil }
     it { should_not be_valid }
   end
 
-  describe "when follower id is not present" do
-    before { relationship.follower_id = nil }
+  describe "when user id is not present" do
+    before { relationship.user_id = nil }
     it { should_not be_valid }
   end
 
-  
+
 end

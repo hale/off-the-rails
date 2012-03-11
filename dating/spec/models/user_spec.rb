@@ -89,33 +89,33 @@ describe User do
 # Tests for the 'relationships' concept
 
   it { should respond_to(:relationships) }
-  it { should respond_to(:followed_users) }
-  it { should respond_to(:following?) }
-  it { should respond_to(:follow!) }
+  it { should respond_to(:matches) }
+  it { should respond_to(:match?) }
+  it { should respond_to(:add_match!) }
   it { should respond_to(:reverse_relationships) }
-  it { should respond_to(:followers) }
+  it { should respond_to(:interested_users) }
 
 
   describe "adding to match list" do
     let(:other_user) { FactoryGirl.create(:user_bob) }
     before do
       @user.save
-      @user.follow!(other_user)
+      @user.add_match!(other_user)
     end
 
-    it { should be_following(other_user) }
-    its(:followed_users) { should include(other_user) }
+    it { should be_match(other_user) }
+    its(:matches) { should include(other_user) }
 
-    describe "followed user" do
+    describe "interested user" do
       subject { other_user }
-      its(:followers) { should include(@user) }
+      its(:interested_users) { should include(@user) }
     end
 
     describe "removing from match list" do
-      before { @user.unfollow!(other_user) }
+      before { @user.remove_match!(other_user) }
 
-      it { should_not be_following(other_user) }
-      its(:followed_users) { should_not include(other_user) }
+      it { should_not be_match(other_user) }
+      its(:matches) { should_not include(other_user) }
     end
   end
 

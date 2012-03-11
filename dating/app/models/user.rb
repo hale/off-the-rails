@@ -37,26 +37,26 @@ class User < ActiveRecord::Base
 
 # relationships
 
-	has_many :relationships, foreign_key: "follower_id", dependent: :destroy
-	has_many :followed_users, through: :relationships, source: :followed
+	has_many :relationships, foreign_key: "user_id", dependent: :destroy
+	has_many :matches, through: :relationships, source: :match
 
-	has_many :reverse_relationships, foreign_key: "followed_id",
+	has_many :reverse_relationships, foreign_key: "match_id",
 																	 class_name:  "Relationship",
 																	 dependent:   :destroy
-  has_many :followers, through: :reverse_relationships, source: :follower
+  has_many :interested_users, through: :reverse_relationships, source: :user
 
 
 
-	def following?(other_user)
-		relationships.find_by_followed_id(other_user.id)
+	def match?(other_user)
+		relationships.find_by_match_id(other_user.id)
 	end
 
-	def follow!(other_user)
-		self.relationships.create!(followed_id: other_user.id)
+	def add_match!(other_user)
+		self.relationships.create!(match_id: other_user.id)
 	end
 
-	def unfollow!(other_user)
-		relationships.find_by_followed_id(other_user.id).destroy
+	def remove_match!(other_user)
+		relationships.find_by_match_id(other_user.id).destroy
 	end
 
 end
