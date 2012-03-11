@@ -93,7 +93,7 @@ describe User do
   it { should respond_to(:following?) }
   it { should respond_to(:follow!) }
 
-  describe "following" do
+  describe "adding to match list" do
     let(:other_user) { FactoryGirl.create(:user_bob) }
     before do
       @user.save
@@ -102,6 +102,13 @@ describe User do
 
     it { should be_following(other_user) }
     its(:followed_users) { should include(other_user) }
+
+    describe "removing from match list" do
+      before { @user.unfollow!(other_user) }
+
+      it { should_not be_following(other_user) }
+      its(:followed_users) { should_not include(other_user) }
+    end
   end
 
 
