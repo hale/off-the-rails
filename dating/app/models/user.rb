@@ -1,6 +1,4 @@
 class User < ActiveRecord::Base
-
-	has_many :relationships
 	attr_accessible :name, :email, :password, :password_confirmation, :avatar,
 									:dob, :gender, :location, :about
 
@@ -14,7 +12,7 @@ class User < ActiveRecord::Base
 
 	validates :email,      :presence     => true, 
 	                       :length       => { :maximum => 100 },
-	                       :format       => EMAIL_REGEX, 
+	                       :format       => {with: EMAIL_REGEX}, 
 	                       :confirmation => true,
 	                       :uniqueness   => { :case_sensitive => false }
 	    
@@ -37,7 +35,18 @@ class User < ActiveRecord::Base
 	validates_attachment_size :avatar, :less_than => 5.megabytes  
 	validates_attachment_content_type :avatar, :content_type => ['image/jpeg', 'image/png']  
 
+# relationships
+
+	has_many :relationships, foreign_key: "follower_id", dependent: :destroy
+	has_many :followed_users, through: :relationships, source: :followed
 
 
+	def following?(other_user)
+		relationships.find_by_followed_id(other_user.id)
+	end
+
+	def follow!(other_user)
+		self.relationships.create!(followed_id: other_user.id)
+	end
 
 end

@@ -43,6 +43,11 @@ describe "Users" do
           page.should have_selector('h1', :text => "Edit")
         end
 
+
+      end
+    end
+  end
+
         
 
 

@@ -10,6 +10,8 @@ Dating::Application.routes.draw do
   end
 
   resources :sessions, only: [:create, :destroy]
+  resources :relationships, except: [:edit, :update] # matches
+  
   # match '/logout',  :to => 'sessions#destroy', :via  => :delete, :as => :logout
 
 
