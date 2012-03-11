@@ -176,11 +176,8 @@ DEPENDENCIES
   factory_girl_rails
   guard-rspec
   jquery-rails
-<<<<<<< HEAD
   paperclip
-=======
   railroady
->>>>>>> c9119771415d897300a8d9bf69fea1ffbd07a822
   rails (= 3.2.1)
   rspec-rails
   sass-rails (~> 3.2.3)
