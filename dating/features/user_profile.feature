@@ -37,3 +37,4 @@ Feature: The user's profile page
     And I should see 'Current status'
     And I should see 'Profile picture'
     And I should see 'Message me'
+    And I should see 'Add to my matches'

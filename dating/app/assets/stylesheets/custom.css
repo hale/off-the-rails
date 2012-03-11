@@ -20,6 +20,24 @@ body{
   background: #BD9C8C;
 }
 
+/* Navigation */
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+ul#info_side li {
+  list-style-type: none;
+
+}
+
 
 #logo{
   position: relative;
@@ -31,6 +49,7 @@ body{
   position: relative;
   float: left;
   padding: 10px;
+  width: 600px;
   display: inline;
 }
 
@@ -47,7 +66,7 @@ body{
  background: #E7DBD5;
  margin: 0px 5px 5px 0px;
  padding: 10px;
- height: 600px;
+ min-height: 600px;
  width: 195px;
  float: left;
 }
@@ -64,7 +83,7 @@ div.signup{
   background: #F2F2E6;
   margin: 0px 0px 5px 0px;
   padding: 10px;
-  height: 600px;
+  min-height: 600px;
   width: 678px;
   /*display: inline;*/
   overflow: hidden;
@@ -112,10 +131,10 @@ div.info_box{
   float: right;
 }
 
-div.field{
+#header div.field{
   display: inline-block;
 }
-div.actions{
+#header div.actions{
   clear: both;
   float: right;
 }
