@@ -12,12 +12,18 @@
     <li><%= @user.gender %></li>
     <strong>Location</strong>
     <li><%= @user.location %></li>
+    <strong>Match stats</strong>
+    <li><%= render 'shared/match_stats' %></li>
     <br />
-    <strong>Match &#37;</strong>
-    <li>[0..100%]</li>
-    <br />
-    <strong><%= link_to "Add to my matches", '#' %></strong>
-  </ul>
+    <% unless @current_user.id == @user.id %>
+      <strong>Match &#37;</strong>
+      <li>[0..100%]</li>
+      <% if @current_user.match?(@user) %>
+        <li><%= render 'remove_match' %></li>
+      <% else %>
+        <li><%= render 'add_match' %></li>
+      <% end %>  
+    <% end %>
 
 <% end %>
 

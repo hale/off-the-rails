@@ -1,0 +1,5 @@
+<%= form_for @user.relationships.
+                          build(:match_id => @user.id) do |f| %>
+  <div><%= f.hidden_field :match_id %></div>
+  <div class="actions"><%= f.submit "Add" %></div>
+<% end %>

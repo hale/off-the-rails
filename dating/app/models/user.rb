@@ -30,7 +30,8 @@ class User < ActiveRecord::Base
 	# User profile attributes
 
 	has_attached_file :avatar, :styles => { :medium => "150x150>",
-																				  :thumb => "50x50>" }
+																				  :thumb => "50x50>" },
+														 :default_url => "#{Rails.root}/app/assets/user/default/avatar.jpg"
 
 	validates_attachment_size :avatar, :less_than => 5.megabytes  
 	validates_attachment_content_type :avatar, :content_type => ['image/jpeg', 'image/png']  
