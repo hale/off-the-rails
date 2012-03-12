@@ -4,6 +4,11 @@ def index
 end
 
 def create
+  @user = User.find(params[:relationship][:match_id])
+  @current_user = User.find session[:user_id]
+
+  @current_user.add_match! @user
+  redirect_to @user
 end
 
 def new
@@ -13,6 +18,11 @@ def show
 end
 
 def destroy
+  @user = Relationship.find(params[:id]).match
+  @current_user = User.find session[:user_id]
+
+  @current_user.remove_match! @user
+  redirect_to @user
 end
   
 end
