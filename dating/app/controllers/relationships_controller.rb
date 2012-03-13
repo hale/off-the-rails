@@ -8,6 +8,7 @@ def create
   @current_user = User.find session[:user_id]
 
   @current_user.add_match! @user
+  TimelineUpdates.new(:user_id => session[:user_id], :message => " added #{@user.name} as his/her match.").save
   redirect_to @user
 end
 

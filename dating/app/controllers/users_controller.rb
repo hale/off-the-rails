@@ -46,6 +46,7 @@ def update_status
 	end
 	 @user_for_status.status = params[:user_for_status][:status]
 	 if @user_for_status.save
+	 	TimelineUpdates.create(:user_id => session[:user_id], :message => " posted new status message: #{params[:user_for_status][:status]}.")
 		flash[:success] = "Status updated"
 		redirect_to :controller => 'users', :id => session[:user_id], :action => 'home' 
 	else
@@ -60,6 +61,7 @@ end
 def update
 	@user = User.find(params[:id])
 	if @user.update_attributes(params[:user])
+		TimelineUpdates.new(:user_id => session[:user_id], :message => " updated his/her profile").save
 		flash[:success] = "Profile updated"
 		# sign_in @user
 		redirect_to @user
