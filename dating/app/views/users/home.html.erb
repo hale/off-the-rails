@@ -1,10 +1,15 @@
-<h3>Placeholder for the Users' home page</h3
-<br />
+<h2>Your current status: <br></h2>
+	<h3><%= @status %></h3> 
+<%= render('users/update_status') %>
 
-Logout button doesn't work.
-
-<%= link_to "log out", session_path( session[:user_id] ), :via => 'delete' %>
 
 <% content_for :header do %>
   <%= link_to "Edit profile", edit_user_path(session[:user_id] ) %>
 <% end -%>
+
+<% content_for :sidebar  do %>
+  <h2><%= @user.name %></h2>
+  <div id='avatar_side'>
+    <%= image_tag @user.avatar.url(:medium) %>
+  </div>
+<% end %>
