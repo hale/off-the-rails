@@ -1,0 +1,7 @@
+<li>
+  <%= image_tag user.avatar.url(:thumb) %>
+  <%= link_to user.name, user %>
+  <%= "A: #{age(user.dob)}" %>
+  <%= "S: #{user.gender}" %>
+  <%= "L: #{user.location}" %>
+</li>

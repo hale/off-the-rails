@@ -20,6 +20,7 @@ group :test, :development do
     gem 'database_cleaner'
     gem 'paperclip'
     gem 'railroady'
+    gem 'faker'
 end
 
 group :production do
