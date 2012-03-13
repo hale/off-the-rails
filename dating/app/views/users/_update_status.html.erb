@@ -1,0 +1,9 @@
+<h2>Update your status: </h2>
+<%= form_for(:user_for_status, :url => {:action => 'update_status',:id => session[:user_id],  :controller => 'users'}) do |f| %>
+<div class="field">
+	New status message: <%= f.text_field :status, :size => 50 %>
+</div>
+<div class="actions">
+	<%= f.submit "Update" %>
+</div>
+<% end %>
