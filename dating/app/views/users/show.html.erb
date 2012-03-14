@@ -32,7 +32,7 @@
       <li><%= link_to "Home",             home_user_path(session[:user_id] ) %></li>
       <li><%= link_to "Edit profile",     edit_user_path(session[:user_id] ) %></li>
       <li><%= link_to "Inbox",            '#'                                %></li>       
-      <li><%= link_to "Find New Matches", '#'                                %></li>
+      <li><%= link_to "Find New Matches", new_interest_path                  %></li>
       <li><%= link_to "Search",           '#'                                %></li>
       <li><%= link_to "Log Out", :controller => 'users', :action => 'destroy', :id => session[:user_id]  %></li>
 

@@ -125,3 +125,24 @@ end
 
 
 
+
+# == Schema Information
+#
+# Table name: users
+#
+#  id                  :integer         not null, primary key
+#  created_at          :datetime        not null
+#  updated_at          :datetime        not null
+#  name                :string(255)
+#  email               :string(255)
+#  password_digest     :string(255)
+#  avatar_file_name    :string(255)
+#  avatar_content_type :string(255)
+#  avatar_file_size    :integer
+#  avatar_updated_at   :datetime
+#  dob                 :date
+#  gender              :string(255)
+#  location            :string(255)
+#  about               :string(255)
+#
+

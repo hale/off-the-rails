@@ -26,7 +26,6 @@ def create
 		flash[:success] = "Welcome to Dating App"
 		session[:user_id] = @user.id
     redirect_to home_user_path(@user)
-		# redirect to user's homepage, or the 'edit profile' page of the user
 	else
 		render('pages/home')
 	end
