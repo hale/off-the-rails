@@ -26,7 +26,6 @@ Dating::Application.routes.draw do
   # match '/logout',  :to => 'sessions#destroy', :via  => :delete, :as => :logout
 
   resources :messages, :singular => :message
-  resource :message
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
