@@ -7,3 +7,15 @@ class Relationship < ActiveRecord::Base
   validates :user_id, presence: true
   validates :match_id, presence: true
 end
+
+# == Schema Information
+#
+# Table name: relationships
+#
+#  id         :integer         not null, primary key
+#  user_id    :integer
+#  match_id   :integer
+#  created_at :datetime        not null
+#  updated_at :datetime        not null
+#
+
