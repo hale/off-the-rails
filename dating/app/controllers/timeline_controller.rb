@@ -1,6 +1,5 @@
 class TimelineController < ApplicationController
-	#list timeline for spec user
+	before_filter :confirm_logged_in
 	def list
-		
 	end
 end

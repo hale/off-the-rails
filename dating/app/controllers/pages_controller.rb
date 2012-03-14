@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  before_filter :confirm_logged_in, :except => [:home, :help, :about]
   def home
     @title = 'Home'
   end

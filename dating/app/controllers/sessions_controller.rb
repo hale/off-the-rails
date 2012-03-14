@@ -1,4 +1,7 @@
 class SessionsController < ApplicationController
+  
+  before_filter :confirm_logged_in, :except => [:create, :destroy]
+
   def create
     user = User.find_by_email(params[:session][:email])
     if user && user.authenticate(params[:session][:password])
@@ -20,5 +23,5 @@ class SessionsController < ApplicationController
     session[:user_id] = nil
     redirect_to login_url, :notice => "Logged out!"
   end
-  
+
 end

@@ -5,7 +5,19 @@
 
 
 <% content_for :header do %>
-  <%= link_to "Edit profile", edit_user_path(session[:user_id] ) %>
+  <nav>
+    <ul>
+      <li><%= link_to "Show profile",     :action => 'show', :id => session[:user_id] %></li>
+      <li><%= link_to "Edit profile",     edit_user_path(session[:user_id] ) %></li>
+      <li><%= link_to "Inbox",            '#'                                %></li>       
+      <li><%= link_to "Find New Matches", '#'                                %></li>
+      <li><%= link_to "Search",           '#'                                %></li>
+      <li><%= link_to "Log Out", :controller => 'users',
+                                 :action=> 'destroy'
+                                                     %></li>
+
+    </ul>
+  </nav>
 <% end -%>
 
 <% content_for :sidebar  do %>
@@ -13,4 +25,15 @@
   <div id='avatar_side'>
     <%= image_tag @user.avatar.url(:medium) %>
   </div>
+
+    <ul id="info_side">
+    <strong>Age</strong>
+    <li><%= age(@user.dob) %></li>
+    <strong>Gender</strong>
+    <li><%= @user.gender %></li>
+    <strong>Location</strong>
+    <li><%= @user.location %></li>
+    <strong>Match stats</strong>
+    <li><%= render 'shared/match_stats' %></li>
+    <br />
 <% end %>

@@ -34,10 +34,7 @@
       <li><%= link_to "Inbox",            '#'                                %></li>       
       <li><%= link_to "Find New Matches", '#'                                %></li>
       <li><%= link_to "Search",           '#'                                %></li>
-      <li><%= link_to "Log Out", 
-                                 :controller=> 'users',
-                                 :action=> 'destroy',
-                                 :id => session[:user_id]                    %></li>
+      <li><%= link_to "Log Out", :controller => 'users', :action => 'destroy', :id => session[:user_id]  %></li>
 
     </ul>
   </nav>
