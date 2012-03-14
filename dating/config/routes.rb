@@ -1,18 +1,24 @@
 Dating::Application.routes.draw do
-  resources :messages
 
   root              :to => 'pages#home'
   match '/help',    :to => 'pages#help'
   match '/about',   :to => 'pages#about'
   match '/login',   :to => 'pages#home'
   match '/signup',  :to => 'pages#home'
+  match '/inbox',   :to => 'messages#index'
+  match '/outbox',  :to => 'messages#outbox'
+  match '/message/:id', :to => 'messages#show'
+  match '/user/:id', :to => 'users#show'
 
   resources :users do
     member do
       get :home
       get :matches, :interested
     end
+    resources :messages
   end
+  
+  #match 'inbox/:id',  :to => 'messages#index'
 
   resources :sessions, only: [:create, :destroy]
   resources :relationships, except: [:edit, :update] # matches
@@ -20,6 +26,7 @@ Dating::Application.routes.draw do
   # match '/logout',  :to => 'sessions#destroy', :via  => :delete, :as => :logout
 
   resources :messages, :singular => :message
+  resource :message
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -31,6 +38,7 @@ Dating::Application.routes.draw do
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
+  #match 'inbox' => 'message#index'
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products

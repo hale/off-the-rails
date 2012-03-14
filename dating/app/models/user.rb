@@ -46,6 +46,8 @@ class User < ActiveRecord::Base
 																	 class_name:  "Relationship",
 																	 dependent:   :destroy
   has_many :interested_users, through: :reverse_relationships, source: :user
+  
+  has_many :messages
 
 
 
