@@ -1,10 +1,16 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+class Interest < ActiveRecord::Base
+  attr_accessible :name, :user_id
 
-one:
-  interest: 1
+  belongs_to :user
 
-two:
-  interest: 1
+  validates :name, :presence => true
+
+
+
+
+
+
+end
 
 # == Schema Information
 #

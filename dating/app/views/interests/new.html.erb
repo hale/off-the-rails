@@ -1,0 +1,25 @@
+<h1>Find new matches by answering questions!</h1>
+
+<%= form_for :interest, :action => 'create' do |f|%>
+  <div class="field">
+    <%= f.label :question %>
+    <h3>Do you like pasta?</h3>
+    <%= f.check_box :pasta, {}, 'likes_pasta', 'dislikes_pasta' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :question %>
+    <h3>Are you a pet lover?</h3>
+    <%= f.check_box :pets, {}, 'likes_pets', 'dislikes_pets' %>
+  </div>
+
+  <div class="field">
+    <%= f.label :question %>
+    <h3>Do you eat meat?</h3>
+    <%= f.check_box :meat, {}, 'meat_eater', 'vegetarian' %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Find matches" %>
+  </div>
+<% end %>

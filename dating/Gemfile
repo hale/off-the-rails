@@ -21,6 +21,8 @@ group :test, :development do
     gem 'paperclip'
     gem 'railroady'
     gem 'faker'
+    # gem 'annotate', '> 2.4.0'
+    gem 'annotate', :git => 'http://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
 end
 
 group :production do
