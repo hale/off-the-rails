@@ -1,4 +1,6 @@
 Dating::Application.routes.draw do
+  resources :messages
+
   root              :to => 'pages#home'
   match '/help',    :to => 'pages#help'
   match '/about',   :to => 'pages#about'
@@ -19,7 +21,7 @@ Dating::Application.routes.draw do
   
   # match '/logout',  :to => 'sessions#destroy', :via  => :delete, :as => :logout
 
-
+  resources :messages, :singular => :message
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

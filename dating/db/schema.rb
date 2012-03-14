@@ -11,7 +11,8 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120314105756) do
+ActiveRecord::Schema.define(:version => 20120314041248) do
+
 
   create_table "interests", :force => true do |t|
     t.integer  "interest"
@@ -22,13 +23,15 @@ ActiveRecord::Schema.define(:version => 20120314105756) do
   end
 
   create_table "messages", :force => true do |t|
-    t.integer  "relationship_id"
-    t.string   "message"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.integer  "sender_id"
+    t.integer  "recipient_id"
+    t.integer  "time"
+    t.boolean  "read"
+    t.string   "type"
+    t.text     "message"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
-
-  add_index "messages", ["relationship_id"], :name => "index_messages_on_relationship_id"
 
   create_table "relationships", :force => true do |t|
     t.integer  "user_id"
