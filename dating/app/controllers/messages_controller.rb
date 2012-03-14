@@ -3,7 +3,9 @@ class MessagesController < ApplicationController
   attr_accessor :type
   # GET /messages.json
   def index
-    @messages = Message.all
+    @user = User.find(session[:user_id])
+    @messages = @user.messages
+    # @messages = Message.where(:user_id => session[:user_id])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -81,4 +83,17 @@ class MessagesController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def outbox
+    #@user = User.find(session[:user_id])
+    #@messages = @user.messages
+    @messages = Message.where(:sender_id => session[:user_id])
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @messages }
+    end
+  end
+  
+  
 end

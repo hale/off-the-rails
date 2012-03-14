@@ -2,6 +2,14 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.2'
 gem 'sqlite3'
+gem 'pg'
+gem 'heroku'
+
+# needed for the js runtime environment 
+gem 'therubyracer-heroku', '0.8.1.pre3'
+
+# Recomended to use instead of WEBrick
+gem 'thin'
 
 
 # Gems used only for assets and not required
@@ -28,6 +36,7 @@ end
 
 group :production do
     gem 'paperclip'
+    gem 'pg'
 end
 
 gem 'jquery-rails'

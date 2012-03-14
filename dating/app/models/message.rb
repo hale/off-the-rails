@@ -1,3 +1,6 @@
 class Message < ActiveRecord::Base
-  attr_accessible :sender_id, :recipient_id, :time, :read, :msg_type, :message
+  attr_accessible :user_id, :sender_id, :time, :read, :msg_type, :message
+  
+  belongs_to :user
+
 end
