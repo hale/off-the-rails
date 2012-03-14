@@ -1,7 +1,6 @@
 class CreateMessages < ActiveRecord::Migration
   def change
-    drop_table :messages
-    update_table :messages do |t|
+    create_table :messages do |t|
       t.integer :sender_id
       t.integer :recipient_id
       t.integer :time

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-before_filter :confirm_logged_in
+before_filter :confirm_logged_in :except => :create
 
 def show
 	# currently doesn't render if the user is not signed in. needs a before filter.
@@ -27,7 +27,7 @@ def create
 		session[:user_id] = @user.id
     redirect_to home_user_path(@user)
 	else
-		render('pages/home')
+		redirect_to root_url
 	end
 end
 

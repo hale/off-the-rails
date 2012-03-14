@@ -71,5 +71,5 @@ Dating::Application.routes.draw do
   #   end
 
   # See how all your routes lay out with "rake routes"
-  match ':controller(/:action(/:id))(.:format)'
+  match '/:controller(/:action(/:id))(.:format)'
 end

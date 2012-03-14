@@ -11,8 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120314041248) do
-
+ActiveRecord::Schema.define(:version => 20120314105756) do
 
   create_table "interests", :force => true do |t|
     t.integer  "interest"
@@ -27,7 +26,7 @@ ActiveRecord::Schema.define(:version => 20120314041248) do
     t.integer  "recipient_id"
     t.integer  "time"
     t.boolean  "read"
-    t.string   "type"
+    t.string   "msg_type"
     t.text     "message"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
