@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-before_filter :confirm_logged_in :except => :create
+before_filter :confirm_logged_in, :except => [:create, :destroy]
 
 def show
 	# currently doesn't render if the user is not signed in. needs a before filter.
