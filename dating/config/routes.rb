@@ -9,7 +9,7 @@ Dating::Application.routes.draw do
     member do
       get :home
       get :matches, :interested
-      resources :interests, only: [:create, :new, :destroy]
+      resources :interests
     end
   end
 

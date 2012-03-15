@@ -1,6 +1,6 @@
 <h1>Answer Questions - Have Coitus</h1>
 
-<%= form_for :interest do |f|%>
+<%= form_for(:interest, :as => :post, :url => interests_path(@user)) do |f| %>
   <div class="field">
     <%= f.label :question %>
     <h3>Do you like pasta?</h3>
