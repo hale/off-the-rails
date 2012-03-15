@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 	attr_accessible :name, :email, :password, :password_confirmation, :avatar,
-									:dob, :gender, :location, :about
+									:dob, :gender, :location, :about, :twitter, :status
 
 	#Rails 3.1 built in authentication
 	has_secure_password
