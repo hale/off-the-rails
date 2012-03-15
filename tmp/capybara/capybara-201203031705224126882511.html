@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Off the Rails Dating App</title>
+<script src="/assets/application.js" type="text/javascript"></script><!-- include the blueprint framework --><link href="/assets/blueprint/screen.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/assets/blueprint/print.css" media="print" rel="stylesheet" type="text/css">
+<!--[if lt IE 8]>
+    <link href="/assets/blueprint/ie.css" media="screen" rel="stylesheet" type="text/css" />
+  <![endif]--><link href="/assets/custom.css" media="all" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+<div class="container">
+      <div class="flash alert">Invalid email or password. </div>
+
+
+  <div class="sidebar">
+      
+    
+    <div class="signup">
+      <form accept-charset="UTF-8" action="/users" method="post">
+<div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+  <div class="field">
+      <label for="user_name">Name</label>
+      <input id="user_name" name="user[name]" size="20" type="text">
+</div>
+  <div class="field">
+      <label for="user_email">Email</label>
+      <input id="user_email" name="user[email]" size="20" type="text">
+</div>
+  <div class="field">
+      <label for="user_password">Password</label>
+      <input id="user_password" name="user[password]" size="20" type="password">
+</div>
+  <div class="field">
+      <label for="user_password_confirmation">Password confirmation</label>
+      <input id="user_password_confirmation" name="user[password_confirmation]" size="20" type="password">
+</div>
+  <div class="actions">
+    <input name="commit" type="submit" value="Sign up">
+</div>
+</form> 
+    </div>
+
+
+    
+  </div>
+
+  <div class="main">
+    
+    <div class="login">
+      <form accept-charset="UTF-8" action="/sessions" method="post">
+<div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+  <div class="field">
+    <label for="session_email">Email</label>
+    <input id="session_email" name="session[email]" size="30" type="text">
+</div>
+  <div class="field">
+    <label for="session_password">Password</label>
+    <input id="session_password" name="session[password]" size="30" type="password">
+</div>
+  <div class="actions">
+    <input name="commit" type="submit" value="Log in">
+</div>
+</form>
+    </div>
+    <div class="banner"><a href="/"><img alt="Dating App" src="/assets/banner.png"></a></div>
+    
+    <div class="information">
+      <div class="info_box">
+        Sample Image 1
+      </div>
+      <div class="info_box">
+        Sample Image 2
+      </div>
+      <div class="info_box">
+        Sample Image 3
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+  </div>
+
+</div>
+
+
+
+</body>
+</html>
