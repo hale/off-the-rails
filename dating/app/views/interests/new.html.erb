@@ -1,6 +1,6 @@
-<h1>Find new matches by answering questions!</h1>
+<h1>Answer Questions - Have Coitus</h1>
 
-<%= form_for :interest, :action => 'create' do |f|%>
+<%= form_for :interest do |f|%>
   <div class="field">
     <%= f.label :question %>
     <h3>Do you like pasta?</h3>
@@ -16,7 +16,7 @@
   <div class="field">
     <%= f.label :question %>
     <h3>Do you eat meat?</h3>
-    <%= f.check_box :meat, {}, 'meat_eater', 'vegetarian' %>
+    <%= f.check_box :meat, {}, 'eats_meat', 'vegetarian' %>
   </div>
 
   <div class="actions">

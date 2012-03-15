@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
-gem 'sqlite3'
+
 
 
 # Gems used only for assets and not required
@@ -13,20 +13,21 @@ group :assets do
 end
 
 group :test, :development do
-    gem 'rspec-rails'
-    gem 'guard-rspec'
-    gem 'cucumber-rails'
-    gem 'factory_girl_rails'
-    gem 'database_cleaner'
-    gem 'paperclip'
-    gem 'railroady'
-    gem 'faker'
-    # gem 'annotate', '> 2.4.0'
-    gem 'annotate', :git => 'http://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
+   gem 'sqlite3'
+   gem 'rspec-rails'
+   gem 'guard-rspec'
+   gem 'cucumber-rails'
+   gem 'factory_girl_rails'
+   gem 'database_cleaner'
+   gem 'paperclip'
+   gem 'railroady'
+   gem 'faker'
+   # gem 'annotate'
+   gem 'annotate', :git => 'http://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
 end
 
 group :production do
-  # gem 'pg'
+   gem 'pg'
 end
 
 gem 'jquery-rails'
