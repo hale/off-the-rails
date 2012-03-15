@@ -5,6 +5,7 @@ gem 'sqlite3'
 gem 'pg'
 gem 'heroku'
 
+gem 'activeadmin'
 # needed for the js runtime environment
 # Recomended to use instead of WEBrick
 gem 'thin'

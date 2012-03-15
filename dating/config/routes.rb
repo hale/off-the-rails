@@ -1,5 +1,9 @@
 Dating::Application.routes.draw do
 
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   root              :to => 'pages#home'
   match '/help',    :to => 'pages#help'
   match '/about',   :to => 'pages#about'
