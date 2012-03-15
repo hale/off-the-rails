@@ -23,11 +23,11 @@ group :test, :development do
    gem 'railroady'
    gem 'faker'
    # gem 'annotate'
-   gem 'annotate', :git => 'http://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
+   # gem 'annotate', :git => 'http://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
 end
 
 group :production do
-   gem 'pg'
+   # gem 'pg'
 end
 
 gem 'jquery-rails'
