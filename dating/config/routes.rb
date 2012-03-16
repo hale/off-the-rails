@@ -19,7 +19,7 @@ Dating::Application.routes.draw do
     member do
       get :home
       get :matches, :interested
-      get :interests
+      resources :interests
     end
     resources :messages
   end
@@ -28,7 +28,7 @@ Dating::Application.routes.draw do
 
   resources :sessions, only: [:create, :destroy]
   resources :relationships, except: [:edit, :update] # matches
-  resources :interests, only: [:create, :new, :destroy]
+ 
   
   # match '/logout',  :to => 'sessions#destroy', :via  => :delete, :as => :logout
 

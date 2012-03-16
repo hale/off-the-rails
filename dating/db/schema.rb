@@ -84,15 +84,6 @@ ActiveRecord::Schema.define(:version => 20120316025618) do
 
   add_index "timeline_updates", ["user_id"], :name => "index_timeline_updates_on_user_id"
 
-  create_table "user_interests", :force => true do |t|
-    t.integer  "user_id"
-    t.integer  "interest_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
-  add_index "user_interests", ["interest_id"], :name => "index_user_interests_on_interest_id"
-  add_index "user_interests", ["user_id"], :name => "index_user_interests_on_user_id"
 
   create_table "users", :force => true do |t|
     t.datetime "created_at",          :null => false
