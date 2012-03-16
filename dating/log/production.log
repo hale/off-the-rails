@@ -1,0 +1,1286 @@
+Migrating to CreateUsers (20120301114418)
+Migrating to CreateUserInfos (20120305105540)
+Migrating to CreateTimelineUpdates (20120305105559)
+Migrating to CreateInterests (20120305105604)
+Migrating to CreateUserInterests (20120305105608)
+Migrating to AddAttachmentAvatarToUser (20120308153429)
+Migrating to AddAslToUsers (20120309002930)
+Migrating to AddAboutToUsers (20120309010000)
+Migrating to CreateRelationships (20120311015718)
+Migrating to ChangeColumnNamesInRelationships (20120311131002)
+Migrating to AddNameToInterests (20120313151803)
+Migrating to CreateMessages (20120314041248)
+Migrating to AddUserIdToInterests (20120314105756)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 16:46:25 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (8.6ms)
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered users/_sign_up.html.erb (3.3ms)
+  Rendered pages/home.html.erb within layouts/application (48.0ms)
+Completed 500 Internal Server Error in 62ms
+
+ActionView::Template::Error (banner.png isn't precompiled):
+    13: <% end -%>
+    14: 
+    15: 
+    16:   <div class = "banner"><%= link_to banner, root_path %></div>
+    17:     
+    18:   <div class="information">
+    19:     <h3>About</h3>
+  app/helpers/application_helper.rb:13:in `banner'
+  app/views/pages/home.html.erb:16:in `_app_views_pages_home_html_erb__1196660859368921675_70229596058900'
+
+
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 16:46:25 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+Compiled jquery.js  (3ms)  (pid 77642)
+Compiled jquery_ujs.js  (0ms)  (pid 77642)
+Compiled messages.js  (322ms)  (pid 77642)
+Compiled sessions.js  (106ms)  (pid 77642)
+Compiled static_pages.js  (173ms)  (pid 77642)
+Compiled timeline.js  (111ms)  (pid 77642)
+Compiled user.js  (118ms)  (pid 77642)
+Compiled application.js  (984ms)  (pid 77642)
+Compiled blueprint/ie.css  (0ms)  (pid 77642)
+Compiled blueprint/plugins/buttons/screen.css  (0ms)  (pid 77642)
+Compiled blueprint/plugins/fancy-type/screen.css  (0ms)  (pid 77642)
+Compiled blueprint/plugins/link-icons/screen.css  (0ms)  (pid 77642)
+Compiled blueprint/plugins/rtl/screen.css  (0ms)  (pid 77642)
+Compiled blueprint/print.css  (0ms)  (pid 77642)
+Compiled blueprint/screen.css  (0ms)  (pid 77642)
+Compiled blueprint/src/forms.css  (0ms)  (pid 77642)
+Compiled blueprint/src/grid.css  (0ms)  (pid 77642)
+Compiled blueprint/src/ie.css  (0ms)  (pid 77642)
+Compiled blueprint/src/print.css  (0ms)  (pid 77642)
+Compiled blueprint/src/reset.css  (0ms)  (pid 77642)
+Compiled blueprint/src/typography.css  (0ms)  (pid 77642)
+Compiled custom.css  (0ms)  (pid 77642)
+Compiled messages.css  (44ms)  (pid 77642)
+Compiled scaffolds.css  (18ms)  (pid 77642)
+Compiled sessions.css  (2ms)  (pid 77642)
+Compiled timeline.css  (1ms)  (pid 77642)
+Compiled user.css  (1ms)  (pid 77642)
+Compiled application.css  (312ms)  (pid 77642)
+Compiled jquery.js  (2ms)  (pid 77642)
+Compiled jquery_ujs.js  (0ms)  (pid 77642)
+Compiled messages.js  (228ms)  (pid 77642)
+Compiled sessions.js  (115ms)  (pid 77642)
+Compiled static_pages.js  (147ms)  (pid 77642)
+Compiled timeline.js  (114ms)  (pid 77642)
+Compiled user.js  (105ms)  (pid 77642)
+Compiled application.js  (788ms)  (pid 77642)
+Compiled blueprint/ie.css  (0ms)  (pid 77642)
+Compiled blueprint/plugins/buttons/screen.css  (0ms)  (pid 77642)
+Compiled blueprint/plugins/fancy-type/screen.css  (0ms)  (pid 77642)
+Compiled blueprint/plugins/link-icons/screen.css  (0ms)  (pid 77642)
+Compiled blueprint/plugins/rtl/screen.css  (0ms)  (pid 77642)
+Compiled blueprint/print.css  (0ms)  (pid 77642)
+Compiled blueprint/screen.css  (0ms)  (pid 77642)
+Compiled blueprint/src/forms.css  (0ms)  (pid 77642)
+Compiled blueprint/src/grid.css  (0ms)  (pid 77642)
+Compiled blueprint/src/ie.css  (0ms)  (pid 77642)
+Compiled blueprint/src/print.css  (0ms)  (pid 77642)
+Compiled blueprint/src/reset.css  (0ms)  (pid 77642)
+Compiled blueprint/src/typography.css  (0ms)  (pid 77642)
+Compiled custom.css  (0ms)  (pid 77642)
+Compiled messages.css  (12ms)  (pid 77642)
+Compiled scaffolds.css  (18ms)  (pid 77642)
+Compiled sessions.css  (1ms)  (pid 77642)
+Compiled timeline.css  (1ms)  (pid 77642)
+Compiled user.css  (1ms)  (pid 77642)
+Compiled application.css  (316ms)  (pid 77642)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 16:49:56 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (9.0ms)
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/_sign_up.html.erb (3.8ms)
+  Rendered pages/home.html.erb within layouts/application (57.9ms)
+Completed 500 Internal Server Error in 82ms
+
+ActionView::Template::Error (blueprint/screen.css isn't precompiled):
+    6:   <%= csrf_meta_tags %>
+    7: 
+    8:   <!-- include the blueprint framework -->
+    9:   <%= stylesheet_link_tag    'blueprint/screen', :media => 'screen' %>
+    10:   <%= stylesheet_link_tag    'blueprint/print', :media => 'print' %>
+    11: 
+    12:   <!--[if lt IE 8]>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__2552350040808291466_70140262103300'
+
+
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 16:49:57 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+Compiled jquery.js  (3ms)  (pid 77672)
+Compiled jquery_ujs.js  (0ms)  (pid 77672)
+Compiled messages.js  (194ms)  (pid 77672)
+Compiled sessions.js  (111ms)  (pid 77672)
+Compiled static_pages.js  (112ms)  (pid 77672)
+Compiled timeline.js  (110ms)  (pid 77672)
+Compiled user.js  (116ms)  (pid 77672)
+Compiled application.js  (803ms)  (pid 77672)
+Compiled blueprint/ie.css  (0ms)  (pid 77672)
+Compiled blueprint/plugins/buttons/screen.css  (0ms)  (pid 77672)
+Compiled blueprint/plugins/fancy-type/screen.css  (0ms)  (pid 77672)
+Compiled blueprint/plugins/link-icons/screen.css  (0ms)  (pid 77672)
+Compiled blueprint/plugins/rtl/screen.css  (0ms)  (pid 77672)
+Compiled blueprint/print.css  (0ms)  (pid 77672)
+Compiled blueprint/screen.css  (0ms)  (pid 77672)
+Compiled blueprint/src/forms.css  (0ms)  (pid 77672)
+Compiled blueprint/src/grid.css  (0ms)  (pid 77672)
+Compiled blueprint/src/ie.css  (0ms)  (pid 77672)
+Compiled blueprint/src/print.css  (0ms)  (pid 77672)
+Compiled blueprint/src/reset.css  (0ms)  (pid 77672)
+Compiled blueprint/src/typography.css  (0ms)  (pid 77672)
+Compiled custom.css  (0ms)  (pid 77672)
+Compiled messages.css  (10ms)  (pid 77672)
+Compiled scaffolds.css  (14ms)  (pid 77672)
+Compiled sessions.css  (1ms)  (pid 77672)
+Compiled timeline.css  (1ms)  (pid 77672)
+Compiled user.css  (1ms)  (pid 77672)
+Compiled application.css  (221ms)  (pid 77672)
+Compiled jquery.js  (3ms)  (pid 77672)
+Compiled jquery_ujs.js  (0ms)  (pid 77672)
+Compiled messages.js  (206ms)  (pid 77672)
+Compiled sessions.js  (110ms)  (pid 77672)
+Compiled static_pages.js  (164ms)  (pid 77672)
+Compiled timeline.js  (129ms)  (pid 77672)
+Compiled user.js  (122ms)  (pid 77672)
+Compiled application.js  (830ms)  (pid 77672)
+Compiled blueprint/ie.css  (0ms)  (pid 77672)
+Compiled blueprint/plugins/buttons/screen.css  (0ms)  (pid 77672)
+Compiled blueprint/plugins/fancy-type/screen.css  (0ms)  (pid 77672)
+Compiled blueprint/plugins/link-icons/screen.css  (0ms)  (pid 77672)
+Compiled blueprint/plugins/rtl/screen.css  (0ms)  (pid 77672)
+Compiled blueprint/print.css  (0ms)  (pid 77672)
+Compiled blueprint/screen.css  (0ms)  (pid 77672)
+Compiled blueprint/src/forms.css  (0ms)  (pid 77672)
+Compiled blueprint/src/grid.css  (0ms)  (pid 77672)
+Compiled blueprint/src/ie.css  (0ms)  (pid 77672)
+Compiled blueprint/src/print.css  (0ms)  (pid 77672)
+Compiled blueprint/src/reset.css  (0ms)  (pid 77672)
+Compiled blueprint/src/typography.css  (0ms)  (pid 77672)
+Compiled custom.css  (0ms)  (pid 77672)
+Compiled messages.css  (13ms)  (pid 77672)
+Compiled scaffolds.css  (15ms)  (pid 77672)
+Compiled sessions.css  (2ms)  (pid 77672)
+Compiled timeline.css  (1ms)  (pid 77672)
+Compiled user.css  (2ms)  (pid 77672)
+Compiled application.css  (243ms)  (pid 77672)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 16:50:49 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (10.0ms)
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/_sign_up.html.erb (3.8ms)
+  Rendered pages/home.html.erb within layouts/application (60.1ms)
+Completed 500 Internal Server Error in 83ms
+
+ActionView::Template::Error (blueprint/screen.css isn't precompiled):
+    6:   <%= csrf_meta_tags %>
+    7: 
+    8:   <!-- include the blueprint framework -->
+    9:   <%= stylesheet_link_tag    'blueprint/screen', :media => 'screen' %>
+    10:   <%= stylesheet_link_tag    'blueprint/print', :media => 'print' %>
+    11: 
+    12:   <!--[if lt IE 8]>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___183481598088484123_70276574099300'
+
+
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 16:50:49 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 16:50:51 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (2.0ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.4ms)
+  Rendered pages/home.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (blueprint/screen.css isn't precompiled):
+    6:   <%= csrf_meta_tags %>
+    7: 
+    8:   <!-- include the blueprint framework -->
+    9:   <%= stylesheet_link_tag    'blueprint/screen', :media => 'screen' %>
+    10:   <%= stylesheet_link_tag    'blueprint/print', :media => 'print' %>
+    11: 
+    12:   <!--[if lt IE 8]>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___183481598088484123_70276574099300'
+
+
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 16:50:52 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+Compiled jquery.js  (3ms)  (pid 78028)
+Compiled jquery_ujs.js  (0ms)  (pid 78028)
+Compiled messages.js  (340ms)  (pid 78028)
+Compiled sessions.js  (3ms)  (pid 78028)
+Compiled static_pages.js  (0ms)  (pid 78028)
+Compiled timeline.js  (0ms)  (pid 78028)
+Compiled user.js  (0ms)  (pid 78028)
+Compiled application.js  (453ms)  (pid 78028)
+Compiled blueprint/ie.css  (0ms)  (pid 78028)
+Compiled blueprint/plugins/buttons/screen.css  (0ms)  (pid 78028)
+Compiled blueprint/plugins/fancy-type/screen.css  (0ms)  (pid 78028)
+Compiled blueprint/plugins/link-icons/screen.css  (0ms)  (pid 78028)
+Compiled blueprint/plugins/rtl/screen.css  (0ms)  (pid 78028)
+Compiled blueprint/print.css  (0ms)  (pid 78028)
+Compiled blueprint/screen.css  (0ms)  (pid 78028)
+Compiled blueprint/src/forms.css  (0ms)  (pid 78028)
+Compiled blueprint/src/grid.css  (0ms)  (pid 78028)
+Compiled blueprint/src/ie.css  (0ms)  (pid 78028)
+Compiled blueprint/src/print.css  (0ms)  (pid 78028)
+Compiled blueprint/src/reset.css  (0ms)  (pid 78028)
+Compiled blueprint/src/typography.css  (0ms)  (pid 78028)
+Compiled custom.css  (0ms)  (pid 78028)
+Compiled messages.css  (10ms)  (pid 78028)
+Compiled scaffolds.css  (14ms)  (pid 78028)
+Compiled sessions.css  (1ms)  (pid 78028)
+Compiled timeline.css  (1ms)  (pid 78028)
+Compiled user.css  (1ms)  (pid 78028)
+Compiled application.css  (253ms)  (pid 78028)
+Compiled jquery.js  (2ms)  (pid 78028)
+Compiled jquery_ujs.js  (0ms)  (pid 78028)
+Compiled messages.js  (172ms)  (pid 78028)
+Compiled sessions.js  (2ms)  (pid 78028)
+Compiled static_pages.js  (0ms)  (pid 78028)
+Compiled timeline.js  (0ms)  (pid 78028)
+Compiled user.js  (0ms)  (pid 78028)
+Compiled application.js  (255ms)  (pid 78028)
+Compiled blueprint/ie.css  (0ms)  (pid 78028)
+Compiled blueprint/plugins/buttons/screen.css  (0ms)  (pid 78028)
+Compiled blueprint/plugins/fancy-type/screen.css  (0ms)  (pid 78028)
+Compiled blueprint/plugins/link-icons/screen.css  (0ms)  (pid 78028)
+Compiled blueprint/plugins/rtl/screen.css  (0ms)  (pid 78028)
+Compiled blueprint/print.css  (0ms)  (pid 78028)
+Compiled blueprint/screen.css  (0ms)  (pid 78028)
+Compiled blueprint/src/forms.css  (0ms)  (pid 78028)
+Compiled blueprint/src/grid.css  (0ms)  (pid 78028)
+Compiled blueprint/src/ie.css  (0ms)  (pid 78028)
+Compiled blueprint/src/print.css  (0ms)  (pid 78028)
+Compiled blueprint/src/reset.css  (0ms)  (pid 78028)
+Compiled blueprint/src/typography.css  (0ms)  (pid 78028)
+Compiled custom.css  (0ms)  (pid 78028)
+Compiled messages.css  (12ms)  (pid 78028)
+Compiled scaffolds.css  (20ms)  (pid 78028)
+Compiled sessions.css  (1ms)  (pid 78028)
+Compiled timeline.css  (1ms)  (pid 78028)
+Compiled user.css  (2ms)  (pid 78028)
+Compiled application.css  (278ms)  (pid 78028)
+Compiled jquery.js  (2ms)  (pid 78032)
+Compiled jquery_ujs.js  (0ms)  (pid 78032)
+Compiled messages.js  (116ms)  (pid 78032)
+Compiled sessions.js  (3ms)  (pid 78032)
+Compiled static_pages.js  (0ms)  (pid 78032)
+Compiled timeline.js  (0ms)  (pid 78032)
+Compiled user.js  (1ms)  (pid 78032)
+Compiled application.js  (225ms)  (pid 78032)
+Compiled blueprint/ie.css  (0ms)  (pid 78032)
+Compiled blueprint/plugins/buttons/screen.css  (0ms)  (pid 78032)
+Compiled blueprint/plugins/fancy-type/screen.css  (0ms)  (pid 78032)
+Compiled blueprint/plugins/link-icons/screen.css  (0ms)  (pid 78032)
+Compiled blueprint/plugins/rtl/screen.css  (0ms)  (pid 78032)
+Compiled blueprint/print.css  (0ms)  (pid 78032)
+Compiled blueprint/screen.css  (0ms)  (pid 78032)
+Compiled blueprint/src/forms.css  (0ms)  (pid 78032)
+Compiled blueprint/src/grid.css  (0ms)  (pid 78032)
+Compiled blueprint/src/ie.css  (0ms)  (pid 78032)
+Compiled blueprint/src/print.css  (0ms)  (pid 78032)
+Compiled blueprint/src/reset.css  (0ms)  (pid 78032)
+Compiled blueprint/src/typography.css  (0ms)  (pid 78032)
+Compiled custom.css  (0ms)  (pid 78032)
+Compiled messages.css  (13ms)  (pid 78032)
+Compiled scaffolds.css  (13ms)  (pid 78032)
+Compiled sessions.css  (1ms)  (pid 78032)
+Compiled timeline.css  (1ms)  (pid 78032)
+Compiled user.css  (1ms)  (pid 78032)
+Compiled application.css  (251ms)  (pid 78032)
+Compiled jquery.js  (2ms)  (pid 78032)
+Compiled jquery_ujs.js  (1ms)  (pid 78032)
+Compiled messages.js  (209ms)  (pid 78032)
+Compiled sessions.js  (2ms)  (pid 78032)
+Compiled static_pages.js  (0ms)  (pid 78032)
+Compiled timeline.js  (0ms)  (pid 78032)
+Compiled user.js  (0ms)  (pid 78032)
+Compiled application.js  (282ms)  (pid 78032)
+Compiled blueprint/ie.css  (0ms)  (pid 78032)
+Compiled blueprint/plugins/buttons/screen.css  (0ms)  (pid 78032)
+Compiled blueprint/plugins/fancy-type/screen.css  (0ms)  (pid 78032)
+Compiled blueprint/plugins/link-icons/screen.css  (0ms)  (pid 78032)
+Compiled blueprint/plugins/rtl/screen.css  (0ms)  (pid 78032)
+Compiled blueprint/print.css  (0ms)  (pid 78032)
+Compiled blueprint/screen.css  (0ms)  (pid 78032)
+Compiled blueprint/src/forms.css  (0ms)  (pid 78032)
+Compiled blueprint/src/grid.css  (0ms)  (pid 78032)
+Compiled blueprint/src/ie.css  (0ms)  (pid 78032)
+Compiled blueprint/src/print.css  (0ms)  (pid 78032)
+Compiled blueprint/src/reset.css  (0ms)  (pid 78032)
+Compiled blueprint/src/typography.css  (0ms)  (pid 78032)
+Compiled custom.css  (0ms)  (pid 78032)
+Compiled messages.css  (9ms)  (pid 78032)
+Compiled scaffolds.css  (14ms)  (pid 78032)
+Compiled sessions.css  (1ms)  (pid 78032)
+Compiled timeline.css  (1ms)  (pid 78032)
+Compiled user.css  (2ms)  (pid 78032)
+Compiled application.css  (389ms)  (pid 78032)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 16:59:19 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (8.9ms)
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered users/_sign_up.html.erb (3.4ms)
+  Rendered pages/home.html.erb within layouts/application (23.4ms)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (blueprint/screen.css isn't precompiled):
+    6:   <%= csrf_meta_tags %>
+    7: 
+    8:   <!-- include the blueprint framework -->
+    9:   <%= stylesheet_link_tag    'blueprint/screen', :media => 'screen' %>
+    10:   <%= stylesheet_link_tag    'blueprint/print', :media => 'print' %>
+    11: 
+    12:   <!--[if lt IE 8]>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__4282339554886023045_70112347061360'
+
+
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 16:59:20 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 17:02:16 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (8.8ms)
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/_sign_up.html.erb (3.7ms)
+  Rendered pages/home.html.erb within layouts/application (23.5ms)
+  Rendered shared/_flash_messages.html.erb (2.1ms)
+Completed 200 OK in 491ms (Views: 490.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-4c8f41e70e0bb71b5a6b407d92814ea8.js" for 127.0.0.1 at 2012-03-14 17:02:17 +0000
+Served asset /application-4c8f41e70e0bb71b5a6b407d92814ea8.js - 200 OK (18ms)
+
+
+Started GET "/assets/custom-afe52d77993ec7c575eb51982577d17b.css" for 127.0.0.1 at 2012-03-14 17:02:17 +0000
+Served asset /custom-afe52d77993ec7c575eb51982577d17b.css - 200 OK (0ms)
+
+
+Started GET "/assets/blueprint/screen-3c34a9892bb3988721853a3b2155f5f7.css" for 127.0.0.1 at 2012-03-14 17:02:17 +0000
+Served asset /blueprint/screen-3c34a9892bb3988721853a3b2155f5f7.css - 200 OK (0ms)
+
+
+Started GET "/assets/logo-44e94e05d4524f190444370c8f66bddb.png" for 127.0.0.1 at 2012-03-14 17:02:17 +0000
+Served asset /logo-44e94e05d4524f190444370c8f66bddb.png - 200 OK (1ms)
+
+
+Started GET "/assets/banner-d3f5c9af8be530375532a517c04c934d.png" for 127.0.0.1 at 2012-03-14 17:02:17 +0000
+Served asset /banner-d3f5c9af8be530375532a517c04c934d.png - 200 OK (1ms)
+
+
+Started GET "/assets/blueprint/print-2cba38f2f67fc19205b2c431f57abd08.css" for 127.0.0.1 at 2012-03-14 17:02:17 +0000
+Served asset /blueprint/print-2cba38f2f67fc19205b2c431f57abd08.css - 200 OK (0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 17:02:17 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 17:03:04 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYaKPPxl3LZsXYQPsApMqsYxHgn4Q8P08ooUkXzCbYM=", "user"=>{"name"=>"blahh", "email"=>"blahh@blahh.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000pages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 17:03:39 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-03-14 17:03:55 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYaKPPxl3LZsXYQPsApMqsYxHgn4Q8P08ooUkXzCbYM=", "session"=>{"email"=>"blahh@blahh.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendered sessions/_login.html.erb (2.3ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.2ms)
+  Rendered pages/home.html.erb within layouts/application (6.0ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 156ms (Views: 12.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 17:03:56 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 17:04:27 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYaKPPxl3LZsXYQPsApMqsYxHgn4Q8P08ooUkXzCbYM=", "user"=>{"name"=>"example", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000pages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 17:06:26 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (8.9ms)
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/_sign_up.html.erb (3.4ms)
+  Rendered pages/home.html.erb within layouts/application (23.0ms)
+  Rendered shared/_flash_messages.html.erb (0.6ms)
+Completed 200 OK in 54ms (Views: 53.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 17:06:26 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 17:06:40 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYaKPPxl3LZsXYQPsApMqsYxHgn4Q8P08ooUkXzCbYM=", "user"=>{"name"=>"example", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000pages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 17:06:40 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYaKPPxl3LZsXYQPsApMqsYxHgn4Q8P08ooUkXzCbYM=", "user"=>{"name"=>"example", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000pages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 17:08:05 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 17:08:06 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (2.2ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.3ms)
+  Rendered pages/home.html.erb within layouts/application (6.4ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 45ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 17:08:06 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 17:08:20 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYaKPPxl3LZsXYQPsApMqsYxHgn4Q8P08ooUkXzCbYM=", "user"=>{"name"=>"example", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000pages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 17:08:20 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYaKPPxl3LZsXYQPsApMqsYxHgn4Q8P08ooUkXzCbYM=", "user"=>{"name"=>"example", "email"=>"example@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000pages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 17:08:43 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 17:08:44 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (2.2ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.3ms)
+  Rendered pages/home.html.erb within layouts/application (5.9ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 17:08:44 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 17:08:50 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYaKPPxl3LZsXYQPsApMqsYxHgn4Q8P08ooUkXzCbYM=", "user"=>{"name"=>"blah", "email"=>"blah@blah.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000pages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 17:08:50 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYaKPPxl3LZsXYQPsApMqsYxHgn4Q8P08ooUkXzCbYM=", "user"=>{"name"=>"blah", "email"=>"blah@blah.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000pages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 17:10:08 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 17:10:09 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (2.1ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_sign_up.html.erb (2.3ms)
+  Rendered pages/home.html.erb within layouts/application (5.7ms)
+  Rendered shared/_flash_messages.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 17:10:10 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 17:10:15 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYaKPPxl3LZsXYQPsApMqsYxHgn4Q8P08ooUkXzCbYM=", "user"=>{"name"=>"blah", "email"=>"blah@blah.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000pages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 17:10:15 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYaKPPxl3LZsXYQPsApMqsYxHgn4Q8P08ooUkXzCbYM=", "user"=>{"name"=>"blah", "email"=>"blah@blah.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000pages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-03-14 17:10:17 +0000
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000pages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 17:11:34 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 17:11:35 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (45.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.3ms)
+  Rendered pages/home.html.erb within layouts/application (49.6ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 54ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 17:11:35 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 17:11:39 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYaKPPxl3LZsXYQPsApMqsYxHgn4Q8P08ooUkXzCbYM=", "user"=>{"name"=>"blah", "email"=>"blah@blah.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000pages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 17:11:39 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYaKPPxl3LZsXYQPsApMqsYxHgn4Q8P08ooUkXzCbYM=", "user"=>{"name"=>"blah", "email"=>"blah@blah.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000pages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 17:13:08 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 17:13:09 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (1.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.3ms)
+  Rendered pages/home.html.erb within layouts/application (5.4ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 17:13:10 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 17:13:20 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYaKPPxl3LZsXYQPsApMqsYxHgn4Q8P08ooUkXzCbYM=", "user"=>{"name"=>"blah", "email"=>"blah@blah.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000pages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 17:13:20 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYaKPPxl3LZsXYQPsApMqsYxHgn4Q8P08ooUkXzCbYM=", "user"=>{"name"=>"blah", "email"=>"blah@blah.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000pages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 17:14:19 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 17:14:20 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (1.8ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.3ms)
+  Rendered pages/home.html.erb within layouts/application (5.4ms)
+  Rendered shared/_flash_messages.html.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 17:14:20 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 17:14:27 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYaKPPxl3LZsXYQPsApMqsYxHgn4Q8P08ooUkXzCbYM=", "user"=>{"name"=>"blah", "email"=>"blah@blah.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000pages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 17:14:27 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYaKPPxl3LZsXYQPsApMqsYxHgn4Q8P08ooUkXzCbYM=", "user"=>{"name"=>"blah", "email"=>"blah@blah.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000pages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 17:15:08 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 17:15:09 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (48.2ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.9ms)
+  Rendered pages/home.html.erb within layouts/application (52.9ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 57ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2012-03-14 17:15:09 +0000
+
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  actionpack (3.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.2) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.2) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.2) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.2) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.2) lib/rails/engine.rb:479:in `call'
+  railties (3.2.2) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.2) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 17:15:13 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYaKPPxl3LZsXYQPsApMqsYxHgn4Q8P08ooUkXzCbYM=", "user"=>{"name"=>"blah", "email"=>"blah@blah.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000pages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 17:15:13 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mYaKPPxl3LZsXYQPsApMqsYxHgn4Q8P08ooUkXzCbYM=", "user"=>{"name"=>"blah", "email"=>"blah@blah.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://localhost:3000pages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)

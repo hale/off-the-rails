@@ -1,0 +1,1452 @@
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-11 22:00:27 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (99.5ms)
+  Rendered shared/_error_messages.html.erb (0.9ms)
+  Rendered users/_sign_up.html.erb (4.4ms)
+  Rendered pages/home.html.erb within layouts/application (153.6ms)
+  Rendered shared/_flash_messages.html.erb (0.6ms)
+Completed 200 OK in 269ms (Views: 268.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/about" for 127.0.0.1 at 2012-03-11 22:00:28 +0000
+Processing by PagesController#about as HTML
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/help" for 127.0.0.1 at 2012-03-11 22:00:28 +0000
+Processing by PagesController#help as HTML
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (1.9ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-03-11 22:00:28 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (1.8ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.0ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-03-11 22:00:28 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (1.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.6ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/login" for 127.0.0.1 at 2012-03-11 22:00:28 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (2.9ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_sign_up.html.erb (4.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-03-11 22:00:28 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Completed 500 Internal Server Error in 1ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/login" for 127.0.0.1 at 2012-03-11 22:00:28 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (1.9ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.1ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.9ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-11 22:01:02 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (44.8ms)
+  Rendered shared/_error_messages.html.erb (0.9ms)
+  Rendered users/_sign_up.html.erb (4.0ms)
+  Rendered pages/home.html.erb within layouts/application (98.5ms)
+  Rendered shared/_flash_messages.html.erb (0.7ms)
+Completed 200 OK in 211ms (Views: 210.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/about" for 127.0.0.1 at 2012-03-11 22:01:03 +0000
+Processing by PagesController#about as HTML
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/help" for 127.0.0.1 at 2012-03-11 22:01:03 +0000
+Processing by PagesController#help as HTML
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (29.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (32.6ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (58.0ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", nil], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:03 UTC +00:00], ["dob", nil], ["email", "user@example.com"], ["gender", nil], ["location", nil], ["name", "Example User"], ["password_digest", "$2a$10$/c3q5Nlb54PVp68wCdVLUeHeshAgkmNLgUkdN2sVj4w7FEMvqd0z2"], ["updated_at", Sun, 11 Mar 2012 22:01:03 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.4ms)
+  [1m[36m (1.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", nil], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:03 UTC +00:00], ["dob", nil], ["email", "user@example.com"], ["gender", nil], ["location", nil], ["name", "Example User"], ["password_digest", "$2a$10$ytjldIKkeWq.ZoosagciLuXC1qkDvlNQ77RUnCqaOOsRY59CZU.KG"], ["updated_at", Sun, 11 Mar 2012 22:01:03 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", nil], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:04 UTC +00:00], ["dob", nil], ["email", "user@example.com"], ["gender", nil], ["location", nil], ["name", "Example User"], ["password_digest", "$2a$10$zH9TdwtArF6cWTgI7FAE4uRhW6YPvUWKV1/mRpPiWALOZdU3h8ArO"], ["updated_at", Sun, 11 Mar 2012 22:01:04 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", nil], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:04 UTC +00:00], ["dob", nil], ["email", "user@example.com"], ["gender", nil], ["location", nil], ["name", "Example User"], ["password_digest", "$2a$10$.qBgZ7L6erphEvij9N4drOZCW9c3GoMrrVbSsxpaBPIc5gPwnMXvG"], ["updated_at", Sun, 11 Mar 2012 22:01:04 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered sessions/_login.html.erb (1.8ms)
+  Rendered shared/_error_messages.html.erb (2.4ms)
+  Rendered users/_sign_up.html.erb (3.1ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 12.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", nil], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:04 UTC +00:00], ["dob", nil], ["email", "user@example.com"], ["gender", nil], ["location", nil], ["name", "Example User"], ["password_digest", "$2a$10$FqK4FPQnKouDSrYzYWLwcODBjZL.Fj.Hu0xTGsjzUbxMie4UnWqVu"], ["updated_at", Sun, 11 Mar 2012 22:01:04 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered sessions/_login.html.erb (1.8ms)
+  Rendered shared/_error_messages.html.erb (2.3ms)
+  Rendered users/_sign_up.html.erb (3.0ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 12.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", nil], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:04 UTC +00:00], ["dob", nil], ["email", "user@example.com"], ["gender", nil], ["location", nil], ["name", "Example User"], ["password_digest", "$2a$10$eBZfCcMLOS3ndB/fNp0EUOC9S1LN30HfphUokZlW2xeuXknpPN69S"], ["updated_at", Sun, 11 Mar 2012 22:01:04 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", nil], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:04 UTC +00:00], ["dob", nil], ["email", "user@example.com"], ["gender", nil], ["location", nil], ["name", "Example User"], ["password_digest", "$2a$10$2cPfbh5Z2VfH/9KJIuPrL.1XWgtGHQncPRUK1I.Bc8rP0udie9UNa"], ["updated_at", Sun, 11 Mar 2012 22:01:04 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"newuser@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('newuser@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", nil], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:04 UTC +00:00], ["dob", nil], ["email", "newuser@example.com"], ["gender", nil], ["location", nil], ["name", "New User"], ["password_digest", "$2a$10$rl7//Pwqj896BmShEFNgVustm86SiFJOlDZYC/EUcXB/VAPuYjKUO"], ["updated_at", Sun, 11 Mar 2012 22:01:04 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/users/home
+Completed 302 Found in 101ms (ActiveRecord: 1.0ms)
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", nil], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:04 UTC +00:00], ["dob", nil], ["email", "user@example.com"], ["gender", nil], ["location", nil], ["name", "Example User"], ["password_digest", "$2a$10$ctJfngV8CMLzgAR1QF4I/uc/6ZOelSpxCCNVSLJw/.SinpjSawov6"], ["updated_at", Sun, 11 Mar 2012 22:01:04 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"newuser@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('newuser@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", nil], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:04 UTC +00:00], ["dob", nil], ["email", "newuser@example.com"], ["gender", nil], ["location", nil], ["name", "New User"], ["password_digest", "$2a$10$BZh1d84A4zNgIIEu9DIjbuYHQd2Xdv279ZyiWWP7VdGf3AooBixsu"], ["updated_at", Sun, 11 Mar 2012 22:01:04 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/users/home
+Completed 302 Found in 149ms (ActiveRecord: 1.0ms)
+  [1m[36m (49.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (54.2ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$kRlEBl4T6SV8dLLF52OQ5.1nVtoUiL2UYxIeixQbHAsX29qKinC/W"], ["updated_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('mary@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", "I have been lucky in life and now I am looking to be lucky in love. I am a fun loving lady who loves to have a good time,  and fully believe that laughter truly is the best medicine. However, that said,  I do  know when and where to be serious and respect that trait in others as well.\\n\\nI enjoy a wide range of activities from your stereotypical walk on the beach to something more offbeat like painting in the park. Generally I consider myself to be very open to new experiences and will try almost anything once."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00], ["dob", Sat, 01 Jan -4753], ["email", "mary@example.com"], ["gender", "Female"], ["location", nil], ["name", "Mary"], ["password_digest", "$2a$10$Ipu714FphxjTnv95gG0qr.xZoWtlq8p0kTOYzFQKw4sTqdLVLtnbW"], ["updated_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$3VOPtgHST/3XiQJ6JbWL1eqbGzi05lAqta19xiybAEh2g8VMJ.oh2"], ["updated_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('mary@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", "I have been lucky in life and now I am looking to be lucky in love. I am a fun loving lady who loves to have a good time,  and fully believe that laughter truly is the best medicine. However, that said,  I do  know when and where to be serious and respect that trait in others as well.\\n\\nI enjoy a wide range of activities from your stereotypical walk on the beach to something more offbeat like painting in the park. Generally I consider myself to be very open to new experiences and will try almost anything once."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00], ["dob", Sat, 01 Jan -4753], ["email", "mary@example.com"], ["gender", "Female"], ["location", nil], ["name", "Mary"], ["password_digest", "$2a$10$uN6AMA1up.6qsoOoD/Z4JeqnIiSAta4/YKSSzGamEwXpQUq.LCnIu"], ["updated_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "relationships" ("created_at", "match_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00], ["match_id", 2], ["updated_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$XyLI/fdw8x6XvaQ5jleuB.AaCYORQv6QMlvha2Vatzzgp1ax/SoCu"], ["updated_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('mary@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I have been lucky in life and now I am looking to be lucky in love. I am a fun loving lady who loves to have a good time,  and fully believe that laughter truly is the best medicine. However, that said,  I do  know when and where to be serious and respect that trait in others as well.\\n\\nI enjoy a wide range of activities from your stereotypical walk on the beach to something more offbeat like painting in the park. Generally I consider myself to be very open to new experiences and will try almost anything once."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00], ["dob", Sat, 01 Jan -4753], ["email", "mary@example.com"], ["gender", "Female"], ["location", nil], ["name", "Mary"], ["password_digest", "$2a$10$TU1nmHyjPj9tJQpbGKAgiedhnT00rn.ML2LPzD3qU4RNlHkv4NGJ."], ["updated_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "relationships" ("created_at", "match_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00], ["match_id", 2], ["updated_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$/m4AKygpnEdw4jTBZeaVFOm1VemE2zet5EGNbJSeOyusyWj8hiHcS"], ["updated_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('mary@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", "I have been lucky in life and now I am looking to be lucky in love. I am a fun loving lady who loves to have a good time,  and fully believe that laughter truly is the best medicine. However, that said,  I do  know when and where to be serious and respect that trait in others as well.\\n\\nI enjoy a wide range of activities from your stereotypical walk on the beach to something more offbeat like painting in the park. Generally I consider myself to be very open to new experiences and will try almost anything once."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00], ["dob", Sat, 01 Jan -4753], ["email", "mary@example.com"], ["gender", "Female"], ["location", nil], ["name", "Mary"], ["password_digest", "$2a$10$X9eTfzegfPsk8/aNnDt/R.LE.cDYZoBhMJGGhlj9NJMcJ7mVn2hEa"], ["updated_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "relationships" ("created_at", "match_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00], ["match_id", 2], ["updated_at", Sun, 11 Mar 2012 22:01:05 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:06 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$HWdjs0CvVvWs4eUMnYqORe9IYMr0BH/kGRYWBViYlvOI2UsMAL0sa"], ["updated_at", Sun, 11 Mar 2012 22:01:06 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('mary@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", "I have been lucky in life and now I am looking to be lucky in love. I am a fun loving lady who loves to have a good time,  and fully believe that laughter truly is the best medicine. However, that said,  I do  know when and where to be serious and respect that trait in others as well.\\n\\nI enjoy a wide range of activities from your stereotypical walk on the beach to something more offbeat like painting in the park. Generally I consider myself to be very open to new experiences and will try almost anything once."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:06 UTC +00:00], ["dob", Sat, 01 Jan -4753], ["email", "mary@example.com"], ["gender", "Female"], ["location", nil], ["name", "Mary"], ["password_digest", "$2a$10$k/S5Zi8IPbaU4j.4JB3SWe3POE.9EUQ68w9ijuJIdR7R7WtBn31H2"], ["updated_at", Sun, 11 Mar 2012 22:01:06 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "relationships" ("created_at", "match_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Sun, 11 Mar 2012 22:01:06 UTC +00:00], ["match_id", 2], ["updated_at", Sun, 11 Mar 2012 22:01:06 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36m (1.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:06 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$hVMANwJyJbp/hz3ZD3eFFO0xK1wpJPjtvIveBt8p22FP.xBaKj3u2"], ["updated_at", Sun, 11 Mar 2012 22:01:06 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('mary@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", "I have been lucky in life and now I am looking to be lucky in love. I am a fun loving lady who loves to have a good time,  and fully believe that laughter truly is the best medicine. However, that said,  I do  know when and where to be serious and respect that trait in others as well.\\n\\nI enjoy a wide range of activities from your stereotypical walk on the beach to something more offbeat like painting in the park. Generally I consider myself to be very open to new experiences and will try almost anything once."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:06 UTC +00:00], ["dob", Sat, 01 Jan -4753], ["email", "mary@example.com"], ["gender", "Female"], ["location", nil], ["name", "Mary"], ["password_digest", "$2a$10$678ptANY0hdpNx5T/SSale9GN0X6ryGHz8B.Jl5L8KpetDYFybclO"], ["updated_at", Sun, 11 Mar 2012 22:01:06 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:06 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$uQTmw0zBkMD0lHzWWk7e5.PBITo7l6aXwThQMZ7B/6n6iKZQzWBbC"], ["updated_at", Sun, 11 Mar 2012 22:01:06 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('mary@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", "I have been lucky in life and now I am looking to be lucky in love. I am a fun loving lady who loves to have a good time,  and fully believe that laughter truly is the best medicine. However, that said,  I do  know when and where to be serious and respect that trait in others as well.\\n\\nI enjoy a wide range of activities from your stereotypical walk on the beach to something more offbeat like painting in the park. Generally I consider myself to be very open to new experiences and will try almost anything once."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:06 UTC +00:00], ["dob", Sat, 01 Jan -4753], ["email", "mary@example.com"], ["gender", "Female"], ["location", nil], ["name", "Mary"], ["password_digest", "$2a$10$dMI5kCkjdVqae0CVRmxyb.kIEHaUZYP/8rpQxKo5KKdF5xUXmjDG6"], ["updated_at", Sun, 11 Mar 2012 22:01:06 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (2.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER(' ') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('first.last@foo.jp') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('first.last@foo.jp') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('first.last@foo.jp') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example.user@foo.') LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example.user@foo.') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example.user@foo.') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('USER@EXAMPLE.COM') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", nil], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:08 UTC +00:00], ["dob", nil], ["email", "USER@EXAMPLE.COM"], ["gender", nil], ["location", nil], ["name", "Example User"], ["password_digest", "$2a$10$n/AAmGUG2OyZUpIi6oIHseno0k/I6yQsW9r5gPJdiAcSg9RxpSBFe"], ["updated_at", Sun, 11 Mar 2012 22:01:08 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (1.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (1.5ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", nil], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:09 UTC +00:00], ["dob", nil], ["email", "user@example.com"], ["gender", nil], ["location", nil], ["name", "Example User"], ["password_digest", "$2a$10$fGzdUL.hySIt0Ky2CtHhY.P0RW6hSWgwSzNnN/oaUIHWB0fpS2I.y"], ["updated_at", Sun, 11 Mar 2012 22:01:09 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:09 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$2VbmVFIowXRRKWmYhyEmwuJR9l/M/s5yAj9XYfpnQDzFXTQz9DUQO"], ["updated_at", Sun, 11 Mar 2012 22:01:09 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "relationships" ("created_at", "match_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 11 Mar 2012 22:01:09 UTC +00:00], ["match_id", 2], ["updated_at", Sun, 11 Mar 2012 22:01:09 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mRelationship Load (0.2ms)[0m  [1mSELECT "relationships".* FROM "relationships" WHERE "relationships"."user_id" = 1 AND "relationships"."match_id" = 2 LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", nil], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:09 UTC +00:00], ["dob", nil], ["email", "user@example.com"], ["gender", nil], ["location", nil], ["name", "Example User"], ["password_digest", "$2a$10$Ci7zbInaNUwsJInPz8EuFuO4jFJtn3nrIccZGpXtae5qDct28Oj12"], ["updated_at", Sun, 11 Mar 2012 22:01:09 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:09 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$yBJbC0H3X4BaYMtzGu.OUewDBMEgQVXd6i7XHnTwMFGGpjjgCva/q"], ["updated_at", Sun, 11 Mar 2012 22:01:09 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "relationships" ("created_at", "match_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 11 Mar 2012 22:01:09 UTC +00:00], ["match_id", 2], ["updated_at", Sun, 11 Mar 2012 22:01:09 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."match_id" WHERE "relationships"."user_id" = 1[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", nil], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:09 UTC +00:00], ["dob", nil], ["email", "user@example.com"], ["gender", nil], ["location", nil], ["name", "Example User"], ["password_digest", "$2a$10$oW8G.5H0KMQ0n6MfsC2o/.ouAt3RuHdcUsGgYoy1vfAMQTvjTTVx."], ["updated_at", Sun, 11 Mar 2012 22:01:09 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:09 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$bHNHP9Yda5b6FHz3N2Q04uQIY7qUn.6Atz724VNRMqYNIKMSaeswO"], ["updated_at", Sun, 11 Mar 2012 22:01:09 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "relationships" ("created_at", "match_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 11 Mar 2012 22:01:09 UTC +00:00], ["match_id", 2], ["updated_at", Sun, 11 Mar 2012 22:01:09 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."user_id" WHERE "relationships"."match_id" = 2[0m
+  [1m[35m (1.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", nil], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:10 UTC +00:00], ["dob", nil], ["email", "user@example.com"], ["gender", nil], ["location", nil], ["name", "Example User"], ["password_digest", "$2a$10$J/9dfAEOloFSZGiRk6jaLemX8SUx5w4wPzvcPc/SAkNJKY/dnX0om"], ["updated_at", Sun, 11 Mar 2012 22:01:10 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:10 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$EbfcHMKm67gTgH3lAiY0jeJSu5MECWfFBpXGeNjtaQgfOLbHRjwx6"], ["updated_at", Sun, 11 Mar 2012 22:01:10 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "relationships" ("created_at", "match_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 11 Mar 2012 22:01:10 UTC +00:00], ["match_id", 2], ["updated_at", Sun, 11 Mar 2012 22:01:10 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mRelationship Load (0.2ms)[0m  [1mSELECT "relationships".* FROM "relationships" WHERE "relationships"."user_id" = 1 AND "relationships"."match_id" = 2 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "relationships" WHERE "relationships"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mRelationship Load (0.1ms)[0m  [1mSELECT "relationships".* FROM "relationships" WHERE "relationships"."user_id" = 1 AND "relationships"."match_id" = 2 LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", nil], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:10 UTC +00:00], ["dob", nil], ["email", "user@example.com"], ["gender", nil], ["location", nil], ["name", "Example User"], ["password_digest", "$2a$10$IPgZ4Pd50daf44jcvH4orOA7zOA3KZMqKnZQCEELxDmVAxPPdpcFS"], ["updated_at", Sun, 11 Mar 2012 22:01:10 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:10 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$YyUl42YRfEMaVJq/XoOzPezw5aFIQcYtxoffvucg513Puo20PlBli"], ["updated_at", Sun, 11 Mar 2012 22:01:10 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "relationships" ("created_at", "match_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 11 Mar 2012 22:01:10 UTC +00:00], ["match_id", 2], ["updated_at", Sun, 11 Mar 2012 22:01:10 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mRelationship Load (0.2ms)[0m  [1mSELECT "relationships".* FROM "relationships" WHERE "relationships"."user_id" = 1 AND "relationships"."match_id" = 2 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "relationships" WHERE "relationships"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."match_id" WHERE "relationships"."user_id" = 1[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-03-11 22:01:10 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (2.2ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.5ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" 
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-11 22:01:10 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered sessions/_login.html.erb (1.9ms)
+  Rendered shared/_error_messages.html.erb (2.3ms)
+  Rendered users/_sign_up.html.erb (3.0ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 12.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-03-11 22:01:10 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (1.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.0ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" [0m
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-11 22:01:10 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", nil], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:10 UTC +00:00], ["dob", nil], ["email", "user@example.com"], ["gender", nil], ["location", nil], ["name", "Example User"], ["password_digest", "$2a$10$gitHgc49yU6BdTXbharXWe6YXRM195CWm7rg8tPD4qNvV.pP5hgxO"], ["updated_at", Sun, 11 Mar 2012 22:01:10 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/home
+Completed 302 Found in 98ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/users/home" for 127.0.0.1 at 2012-03-11 22:01:10 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"home"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "home"]]
+Completed 500 Internal Server Error in 1ms
+  [1m[36m (1.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+
+
+Started GET "/login" for 127.0.0.1 at 2012-03-11 22:01:10 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (1.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (1.9ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-03-11 22:01:10 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = '' LIMIT 1[0m
+  Rendered sessions/_login.html.erb (1.8ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.1ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/login" for 127.0.0.1 at 2012-03-11 22:01:10 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (1.8ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.1ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", nil], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:10 UTC +00:00], ["dob", nil], ["email", "user@example.com"], ["gender", nil], ["location", nil], ["name", "user"], ["password_digest", "$2a$10$KfKAceFzmc9MuyN23t2KaeBEhY/gueLL9YL4gyHRn80q9uUCfqsd2"], ["updated_at", Sun, 11 Mar 2012 22:01:10 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-03-11 22:01:10 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "session"=>{"email"=>"user@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'user@example.com' LIMIT 1
+Redirected to http://www.example.com/users/1/home
+Completed 302 Found in 98ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/home" for 127.0.0.1 at 2012-03-11 22:01:11 +0000
+Processing by UsersController#home as HTML
+  Parameters: {"id"=>"1"}
+ERROR: compiling _app_views_users_home_html_erb___2889947649032504158_70227988711000 RAISED /Users/Gabriel/Desktop/off-the-rails/dating/app/views/users/home.html.erb:6: syntax error, unexpected ')'
+...append= ( link_to "log out",  );@output_buffer.safe_concat('
+...                               ^
+/Users/Gabriel/Desktop/off-the-rails/dating/app/views/users/home.html.erb:12: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/Gabriel/Desktop/off-the-rails/dating/app/views/users/home.html.erb:14: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_users_home_html_erb___2889947649032504158_70227988711000(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "users/home";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h3>Placeholder for the Users\' home page</h3
+<br />
+
+Logout button doesn\'t work.
+
+');@output_buffer.append= ( link_to "log out",  );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+'); content_for :header do 
+@output_buffer.safe_concat('  ');@output_buffer.append= ( link_to "Edit profile", edit_user_path(session[:user_id] ) );@output_buffer.safe_concat('
+'); end 
+@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_view/template.rb:285:in `module_eval'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_view/template.rb:285:in `compile'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_view/template.rb:233:in `compile!'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_view/template.rb:142:in `block in render'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `instrument'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_view/template.rb:141:in `render'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:41:in `block (2 levels) in render_template'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `instrument'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:40:in `block in render_template'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:48:in `render_with_layout'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:39:in `render_template'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_view/renderer/template_renderer.rb:12:in `render'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/abstract_controller/rendering.rb:109:in `_render_template'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:414:in `_run__817939284804415263__process_action__3620741358747669074__callbacks'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/notifications.rb:123:in `instrument'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_controller/metal/params_wrapper.rb:205:in `process_action'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/abstract_controller/base.rb:121:in `process'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_controller/metal.rb:246:in `block in action'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/routing/route_set.rb:66:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/routing/route_set.rb:66:in `dispatch'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/routing/route_set.rb:30:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:68:in `block in call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:56:in `each'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/journey-1.0.3/lib/journey/router.rb:56:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/routing/route_set.rb:589:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/query_cache.rb:64:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `_run__324509663521546751__call__3513737624974909209__callbacks'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.1/lib/rails/rack/logger.rb:26:in `call_app'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.1/lib/rails/rack/logger.rb:16:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/actionpack-3.2.1/lib/action_dispatch/middleware/static.rb:53:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.1/lib/rails/engine.rb:479:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/railties-3.2.1/lib/rails/application.rb:220:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/builder.rb:134:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/urlmap.rb:64:in `block in call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/urlmap.rb:49:in `each'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rack-1.4.1/lib/rack/urlmap.rb:49:in `call'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rack-test-0.6.1/lib/rack/mock_session.rb:30:in `request'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rack-test-0.6.1/lib/rack/test.rb:219:in `process_request'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rack-test-0.6.1/lib/rack/test.rb:57:in `get'
+/Users/Gabriel/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/forwardable.rb:201:in `get'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/capybara-1.1.2/lib/capybara/rack_test/browser.rb:62:in `process'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/capybara-1.1.2/lib/capybara/rack_test/browser.rb:39:in `block in follow_redirects!'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/capybara-1.1.2/lib/capybara/rack_test/browser.rb:38:in `times'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/capybara-1.1.2/lib/capybara/rack_test/browser.rb:38:in `follow_redirects!'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/capybara-1.1.2/lib/capybara/rack_test/browser.rb:28:in `submit'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/capybara-1.1.2/lib/capybara/rack_test/form.rb:64:in `submit'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/capybara-1.1.2/lib/capybara/rack_test/node.rb:59:in `click'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/capybara-1.1.2/lib/capybara/node/element.rb:99:in `block in click'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/capybara-1.1.2/lib/capybara/node/base.rb:46:in `wait_until'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/capybara-1.1.2/lib/capybara/node/element.rb:99:in `click'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/capybara-1.1.2/lib/capybara/node/actions.rb:38:in `click_button'
+(eval):2:in `click_button'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/capybara-1.1.2/lib/capybara/dsl.rb:161:in `click_button'
+/Users/Gabriel/Desktop/off-the-rails/dating/spec/requests/pages_spec.rb:69:in `block (6 levels) in <top (required)>'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/capybara-1.1.2/lib/capybara/session.rb:192:in `within'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/capybara-1.1.2/lib/capybara/dsl.rb:161:in `within'
+/Users/Gabriel/Desktop/off-the-rails/dating/spec/requests/pages_spec.rb:66:in `block (5 levels) in <top (required)>'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/example.rb:80:in `instance_eval'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/example.rb:80:in `block in run'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/example.rb:173:in `with_around_hooks'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/example.rb:77:in `run'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/example_group.rb:355:in `block in run_examples'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/example_group.rb:351:in `map'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/example_group.rb:351:in `run_examples'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/example_group.rb:337:in `run'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/example_group.rb:338:in `block in run'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/example_group.rb:338:in `map'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/example_group.rb:338:in `run'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/example_group.rb:338:in `block in run'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/example_group.rb:338:in `map'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/example_group.rb:338:in `run'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/example_group.rb:338:in `block in run'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/example_group.rb:338:in `map'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/example_group.rb:338:in `run'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/command_line.rb:28:in `block (2 levels) in run'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/command_line.rb:28:in `map'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/command_line.rb:28:in `block in run'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/reporter.rb:34:in `report'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/command_line.rb:25:in `run'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/runner.rb:80:in `run_in_process'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/runner.rb:69:in `run'
+/Users/Gabriel/.rvm/gems/ruby-1.9.3-p125/gems/rspec-core-2.8.0/lib/rspec/core/runner.rb:10:in `block in autorun'
+Completed 500 Internal Server Error in 128ms
+  [1m[36m (1.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", nil], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:01:11 UTC +00:00], ["dob", nil], ["email", "user@example.com"], ["gender", nil], ["location", nil], ["name", "Example"], ["password_digest", "$2a$10$yQKauVHdWKFyMc/tFH6XLOAEUyRKt6mpIsQRBjHfoGh3VebT9b7yW"], ["updated_at", Sun, 11 Mar 2012 22:01:11 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (52.5ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:03:35 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$./MXx2GFFNwHe5rg8QP9g.gf8dXDatn9h8/3SC9K8qEg./oFs2kxa"], ["updated_at", Sun, 11 Mar 2012 22:03:35 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('mary@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (51.7ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I have been lucky in life and now I am looking to be lucky in love. I am a fun loving lady who loves to have a good time,  and fully believe that laughter truly is the best medicine. However, that said,  I do  know when and where to be serious and respect that trait in others as well.\\n\\nI enjoy a wide range of activities from your stereotypical walk on the beach to something more offbeat like painting in the park. Generally I consider myself to be very open to new experiences and will try almost anything once."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:03:35 UTC +00:00], ["dob", Sat, 01 Jan -4753], ["email", "mary@example.com"], ["gender", "Female"], ["location", nil], ["name", "Mary"], ["password_digest", "$2a$10$aErlCCIqDrjvWQLgOBCDn.fDRSxy/pS7G/y1CMsXKn6HmFIk0.XIa"], ["updated_at", Sun, 11 Mar 2012 22:03:35 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:03:35 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$VUUIenka0gsvJC7tsHmUku8lIUUPOtcQoEASMkIRaY3xhm32PUwba"], ["updated_at", Sun, 11 Mar 2012 22:03:35 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('mary@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I have been lucky in life and now I am looking to be lucky in love. I am a fun loving lady who loves to have a good time,  and fully believe that laughter truly is the best medicine. However, that said,  I do  know when and where to be serious and respect that trait in others as well.\\n\\nI enjoy a wide range of activities from your stereotypical walk on the beach to something more offbeat like painting in the park. Generally I consider myself to be very open to new experiences and will try almost anything once."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:03:35 UTC +00:00], ["dob", Sat, 01 Jan -4753], ["email", "mary@example.com"], ["gender", "Female"], ["location", nil], ["name", "Mary"], ["password_digest", "$2a$10$tWo79CWMTW0l/fsAQ2D/lehmVOOIjS9a18i3hcexDezeOyV.zazhS"], ["updated_at", Sun, 11 Mar 2012 22:03:35 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "relationships" ("created_at", "match_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 11 Mar 2012 22:03:35 UTC +00:00], ["match_id", 3], ["updated_at", Sun, 11 Mar 2012 22:03:35 UTC +00:00], ["user_id", 2]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$lzOthDtx3c8hILg8ryp6W.VvIKZyM/F23jjTV5BbzJ0C.rnDsm9ge"], ["updated_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('mary@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", "I have been lucky in life and now I am looking to be lucky in love. I am a fun loving lady who loves to have a good time,  and fully believe that laughter truly is the best medicine. However, that said,  I do  know when and where to be serious and respect that trait in others as well.\\n\\nI enjoy a wide range of activities from your stereotypical walk on the beach to something more offbeat like painting in the park. Generally I consider myself to be very open to new experiences and will try almost anything once."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00], ["dob", Sat, 01 Jan -4753], ["email", "mary@example.com"], ["gender", "Female"], ["location", nil], ["name", "Mary"], ["password_digest", "$2a$10$a486.w3quotMaUvXCM6PtOQN5kMfH9TzV.kMrBSMiANtU0OlpupKO"], ["updated_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "relationships" ("created_at", "match_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00], ["match_id", 3], ["updated_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00], ["user_id", 2]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$MhsOk3ezXtwca/ux5ustQ.9wmANzEpX7YGzzxIxEWSXsFsH3NM9xu"], ["updated_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('mary@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I have been lucky in life and now I am looking to be lucky in love. I am a fun loving lady who loves to have a good time,  and fully believe that laughter truly is the best medicine. However, that said,  I do  know when and where to be serious and respect that trait in others as well.\\n\\nI enjoy a wide range of activities from your stereotypical walk on the beach to something more offbeat like painting in the park. Generally I consider myself to be very open to new experiences and will try almost anything once."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00], ["dob", Sat, 01 Jan -4753], ["email", "mary@example.com"], ["gender", "Female"], ["location", nil], ["name", "Mary"], ["password_digest", "$2a$10$1RdXylSnYJkM1i30eCLiyuJQLXI3plJZlVgiqmG95W5YF1pqdF0Be"], ["updated_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "relationships" ("created_at", "match_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00], ["match_id", 3], ["updated_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00], ["user_id", 2]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35m (1.7ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$yCCEC4DjqZjpATFbs5qcFOKtS/RnMZ8IkEFboiyl.ZnO/KJhPlkoO"], ["updated_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('mary@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I have been lucky in life and now I am looking to be lucky in love. I am a fun loving lady who loves to have a good time,  and fully believe that laughter truly is the best medicine. However, that said,  I do  know when and where to be serious and respect that trait in others as well.\\n\\nI enjoy a wide range of activities from your stereotypical walk on the beach to something more offbeat like painting in the park. Generally I consider myself to be very open to new experiences and will try almost anything once."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00], ["dob", Sat, 01 Jan -4753], ["email", "mary@example.com"], ["gender", "Female"], ["location", nil], ["name", "Mary"], ["password_digest", "$2a$10$zqiv43jrG2AEi8FrSAizdu42L6wG6Q9sqa3B3NMI4veX8QvZRwfpy"], ["updated_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "relationships" ("created_at", "match_id", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00], ["match_id", 3], ["updated_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00], ["user_id", 2]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$NTiBrLt5dLeCQR2B1SI4S.YsrWeP8wc0aX3zPxOZADtRGpUB76vWS"], ["updated_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('mary@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I have been lucky in life and now I am looking to be lucky in love. I am a fun loving lady who loves to have a good time,  and fully believe that laughter truly is the best medicine. However, that said,  I do  know when and where to be serious and respect that trait in others as well.\\n\\nI enjoy a wide range of activities from your stereotypical walk on the beach to something more offbeat like painting in the park. Generally I consider myself to be very open to new experiences and will try almost anything once."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00], ["dob", Sat, 01 Jan -4753], ["email", "mary@example.com"], ["gender", "Female"], ["location", nil], ["name", "Mary"], ["password_digest", "$2a$10$rGjaMxzrsbniHDRXXZToQ.2247ZbRuwYZDFohN3yXSj45hJ5rFs5C"], ["updated_at", Sun, 11 Mar 2012 22:03:36 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:03:37 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$dFGkO96VlNTagYL3aEHBV.TTFCss/ItPbU.66tA.UCfAp/cjATx2C"], ["updated_at", Sun, 11 Mar 2012 22:03:37 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('mary@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I have been lucky in life and now I am looking to be lucky in love. I am a fun loving lady who loves to have a good time,  and fully believe that laughter truly is the best medicine. However, that said,  I do  know when and where to be serious and respect that trait in others as well.\\n\\nI enjoy a wide range of activities from your stereotypical walk on the beach to something more offbeat like painting in the park. Generally I consider myself to be very open to new experiences and will try almost anything once."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:03:37 UTC +00:00], ["dob", Sat, 01 Jan -4753], ["email", "mary@example.com"], ["gender", "Female"], ["location", nil], ["name", "Mary"], ["password_digest", "$2a$10$LUuh8SRLe3jSRmKIFCLL6Ohv2VI5fsK4SA8XMbsbP7MSiqK1n7Xnm"], ["updated_at", Sun, 11 Mar 2012 22:03:37 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER(' ') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('first.last@foo.jp') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('first.last@foo.jp') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('first.last@foo.jp') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example.user@foo.') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example.user@foo.') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example.user@foo.') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('USER@EXAMPLE.COM') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:03:39 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$/1szT0sBaKS8sHOUocGQAeRHH8/q/m.AOR9WCUEpYeZO5aDiG34/q"], ["updated_at", Sun, 11 Mar 2012 22:03:39 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:03:40 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$nVqnw82unbzZ3WvNwVVWUeB9zQY2fgjpq8ByfuYXCub4tPmKmJbvu"], ["updated_at", Sun, 11 Mar 2012 22:03:40 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:03:40 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$VICTwIcNROC55/ecFYiUf.qGBxkolqRiNCcRvg/6PYueskYLwqWU."], ["updated_at", Sun, 11 Mar 2012 22:03:40 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.9ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:03:40 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$fsVXtpcoZ8M0M0uURAERK..4gJ./sAWqgbnnmOtuGMh0SdNAFoOtq"], ["updated_at", Sun, 11 Mar 2012 22:03:40 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('user@example.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('bob@example.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "location", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["about", "I would say that above all, I am searching for a woman that has the confidence to know that she is worth my time. Someone that knows how to have a good time and will pull me out of the rut that I tend to settle in will capture my attention easily."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Sun, 11 Mar 2012 22:03:40 UTC +00:00], ["dob", Mon, 01 Jan -4746], ["email", "bob@example.com"], ["gender", "Male"], ["location", nil], ["name", "Bob"], ["password_digest", "$2a$10$lq16Gk34H8hLyiMvBPYT9.nhBAV2uTbe/Wjjri9sC39kanIDyu/Va"], ["updated_at", Sun, 11 Mar 2012 22:03:40 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-03-14 16:13:00 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (255.8ms)
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/_sign_up.html.erb (3.6ms)
+  Rendered pages/home.html.erb within layouts/application (293.0ms)
+  Rendered shared/_flash_messages.html.erb (0.8ms)
+Completed 200 OK in 330ms (Views: 329.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 16:13:00 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://www.example.compages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2012-03-14 16:13:00 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 16:13:00 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (1.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.0ms)
+  Rendered pages/home.html.erb within layouts/application (5.1ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 16:13:00 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (2.2ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.5ms)
+  Rendered pages/home.html.erb within layouts/application (6.5ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-03-14 16:13:00 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (1.8ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.2ms)
+  Rendered pages/home.html.erb within layouts/application (5.4ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 63ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 16:13:00 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://www.example.compages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2012-03-14 16:13:00 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-03-14 16:13:00 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (1.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.0ms)
+  Rendered pages/home.html.erb within layouts/application (5.0ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 16:13:00 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://www.example.compages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2012-03-14 16:13:00 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-03-14 16:13:00 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (1.8ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.0ms)
+  Rendered pages/home.html.erb within layouts/application (5.2ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 16:13:00 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://www.example.compages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2012-03-14 16:13:00 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-03-14 16:13:00 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (1.8ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.1ms)
+  Rendered pages/home.html.erb within layouts/application (5.3ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 16:13:00 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://www.example.compages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2012-03-14 16:13:00 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.7ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-03-14 16:19:00 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (204.7ms)
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/_sign_up.html.erb (3.1ms)
+  Rendered pages/home.html.erb within layouts/application (218.7ms)
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 238ms (Views: 237.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 16:19:00 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://www.example.compages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2012-03-14 16:19:00 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 16:19:00 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (1.6ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.0ms)
+  Rendered pages/home.html.erb within layouts/application (4.9ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-14 16:19:00 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (1.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.0ms)
+  Rendered pages/home.html.erb within layouts/application (5.0ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-03-14 16:19:00 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (1.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.0ms)
+  Rendered pages/home.html.erb within layouts/application (5.1ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 65ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 16:19:00 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://www.example.compages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2012-03-14 16:19:00 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-03-14 16:19:00 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (1.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (1.9ms)
+  Rendered pages/home.html.erb within layouts/application (4.9ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 8ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 16:19:01 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://www.example.compages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2012-03-14 16:19:01 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-03-14 16:19:01 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (2.5ms)
+  Rendered pages/home.html.erb within layouts/application (6.6ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 16:19:01 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://www.example.compages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2012-03-14 16:19:01 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-03-14 16:19:01 +0000
+Processing by PagesController#home as HTML
+  Rendered sessions/_login.html.erb (1.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_sign_up.html.erb (1.9ms)
+  Rendered pages/home.html.erb within layouts/application (5.0ms)
+  Rendered shared/_flash_messages.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-03-14 16:19:01 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Redirected to http://www.example.compages/home
+Filter chain halted as :confirm_logged_in rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2012-03-14 16:19:01 +0000
+  [1m[35m (0.1ms)[0m  rollback transaction
