@@ -19,7 +19,10 @@ end
 
 def create
 	@user = User.new(params[:user])
-	if @user.save
+	@user_status = UserInfo.new
+	@user_status.user_id = @user.id
+	@user_status.status = "You have no status message."
+	if @user.save && @user_status.save
 		flash[:success] = "Welcome to Dating App"
 		session[:user_id] = @user.id
     redirect_to home_user_path(@user)
@@ -30,22 +33,28 @@ end
 
 def home
 	@user = User.find(session[:user_id])
-	@status = @user.status
-end
-
-def update_status
-	@user_for_status = User.where(:id => session[:user_id]).first
-	 if @user_for_status && @user_for_status.update_attribute(:status, params[:user_for_status][:status])
-	 	TimelineUpdates.create(:user_id => session[:user_id], :message => " posted new status message: #{params[:user_for_status][:status]}.")
-		flash[:success] = "Status updated"
-		redirect_to home_user_path(@user_for_status)
+	@user_for_status = UserInfo.where(:user_id => session[:user_id]).first
+	if !@user_for_status.nil?
+		@status = @user_for_status.status
 	else
-		flash[:notice] = "Something went wrong"
-		redirect_to home_user_path(@user_for_status)
-
+		@status = "You have no status message."
 	end
 end
 
+def update_status
+	@user_for_status = UserInfo.where(:user_id => session[:user_id]).first
+	if @user_for_status.nil?
+		@user_for_status = UserInfo.new(:user_id => session[:user_id], :status => "You still have no status message.")
+	end
+	 @user_for_status.status = params[:user_for_status][:status]
+	 if @user_for_status.save
+	 	TimelineUpdates.create(:user_id => session[:user_id], :message => " posted new status message: #{params[:user_for_status][:status]}.")
+		flash[:success] = "Status updated"
+		redirect_to :controller => 'users', :id => session[:user_id], :action => 'home' 
+	else
+		render 'update_status'
+	end
+end
 def edit
 	@user = User.find(params[:id])
 	@title = "#{@user.name} - Edit"	

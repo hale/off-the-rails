@@ -1,10 +1,23 @@
+<% content_for :header do %>
+  <nav>
+    <ul>
+      <li><%= link_to "Home",             home_user_path(session[:user_id] ) %></li>
+      <li><%= link_to "View profile",     user_path(session[:user_id] ) %></li>
+      <li><%= link_to "Inbox",            '#'                                %></li>       
+      <li><%= link_to "Find New Matches", '#'                                %></li>
+      <li><%= link_to "Search",           '#'                                %></li>
+      <li><%= link_to "Matches",          '#'                                %></li>
+      <li><%= link_to "Log Out", 
+                                 :controller=> 'users',
+                                 :action=> 'destroy',
+                                 :id => session[:user_id]                    %></li>
 
-<% if @status.nil? %>
-  <h2>You have no status message.</h2>
-<% else %>
-  <h2>Your current status: <br></h2>
+    </ul>
+  </nav>
+<% end -%>
+
+<h2>Your current status: <br></h2>
 	<h3><%= @status %></h3> 
-<% end %>
 <%= render('users/update_status') %>
 <%= render('timeline/list') %>
 
