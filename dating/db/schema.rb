@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120316023839) do
+ActiveRecord::Schema.define(:version => 20120316025618) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -84,24 +84,6 @@ ActiveRecord::Schema.define(:version => 20120316023839) do
 
   add_index "timeline_updates", ["user_id"], :name => "index_timeline_updates_on_user_id"
 
-  create_table "user_infos", :force => true do |t|
-    t.string   "fname"
-    t.string   "lname"
-    t.date     "dob"
-    t.string   "location"
-    t.string   "gender"
-    t.string   "interested_in"
-    t.string   "looking_for"
-    t.string   "about"
-    t.string   "status"
-    t.datetime "last_visit"
-    t.integer  "user_id"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
-  end
-
-  add_index "user_infos", ["user_id"], :name => "index_user_infos_on_user_id"
-
   create_table "user_interests", :force => true do |t|
     t.integer  "user_id"
     t.integer  "interest_id"
@@ -126,6 +108,8 @@ ActiveRecord::Schema.define(:version => 20120316023839) do
     t.string   "gender"
     t.string   "location"
     t.string   "about"
+    t.string   "twitter"
+    t.string   "status"
   end
 
 end

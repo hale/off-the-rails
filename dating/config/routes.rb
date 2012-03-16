@@ -13,6 +13,7 @@ Dating::Application.routes.draw do
   match '/outbox',  :to => 'messages#outbox'
   match '/message/:id', :to => 'messages#show'
   match '/user/:id', :to => 'users#show'
+  match '/user/:id/search', :to => 'users#search'
 
   resources :users do
     member do

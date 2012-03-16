@@ -8,9 +8,9 @@
     <strong>Age</strong>
     <li><%= age(@user.dob) %></li>
     <strong>Gender</strong>
-    <li><%= @user.gender %></li>
+    <li><%= sanitize(@user.gender) %></li>
     <strong>Location</strong>
-    <li><%= @user.location %></li>
+    <li><%= sanitize(@user.location) %></li>
     <strong>Match stats</strong>
     <li><%= render 'shared/match_stats' %></li>
     <br />
@@ -26,30 +26,9 @@
 
 <% end %>
 
-<% content_for :header do %>
-  <nav>
-    <ul>
-      <li><%= link_to "Home",             home_user_path(session[:user_id] ) %></li>
-      <li><%= link_to "Edit profile",     edit_user_path(session[:user_id] ) %></li>
-      <li><%= link_to "Inbox",            '#'                                %></li>       
-      <li><%= link_to "Find New Matches", new_interest_path                  %></li>
-      <li><%= link_to "Search",           '#'                                %></li>
-      <li><%= link_to "Log Out", :controller => 'users', :action => 'destroy', :id => session[:user_id]  %></li>
 
-    </ul>
-  </nav>
-<% end -%>
 
 
   
 <h3>About Me</h3>
-<p><%= @user.about.nil? ? default_about_me : @user.about %><p>
-
-
-
-
-
-
-
-
-
+<p><%= @user.about.nil? ? default_about_me : sanitize(@user.about) %><p>

@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 	attr_accessible :name, :email, :password, :password_confirmation, :avatar,
-									:dob, :gender, :location, :about
+									:dob, :gender, :location, :about, :twitter, :status
 
 	#Rails 3.1 built in authentication
 	has_secure_password
@@ -15,7 +15,7 @@ class User < ActiveRecord::Base
 	                       :format       => {with: EMAIL_REGEX}, 
 	                       :confirmation => true,
 	                       :uniqueness   => { :case_sensitive => false }
-	    
+
 	validates :password,   :presence     => true,
 												 :length => { :within => 6..25} 
 												 # :on => :create
@@ -67,24 +67,3 @@ class User < ActiveRecord::Base
 	end
 
 end
-
-# == Schema Information
-#
-# Table name: users
-#
-#  id                  :integer         not null, primary key
-#  created_at          :datetime        not null
-#  updated_at          :datetime        not null
-#  name                :string(255)
-#  email               :string(255)
-#  password_digest     :string(255)
-#  avatar_file_name    :string(255)
-#  avatar_content_type :string(255)
-#  avatar_file_size    :integer
-#  avatar_updated_at   :datetime
-#  dob                 :date
-#  gender              :string(255)
-#  location            :string(255)
-#  about               :string(255)
-#
-
