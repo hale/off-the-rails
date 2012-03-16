@@ -1,5 +1,9 @@
 Dating::Application.routes.draw do
 
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   root              :to => 'pages#home'
   match '/help',    :to => 'pages#help'
   match '/about',   :to => 'pages#about'
@@ -9,12 +13,13 @@ Dating::Application.routes.draw do
   match '/outbox',  :to => 'messages#outbox'
   match '/message/:id', :to => 'messages#show'
   match '/user/:id', :to => 'users#show'
+  match '/user/:id/search', :to => 'users#search'
 
   resources :users do
     member do
       get :home
       get :matches, :interested
-      get :interests
+      resources :interests
     end
     resources :messages
   end
@@ -23,7 +28,7 @@ Dating::Application.routes.draw do
 
   resources :sessions, only: [:create, :destroy]
   resources :relationships, except: [:edit, :update] # matches
-  resources :interests, only: [:create, :new, :destroy]
+ 
   
   # match '/logout',  :to => 'sessions#destroy', :via  => :delete, :as => :logout
 

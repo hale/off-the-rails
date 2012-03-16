@@ -1,22 +1,24 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.2'
+gem 'rails'
 gem 'sqlite3'
 gem 'pg'
 gem 'heroku'
 
+gem 'activeadmin'
+
 # needed for the js runtime environment 
-#gem 'therubyracer-heroku', '0.8.1.pre3'
 
 # Recomended to use instead of WEBrick
 gem 'thin'
-
+gem 'rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
   gem 'therubyracer'
   gem 'sass-rails'
+  gem "meta_search",    '>= 1.1.0.pre'
   gem 'coffee-rails'
   gem 'uglifier'
 end
@@ -35,8 +37,8 @@ group :test, :development do
 end
 
 group :production do
-    gem 'paperclip'
-    gem 'pg'
+   gem 'paperclip'
+   gem 'pg'
 end
 
 gem 'jquery-rails'

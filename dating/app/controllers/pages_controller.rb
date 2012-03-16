@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   before_filter :confirm_logged_in, :except => [:home, :help, :about]
   def home
+    session[:user_id] = nil
     @title = 'Home'
   end
 

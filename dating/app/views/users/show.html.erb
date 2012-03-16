@@ -8,9 +8,9 @@
     <strong>Age</strong>
     <li><%= age(@user.dob) %></li>
     <strong>Gender</strong>
-    <li><%= @user.gender %></li>
+    <li><%= sanitize(@user.gender) %></li>
     <strong>Location</strong>
-    <li><%= @user.location %></li>
+    <li><%= sanitize(@user.location) %></li>
     <strong>Match stats</strong>
     <li><%= render 'shared/match_stats' %></li>
     <br />
@@ -64,14 +64,11 @@
       <li><%= link_to "Search",           '#'                                %></li>
       <li><%= link_to "Log Out", :controller => 'users', :action => 'destroy', :id => session[:user_id]  %></li>
 
-    </ul>
-  </nav>
-<% end -%>
 
 
   
 <h3>About Me</h3>
-<p><%= @user.about.nil? ? default_about_me : @user.about %><p>
+<p><%= @user.about.nil? ? default_about_me : sanitize(@user.about) %><p>
 
 <% if (@user.twitter) then %>
 <h3>Your Latest Tweet:</h3>
@@ -80,8 +77,3 @@
 <br /><br />
 <h3>Location:</h3>
 <%= gmaps4rails(@json) %>
-
-
-
-
-
