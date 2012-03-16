@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120314105756) do
+ActiveRecord::Schema.define(:version => 20120316112739) do
 
   create_table "interests", :force => true do |t|
     t.integer  "interest"
@@ -93,6 +93,10 @@ ActiveRecord::Schema.define(:version => 20120314105756) do
     t.string   "gender"
     t.string   "location"
     t.string   "about"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.boolean  "gmaps"
+    t.string   "twitter"
   end
 
 end

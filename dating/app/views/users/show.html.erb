@@ -27,6 +27,34 @@
 <% end %>
 
 <% content_for :header do %>
+<style>
+	.map_container {
+  padding: 6px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc #ccc #999 #ccc;
+  -webkit-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
+  -moz-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
+  box-shadow: rgba(64, 64, 64, 0.1) 0 2px 5px;
+  width: 500px;
+}
+
+.gmaps4rails_map {
+  width: 800px;
+  height: 400px;
+}
+
+.bing_map {
+   position: absolute;
+   top: 20;
+   left: 10;
+   width: 400px;
+   height: 400px;
+   border:#555555 2px solid;
+}
+</style>
+<%= yield :head %>
+<%= yield :scripts %>
   <nav>
     <ul>
       <li><%= link_to "Home",             home_user_path(session[:user_id] ) %></li>
@@ -45,9 +73,13 @@
 <h3>About Me</h3>
 <p><%= @user.about.nil? ? default_about_me : @user.about %><p>
 
-
-
-
+<% if (@user.twitter) then %>
+<h3>Your Latest Tweet:</h3>
+<%= Twitter.user_timeline(@user.twitter).first.text %>
+<% end -%>
+<br /><br />
+<h3>Location:</h3>
+<%= gmaps4rails(@json) %>
 
 
 

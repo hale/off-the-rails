@@ -17,10 +17,21 @@ class MessagesController < ApplicationController
   # GET /messages/1.json
   def show
     @message = Message.find(params[:id])
-
+    @user = User.find(session[:user_id])
+    
+    if (!@message.read) then
+      @message.read = true
+      @message.save
+    end 
+    #print "sender: #{@message.user_id}"
+    
     respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @message }
+      #if (@message.user_id != @user.id) then
+      #  render '/shared/no_access'
+      #else 
+        format.html # show.html.erb
+        format.json { render json: @message }
+      #end
     end
   end
 

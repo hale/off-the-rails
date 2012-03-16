@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 	attr_accessible :name, :email, :password, :password_confirmation, :avatar,
-									:dob, :gender, :location, :about
+									:dob, :gender, :location, :about, :latitude, :longitude, :twitter
 
 	#Rails 3.1 built in authentication
 	has_secure_password
@@ -65,6 +65,17 @@ class User < ActiveRecord::Base
 	def remove_match!(other_user)
 		relationships.find_by_match_id(other_user.id).destroy
 	end
+
+acts_as_gmappable :process_geocoding => false, :msg => "Sorry, not even Google could figure out where that is"
+
+geocoded_by :ip_address,
+  :latitude => :lat, :longitude => :lon
+after_validation :geocode
+
+def gmaps4rails_address
+  #"#{self.location}"
+  "#{self.latitude}, #{self.longitude}"
+end
 
 end
 
