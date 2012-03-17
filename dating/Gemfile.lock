@@ -266,9 +266,9 @@ GEM
       ffi (~> 1.0)
       multi_json (~> 1.0)
       rubyzip
+    simple_oauth (0.1.5)
     sketches (0.1.1)
     spoon (0.0.1)
-    simple_oauth (0.1.5)
     sprockets (2.1.2)
       hike (~> 1.2)
       rack (~> 1.0)
