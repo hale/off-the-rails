@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   protected
+  has_mobile_fu
 
   def confirm_logged_in
     unless session[:user_id]

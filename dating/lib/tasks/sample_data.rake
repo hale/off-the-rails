@@ -3,6 +3,7 @@ namespace :db do
   task populate: :environment do
     make_users
     make_relationships
+    make_messages
   end
 end
 
@@ -46,4 +47,12 @@ def make_relationships
   interested_users.each { |i_user| i_user.add_match!( user  ) }
 end
 
-
+def make_messages
+  99.times do |n|
+    Message.create!(user_id: rand(1..100),
+                   sender_id: rand(1..100),
+                   msg_type: ['wink', 'nudge'].at((rand(1..100).odd? ? 0 : 1)),
+                   read: 0,
+                   message: Faker::Lorem.paragraph(4) )
+  end
+end
