@@ -246,7 +246,7 @@ DEPENDENCIES
   paperclip
   pg
   railroady
-  rails (= 3.2.2)
+  rails
   rspec-rails
   sass-rails
   sqlite3

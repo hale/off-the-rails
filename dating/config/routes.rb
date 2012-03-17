@@ -9,8 +9,8 @@ Dating::Application.routes.draw do
   match '/about',   :to => 'pages#about'
   match '/login',   :to => 'pages#home'
   match '/signup',  :to => 'pages#home'
-  match '/inbox',   :to => 'messages#index'
-  match '/outbox',  :to => 'messages#outbox'
+  match '/inbox',   :to => 'messages#index', :as => :inbox
+  match '/outbox',  :to => 'messages#outbox', :as => :outbox
   match '/message/:id', :to => 'messages#show'
   match '/user/:id', :to => 'users#show'
   match '/user/:id/search', :to => 'users#search'
