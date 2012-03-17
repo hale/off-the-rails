@@ -36,8 +36,8 @@
             <li><%= link_to "Home",             home_user_path(session[:user_id] ) %></li>
             <li><%= link_to "Show your profile",     :action => 'show', :id => session[:user_id] %></li>    
             <li><%= link_to "Edit your profile",     edit_user_path(session[:user_id] ) %></li>
-            <li><%= link_to "Inbox",            outbox_path                                %></li>       
-            <li><%= link_to "Find New Matches", new_interest_path                  %></li>
+            <li><%= link_to "Inbox",            inbox_path                                %></li>       
+            <li><%= link_to "Find New Matches", :action => 'outbox', :controller => 'messages'                  %></li>
             <li><%= link_to "Log Out", root_path  %></li>
           </ul>
         </nav>

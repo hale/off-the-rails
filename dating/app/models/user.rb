@@ -68,9 +68,6 @@ class User < ActiveRecord::Base
 
 acts_as_gmappable :process_geocoding => false, :msg => "Sorry, not even Google could figure out where that is"
 
-geocoded_by :ip_address,
-  :latitude => :lat, :longitude => :lon
-after_validation :geocode
 
 def gmaps4rails_address
   #"#{self.location}"
