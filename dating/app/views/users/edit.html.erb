@@ -1,4 +1,5 @@
 <% content_for :sidebar do %>
+  
   <%= error_messages_for( @user ) %> 
 <% end -%>
   
@@ -44,19 +45,22 @@
   </div>
   <br />
   <h2>Account Information</h2>
+  <p>For security purposes, please enter your password before submitting any changes.</p>
 
   <div class="field">
     <%= f.label :email %><br />
     <%= f.text_field :email %>
   </div>
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </div>
-  <div class="field">
-    <%= f.label :password_confirmation, "Confirmation" %><br />
-    <%= f.password_field :password_confirmation %>
-  </div>
+  <section class="notice">
+    <div class="field">
+      <%= f.label :password %><br />
+      <%= f.password_field :password %>
+    </div>
+    <div class="field">
+      <%= f.label :password_confirmation, "Confirmation" %><br />
+      <%= f.password_field :password_confirmation %>
+    </div>
+  </section>
 
   <div class="actions">
     <%= f.submit "Update" %>

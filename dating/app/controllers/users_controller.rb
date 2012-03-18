@@ -24,7 +24,7 @@ end
 
 def index
 	@title = "All users"
-	@users = User.all
+	# @users = User.all
 end
 
 def create
@@ -34,7 +34,7 @@ def create
 		session[:user_id] = @user.id
     redirect_to home_user_path(@user)
 	else
-		redirect_to root_url
+    render 'pages/home'
 	end
 end
 
