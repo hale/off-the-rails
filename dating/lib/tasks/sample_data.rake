@@ -64,8 +64,9 @@ def make_interests
   users.each do |user|
     interests_count = rand(0..30)
     interests_count.times do
-      Interest.create!( user_id: user.id, 
-                        name: Faker::Lorem.words(1).first.capitalize )
+      # Interest.create!( user_id: user.id, 
+                        # name: Faker::Lorem.words(1).first.capitalize )
+      user.add_interest!( Faker::Lorem.words(1).first.capitalize ) 
     end
   end
 end

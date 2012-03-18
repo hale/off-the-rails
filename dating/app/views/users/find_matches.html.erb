@@ -5,3 +5,11 @@
     <%= render user %>
   <% end %>
 </ul>
+
+<% content_for :sidebar do %>
+  <h3>Want some more?</h3>
+  <p>
+    Matches are found using your interests.  To add more interests, visit
+    your profile or click <%= link_to "this link", new_interest_path %>.
+  </p>
+<% end %>

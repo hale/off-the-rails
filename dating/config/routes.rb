@@ -5,8 +5,7 @@ Dating::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   root              :to => 'pages#home'
-  match '/help',    :to => 'pages#help'
-  match '/about',   :to => 'pages#about'
+
   match '/login',   :to => 'pages#home'
   match '/signup',  :to => 'pages#home'
   match '/inbox',   :to => 'messages#index', :as => :inbox

@@ -53,6 +53,10 @@ class User < ActiveRecord::Base
 
 	has_many :interests, dependent: :destroy
 
+	def add_interest!(name)
+		self.interests.create!(user_id: self.id, name: name)
+	end
+
 	def shared_interests(other_user)
 		user_i = []
 		self.interests.each { |i| user_i << i.name }

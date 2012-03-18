@@ -9,14 +9,11 @@ class InterestsController < ApplicationController
   def create
     @user = User.find(session[:user_id])
     interest_name = params[:interest].values.first
-    @interest = Interest.new(:user_id => @user.id, :name => interest_name)
-    if @interest.save
-      flash.now[:success] = "Interest added"
-      render 'new'
-    else
-      flash.now[:error] = "Sorry, there was a problem adding the interest"
-      render 'new'
-    end
+    # @interest = Interest.new(:user_id => @user.id, :name => interest_name)
+    @user.add_interest!( interest_name )
+
+    flash.now[:success] = "Interest added"
+    render 'new'
   end
 
   def new

@@ -45,6 +45,8 @@ describe UsersController do
         response.body.should have_selector("title", :content => "Home")
       end
 
+    end
+
     describe "success" do
       
       before(:each) do
@@ -59,9 +61,9 @@ describe UsersController do
         end
       end
 
-      it "should redirect to the user show page" do
+      it "should redirect to the user home page" do
         post :create, :user => @attr
-        response.should redirect_to( user_path( assigns(:user) ) )
+        response.should redirect_to( home_user_path( assigns(:user) ) )
       end
 
       it "should have a welcome message" do
@@ -70,8 +72,6 @@ describe UsersController do
       end
       
     end
-
-  end
 
   end
 
