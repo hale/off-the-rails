@@ -53,7 +53,41 @@ class User < ActiveRecord::Base
 
 	has_many :interests, dependent: :destroy
 
+	def shared_interests(other_user)
+		user_i = []
+		self.interests.each { |i| user_i << i.name }
 
+		other_user_i = []
+		other_user.interests.each { |i| other_user_i << i.name }
+
+		return other_user_i & user_i
+	end
+
+	def match_percentage(other_user)
+		user_i = []
+		self.interests.each { |i| user_i << i.name }
+
+		other_user_i = []
+		other_user.interests.each { |i| other_user_i << i.name }
+
+		# match percentage is an artificial measure of how similar you are to 
+		# another user.  Arbitarily (*cough* I mean, using coitus cupid patented
+		# dating research) a perfect score is given to users with more than 17
+		# similar interests.  
+
+		percentage = (other_user_i & user_i).count / 17.0 * 100
+		if percentage > 100
+			return 100
+		else
+			return percentage.round(2)
+		end
+		
+
+	end
+
+
+
+# Match list methods
 	def match?(other_user)
 		relationships.find_by_match_id(other_user.id)
 	end
@@ -66,13 +100,15 @@ class User < ActiveRecord::Base
 		relationships.find_by_match_id(other_user.id).destroy
 	end
 
-acts_as_gmappable :process_geocoding => false, :msg => "Sorry, not even Google could figure out where that is"
+# Location services
+	acts_as_gmappable :process_geocoding => false, :msg => "Sorry, not even Google could figure out where that is"
+
+	def gmaps4rails_address
+  	#"#{self.location}"
+  	"#{self.latitude}, #{self.longitude}"
+	end
 
 
-def gmaps4rails_address
-  #"#{self.location}"
-  "#{self.latitude}, #{self.longitude}"
-end
 
 end
 

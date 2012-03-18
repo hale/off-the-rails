@@ -1,0 +1,7 @@
+<ul class="interests">
+  <% unless @user.interests.nil? %>
+    <% @user.interests.each do |interest| %>
+      <%= render interest %>
+    <% end %>
+  <% end -%>
+</ul>

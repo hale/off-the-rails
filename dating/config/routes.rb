@@ -19,6 +19,7 @@ Dating::Application.routes.draw do
     member do
       get :home
       get :matches, :interested
+      get :find_matches
       resources :interests
     end
     resources :messages

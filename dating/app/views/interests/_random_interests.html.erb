@@ -1,0 +1,5 @@
+<ul class="interests">
+  <% Interest.random(10).each do |interest| %>
+    <%= render interest %>
+  <% end %>
+</ul>
