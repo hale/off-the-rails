@@ -30,7 +30,7 @@ end
 def create
 	@user = User.new(params[:user])
 	if @user.save
-		flash[:success] = "Welcome to Dating App"
+		flash[:success] = "Welcome to Coitus Cupid!"
 		session[:user_id] = @user.id
     redirect_to home_user_path(@user)
 	else
