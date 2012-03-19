@@ -2,7 +2,7 @@ namespace :db do
   desc "Fill in the database with pretend users"
   task populate: :environment do
     make_users
-    make_relationships
+   # make_relationships
     make_messages
     make_interests
   end
@@ -41,11 +41,11 @@ def make_relationships
   users = User.all
   # This is the user that will have all the relationships
   user             = users.first
-  matches          = users[2..50]
-  interested_users = users[3..40]
+  matches          = users[2]
+  interested_users = users[3]
 
-  matches.each          { |match|  user.add_match!(  match ) }
-  interested_users.each { |i_user| i_user.add_match!( user  ) }
+   user.add_match!(  users[2] ) 
+   i_user.add_match!( users[3]  )
 end
 
 def make_messages
@@ -62,7 +62,7 @@ end
 def make_interests
   users = User.all
   users.each do |user|
-    interests_count = rand(0..30)
+    interests_count = rand(30)
     interests_count.times do
       # Interest.create!( user_id: user.id, 
                         # name: Faker::Lorem.words(1).first.capitalize )
