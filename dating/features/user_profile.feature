@@ -29,3 +29,4 @@ Feature: The user's profile page
     And I should see 'Status'
     And I should see 'remove from your match list'
     And I should see 'Message me'
+    And I should see 'Twitter'
