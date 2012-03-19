@@ -1,0 +1,11 @@
+<h2>Timeline</h2>
+<% k = 0 %>
+<% TimelineUpdates.find(:all, :order => "created_at DESC").each do |update| %>
+	<% if !Relationship.where(:user_id => session[:user_id], :match_id => update.user_id).first.nil? && k < 20 %>
+		<h3>
+			<%= link_to "#{User.where(:id => update.user_id).first.name}", :controller => 'users', :action => 'show', :id => update.user_id %> <%= "#{update.message}" %> 
+			<% k = k + 1 %>
+		</h3>
+	<% end %>
+<% end %>
+

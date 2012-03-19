@@ -1,0 +1,9 @@
+<h2>Search for user: </h2>
+<%= form_for User.new, :url => {:action => 'search',:id => session[:user_id],  :controller => 'users'} do |f| %>
+<div class="field">
+	User name: <%= f.text_field :name, :size => 50 %>
+</div>
+<div class="actions">
+	<%= f.submit "Search" %>
+</div>
+<% end %>

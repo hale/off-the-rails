@@ -1,0 +1,205 @@
+/* Adapted from a layout by Keith Donegan of Code-Sucks.com */
+
+body{
+  background-color: white;
+}
+
+#container{
+  width: 940px;
+  margin: 10px auto;
+  min-height: 100%;
+}
+
+header {
+  color: #333;
+  width: 900px;
+  float: left;
+  border: 1px solid #ccc;
+  height: 100px;
+  margin: 10px 0px 5px 0px;
+  background: #BD9C8C;
+}
+
+/* Navigation */
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+ul#info_side li {
+  list-style-type: none;
+
+}
+
+
+#logo{
+  position: relative;
+  float: left;
+}
+
+/*Used to separate logo from header*/
+#header-content{
+  position: relative;
+  float: left;
+  padding: 10px;
+  width: 600px;
+  display: inline;
+}
+
+
+#messages{
+  float: left;
+  width: 900px;
+  padding: 10px;
+}
+
+#sidebar{
+ color: #333;
+ border: 1px solid #ccc;
+ background: #E7DBD5;
+ margin: 0px 5px 5px 0px;
+ padding: 10px;
+ min-height: 600px;
+ width: 195px;
+ float: left;
+}
+
+div.signup{
+  width: 150px;
+  padding: 10px;
+}
+
+#main{
+  float: right;
+  color: #333;
+  border: 1px solid #ccc;
+  background: #F2F2E6;
+  margin: 0px 0px 5px 0px;
+  padding: 10px;
+  min-height: 600px;
+  width: 678px;
+  /*display: inline;*/
+  overflow: hidden;
+}
+
+div.banner{
+  width: 600px;
+  height: 200px;
+  /*margin: 10px 5px 5px 5px;*/
+  font-size: 10em;
+  text-align: center;
+  overflow: hidden;
+
+}
+
+div.information{
+  margin: 50px 10px 5px 10px;
+  height: 200px;
+  padding: 0 20px 0 20px;
+}
+
+div.info_box{
+  position: relative;
+  float: left;
+  width: 180px;
+  height: 130px;
+  border: 1px solid black;
+  padding: 0 0 0 0;
+  margin: 0 10px 0 10px;
+
+}
+
+#footer{
+  text-align: center;
+  width: 900px;
+  clear: both;
+  color: #333;
+  border: 1px solid #ccc;
+  background: #BD9C8C;
+  margin: 0px 0px 10px 0px;
+  padding: 10px;
+}
+
+#login{
+  float: right;
+}
+
+#header div.field{
+  display: inline-block;
+}
+#header div.actions{
+  clear: both;
+  float: right;
+}
+
+
+input.text{
+  width: 50px;
+}
+
+/* List element spacing for users */
+
+li.user_li{
+  list-style-type: none;
+  padding: 10px;
+}
+
+/* css for maps, copied from users/show*/
+
+.map_container {
+      padding: 6px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #ccc #ccc #999 #ccc;
+      -webkit-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
+      -moz-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
+      box-shadow: rgba(64, 64, 64, 0.1) 0 2px 5px;
+      width: 500px;
+    }
+
+    .gmaps4rails_map {
+      width: 800px;
+      height: 400px;
+    }
+
+    .bing_map {
+       position: absolute;
+       top: 20;
+       left: 10;
+       width: 400px;
+       height: 400px;
+       border:#555555 2px solid;
+    }
+
+/*user profile*/
+
+q {
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

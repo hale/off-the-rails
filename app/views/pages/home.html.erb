@@ -1,0 +1,34 @@
+<% content_for :header do %>
+  <div id="login">
+    <%= render( :partial => 'sessions/login' ) %>  
+  </div>
+<% end -%>
+
+<% content_for :sidebar do %>
+  <%= error_messages_for( @user ) %>  
+
+    <div class="signup">
+      <%= render( :partial => 'users/sign_up' ) %>
+    </div>
+<% end -%>
+
+
+  <div class = "banner"><%= link_to banner, root_path %></div>
+    
+  <div class="information">
+    <h3>About</h3>
+    <div class="info_box">
+      Sample Image 1
+    </div>
+    <div class="info_box">
+      Sample Image 2
+    </div>
+    <div class="info_box">
+      Sample Image 3
+    </div>
+  </div>
+
+
+
+<% content_for :footer do %>
+<% end -%>
