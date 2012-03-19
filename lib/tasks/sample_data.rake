@@ -22,8 +22,8 @@ def make_users
     name     = Faker::Name.name
     email    = Faker::Internet.email
     password = 'password'
-    dob      = Date.current.years_ago(rand(18..60))
-    gender   = ['Male', 'Female'].at((rand(1..100).odd? ? 0 : 1))
+    dob      = Date.current.years_ago(rand(60-18)+18)
+    gender   = ['Male', 'Female'].at((rand(100).odd? ? 0 : 1))
     location = Faker::Lorem.words(1).first.capitalize
     about    = Faker::Lorem.paragraphs(1).first
     User.create!(name: name,
@@ -50,9 +50,9 @@ end
 
 def make_messages
   99.times do |n|
-    Message.create!(user_id: rand(1..100),
-                   sender_id: rand(1..100),
-                   msg_type: ['wink', 'nudge'].at((rand(1..100).odd? ? 0 : 1)),
+    Message.create!(user_id: rand(100),
+                   sender_id: rand(100),
+                   msg_type: ['wink', 'nudge'].at((rand(100).odd? ? 0 : 1)),
                    read: 0,
                    message: Faker::Lorem.paragraph(4) )
   end

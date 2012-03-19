@@ -46973,3 +46973,60 @@ Served asset /custom.css - 304 Not Modified (0ms)
 
 Started GET "/assets/blueprint/print.css?body=1" for 127.0.0.1 at 2012-03-19 16:03:20 +0000
 Served asset /blueprint/print.css - 304 Not Modified (0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120301114418)
+Migrating to CreateUserInfos (20120305105540)
+Migrating to CreateTimelineUpdates (20120305105559)
+Migrating to CreateInterests (20120305105604)
+Migrating to CreateUserInterests (20120305105608)
+Migrating to AddAttachmentAvatarToUser (20120308153429)
+Migrating to AddAslToUsers (20120309002930)
+Migrating to AddAboutToUsers (20120309010000)
+Migrating to CreateRelationships (20120311015718)
+Migrating to ChangeColumnNamesInRelationships (20120311131002)
+Migrating to AddNameToInterests (20120313151803)
+Migrating to CreateMessages (20120314041248)
+Migrating to AddUserIdToInterests (20120314105756)
+Migrating to DeviseCreateAdminUsers (20120316023831)
+Migrating to CreateAdminNotes (20120316023838)
+Migrating to MoveAdminNotesToComments (20120316023839)
+Migrating to AddToUsers (20120316025618)
+Migrating to AddLocationToUsers (20120316040455)
+  [1m[35m (37.9ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("active_admin_comments")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_admin_notes_on_resource_type_and_resource_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_active_admin_comments_on_namespace')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_active_admin_comments_on_author_type_and_author_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("admin_users")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_admin_users_on_reset_password_token')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_admin_users_on_email')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("interests")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("messages")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("relationships")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_relationships_on_follower_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_relationships_on_follower_id_and_followed_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_relationships_on_followed_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("timeline_updates")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_timeline_updates_on_user_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("user_interests")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_user_interests_on_user_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_user_interests_on_interest_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('example@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 FROM "users" WHERE LOWER("users"."email") = LOWER('vilma@boyle.net') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("about", "avatar_content_type", "avatar_file_name", "avatar_file_size", "avatar_updated_at", "created_at", "dob", "email", "gender", "gmaps", "latitude", "location", "longitude", "name", "password_digest", "status", "twitter", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["about", "Pariatur et sed. Temporibus voluptatem non quis et ad ipsa iure. Eos soluta modi ab vel odit."], ["avatar_content_type", nil], ["avatar_file_name", nil], ["avatar_file_size", nil], ["avatar_updated_at", nil], ["created_at", Mon, 19 Mar 2012 20:41:13 UTC +00:00], ["dob", Sun, 19 Mar 1972], ["email", "vilma@boyle.net"], ["gender", "Female"], ["gmaps", nil], ["latitude", nil], ["location", "Nulla"], ["longitude", nil], ["name", "Lupe Bashirian"], ["password_digest", "$2a$10$2OAJeTewI7nT7qJX7vqZc.DBRLTlJqiJV1qchSCOAyR142w3spleu"], ["status", nil], ["twitter", nil], ["updated_at", Mon, 19 Mar 2012 20:41:13 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (5051.9ms)[0m  [1mcommit transaction[0m
+SQLite3::BusyException: database is locked: commit transaction
+  [1m[35m (24.5ms)[0m  rollback transaction
