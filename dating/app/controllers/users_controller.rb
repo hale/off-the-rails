@@ -10,7 +10,7 @@ def show
 
 	@current_user = User.find(session[:user_id])
 	if @user == @current_user 
-		flash.now[:info] = "This is your profile page."
+		flash.now[:info] = "This is your profile page. #{view_context.link_to('Click to edit profile', edit_user_path(@current_user))}".html_safe
 	end
   @title = @user.name
   

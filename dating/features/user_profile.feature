@@ -10,31 +10,22 @@ Feature: The user's profile page
     And I am logged in
     And I am on my homepage
 
-  Scenario: Viewing my own home page for the first time
-    Given I have not filled out my profile page
-    When I go to my profile page
-    Then I should see 'This user has not yet filled in their profile'
-
-  Scenario: Viewing my homepage once I've filled in information
-    Given I have filled out my profile page
-    When I go to my profile page
-    Then I should see 'This is you!'
-    And I should see a link to 'Edit profile'
+  Scenario: Viewing my own profile page 
+    Given I am on my profile page
+    Then I should see 'This is your profile page'
+    And I should see a link to 'edit profile'
 
   Scenario: Editing my homepage
     Given I am on my homepage
-    When I click on 'Edit profile'
-    Then I should 'Update'
+    When I click on 'Edit your profile'
+    Then I should see 'Update'
 
   Scenario: Checking out someone's profile
-    Given I have 'Sarah' in my match list
-    And I visit 'Sarah's' profile page
-    Then I should see 'About me'
+    Given 'Timothy' is in my match list
+    And I visit 'Timothy's' profile page
+    Then I should see 'About'
     And I should see 'Interests'
-    And I should see 'Online status'
     And I should see 'Member since'
-    And I should see 'Looking for'
-    And I should see 'Current status'
-    And I should see 'Profile picture'
+    And I should see 'Status'
+    And I should see 'remove from your match list'
     And I should see 'Message me'
-    And I should see 'Add to my matches'

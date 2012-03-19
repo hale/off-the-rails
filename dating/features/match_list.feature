@@ -1,20 +1,20 @@
 Feature: match list
-  As a user of Coitus cupid i ecpect to be able to
+  As a user of Coitus cupid i expect to be able to
   Add users to my match list, and delete them.
 
   Background:
     Given I have an account
     And I am logged in
-    And 'Sarah' has an account
 
   Scenario: adding a user to the match list
-    When I go to 'Sarah's' profile page
+    Given 'Jessica' has an account
+    When I go to 'Jessica's' profile page
     And I click on 'Add'
-    Then 'Sarah' should be in my match list
+    Then 'Jessica' should be in my match list
 
   Scenario: removing a user from the match list
-    Given 'Sarah' is in my match list
-    When I go to 'Sarah's' profile page
+    Given 'Gordon' is in my match list
+    When I go to 'Gordon's' profile page
     And I click on 'Remove'
-    Then 'Sarah' should not be in my match list
+    Then 'Gordon' should not be in my match list
 

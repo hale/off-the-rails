@@ -21,6 +21,7 @@ module ApplicationHelper
     render(:partial => 'shared/error_messages', :locals => {:object => object})
   end
 
+  # This safely handles leap years.
   def age(dob)
     return '' if dob.nil?
     now = Time.now.utc.to_date

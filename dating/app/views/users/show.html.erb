@@ -1,8 +1,13 @@
 <% content_for :sidebar  do %>
   <h2><%= @user.name %></h2>
+    <strong>Status</strong><br />
+  <% unless @user.status.nil? %>
+    <q class="loud large">"<%= @user.status %>"</q>
+  <% end %>
   <div id='avatar_side'>
     <%= image_tag @user.avatar.url(:medium) %>
   </div>
+
 
   <ul id="info_side">
     <strong>Age</strong>
@@ -11,16 +16,21 @@
     <li><%= sanitize(@user.gender) %></li>
     <strong>Location</strong>
     <li><%= sanitize(@user.location) %></li>
+    <strong>Member since</strong>
+    <li><%= @user.created_at.to_date%></li>
     <strong>Match stats</strong>
     <li><%= render 'shared/match_stats' %></li>
     <br />
     <% unless @current_user.id == @user.id %>
       <strong>Match &#37;</strong>
       <li><%= "#{@user.match_percentage(@current_user)}%"%></li>
+      <br />
       <% if @current_user.match?(@user) %>
         <li><%= render 'remove_match' %></li>
+        <li>Click to remove from your match list</li>
       <% else %>
         <li><%= render 'add_match' %></li>
+        <li>Click to add to your match list</li>
       <% end %>  
     <% end %>
 
@@ -30,7 +40,7 @@
 
   
 <!-- about me -->
-<h3>About Me</h3>
+<h3>About</h3>
 <p><%= @user.about.nil? ? default_about_me : sanitize(@user.about) %><p>
 
 <!-- twitter -->
