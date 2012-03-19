@@ -9,5 +9,12 @@ Feature: match list
 
   Scenario: adding a user to the match list
     When I go to 'Sarah's' profile page
-    And I click on 'Add to my matches'
-    Then 'Sarah' should be added to my match list
+    And I click on 'Add'
+    Then 'Sarah' should be in my match list
+
+  Scenario: removing a user from the match list
+    Given 'Sarah' is in my match list
+    When I go to 'Sarah's' profile page
+    And I click on 'Remove'
+    Then 'Sarah' should not be in my match list
+

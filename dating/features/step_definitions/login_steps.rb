@@ -46,8 +46,9 @@ end
 
 # NB: keep these steps at the bottom because they mess with syntax hilighting
 
-Given /^I click(?: on)? \'(.*)\'$/ do |button|
-  click_button button
+Given /^I click(?: on)? \'(.*)\'$/ do |thing|
+  # button or link
+  click_on thing
 end
 
 Given /^I enter \'(.*)\' as my (\w*)$/ do |content, field|

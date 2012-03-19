@@ -19,6 +19,6 @@ Feature: Logging in
     When I visit the 'login' page
     And I enter my username and password
     And I click 'Log in'
-    Then I should see a 'welcome' message
+    Then I should see a 'Welcome back' message
     And I should be on my homepage
-    And I should see a 'Log out' link
+    And I should see a 'Log Out' link
