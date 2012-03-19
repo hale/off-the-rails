@@ -70,7 +70,7 @@ describe "Pages" do
           end
           page.should have_selector("div.flash.success", text: 'Welcome back')
           current_url.should =~ /users\/(\d*)\/home/
-          page.should have_content("Log out")
+          page.should have_content("Log Out")
         end
       end
     end
