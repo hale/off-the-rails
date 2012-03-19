@@ -1,7 +1,0 @@
-<li>
-  <span>
-    <%= interest.name %>  
-    <!-- Only shows the destroy link if we're on an interests page and the interest belongs to the user -->
-    <%= link_to_if( controller.controller_name == 'interests' && interest.user_id == session[:user_id], 'Remove', interest_path(@user.id, interest.id), method: :delete ) {} %>
-  </span>
-</li>
