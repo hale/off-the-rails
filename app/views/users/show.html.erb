@@ -1,6 +1,6 @@
 <% content_for :sidebar  do %>
   <h2><%= @user.name %></h2>
-    <strong>Status</strong><br />
+  <%= render "users/update_status" %>
   <% unless @user.status.nil? %>
     <q class="loud large">"<%= @user.status %>"</q>
   <% end %>
