@@ -1,9 +1,16 @@
 <% content_for :sidebar  do %>
   <h2><%= @user.name %></h2>
-  <%= render "users/update_status" %>
-  <% unless @user.status.nil? %>
-    <q class="loud large">"<%= @user.status %>"</q>
+
+  <q class="loud large">"<%= @user.status %>"</q>
+  <%= form_for(:user_for_status, :url => {:action => 'update_status',:id => session[:user_id],  :controller => 'users'}) do |f| %>
+    <div class="field">
+      <%= f.text_field :status, :size => 25 %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Update status" %>
+    </div>
   <% end %>
+
   <div id='avatar_side'>
     <%= image_tag @user.avatar.url(:medium) %>
   </div>

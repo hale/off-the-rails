@@ -44,15 +44,14 @@ def home
 end
 
 def update_status
-	@user_for_status = User.where(:id => session[:user_id]).first
+	@user_for_status = User.find(session[:user_id])
 	 if @user_for_status && @user_for_status.update_attribute(:status, params[:user_for_status][:status])
-	 	TimelineUpdates.create(:user_id => session[:user_id], :message => " posted new status message: #{params[:user_for_status][:status]}.")
+	 	TimelineUpdates.create(:user_id => @user_for_status.id, :message => " posted new status message: #{params[:user_for_status][:status]}.")
 		flash[:success] = "Status updated"
-		redirect_to home_user_path(@user_for_status)
+		redirect_to user_path(@user_for_status)
 	else
-		flash[:notice] = "Something went wrong"
-		redirect_to home_user_path(@user_for_status)
-
+		flash[:notice] = "Your status could not be updated at this time"
+		redirect_to user_path(@user_for_status)
 	end
 end
 
