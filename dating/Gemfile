@@ -1,17 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.2'
+gem 'rails'
 gem 'sqlite3'
-gem 'pg'
 gem 'heroku'
-
-gem 'activeadmin'
-
-# needed for the js runtime environment 
-
-# Recomended to use instead of WEBrick
 gem 'thin'
 
+gem 'activeadmin'
+gem 'paperclip'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -26,22 +21,30 @@ end
 group :test, :development do
     gem 'rspec-rails'
     gem 'guard-rspec'
-    gem 'cucumber-rails'
     gem 'factory_girl_rails'
     gem 'database_cleaner'
     gem 'paperclip'
     gem 'railroady'
     gem 'faker'
     # gem 'annotate', '> 2.4.0'
-    # gem 'annotate', :git => 'http://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
+    gem 'annotate', :git => 'http://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
+    gem 'irbtools-more', :require => false
+end
+
+group :test do
+  gem 'cucumber-rails'
 end
 
 group :production do
-    gem 'paperclip'
-    gem 'pg'
+   gem 'pg'
 end
 
 gem 'jquery-rails'
+gem 'gmaps4rails'
+gem 'twitter'
+gem 'mobile-fu'
+gem 'geocoder'
+gem 'randumb' # lets you get random records efficiently
 
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby'

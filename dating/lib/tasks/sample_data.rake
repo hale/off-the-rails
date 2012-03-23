@@ -3,6 +3,8 @@ namespace :db do
   task populate: :environment do
     make_users
     make_relationships
+    make_messages
+    make_interests
   end
 end
 
@@ -46,4 +48,25 @@ def make_relationships
   interested_users.each { |i_user| i_user.add_match!( user  ) }
 end
 
+def make_messages
+  99.times do |n|
+    Message.create!(user_id: rand(1..100),
+                   sender_id: rand(1..100),
+                   msg_type: ['wink', 'nudge'].at((rand(1..100).odd? ? 0 : 1)),
+                   read: 0,
+                   message: Faker::Lorem.paragraph(4) )
+  end
+end
 
+# Give each user between 0 and 30 interests
+def make_interests
+  users = User.all
+  users.each do |user|
+    interests_count = rand(0..30)
+    interests_count.times do
+      # Interest.create!( user_id: user.id, 
+                        # name: Faker::Lorem.words(1).first.capitalize )
+      user.add_interest!( Faker::Lorem.words(1).first.capitalize ) 
+    end
+  end
+end

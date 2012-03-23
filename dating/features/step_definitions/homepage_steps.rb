@@ -6,6 +6,6 @@ end
 # NB: keep these steps at the bottom because they mess with syntax hilighting
 
 Then /^I should see(?:.*)\'(.*)\'(?:.*)$/ do |content|
-  page.body.should have_content content
+  page.should have_content content
 end
 

@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 	attr_accessible :name, :email, :password, :password_confirmation, :avatar,
-									:dob, :gender, :location, :about, :twitter, :status
+									:dob, :gender, :location, :about, :latitude, :longitude, :twitter, :status
 
 	#Rails 3.1 built in authentication
 	has_secure_password
@@ -53,7 +53,45 @@ class User < ActiveRecord::Base
 
 	has_many :interests, dependent: :destroy
 
+	def add_interest!(name)
+		self.interests.create!(user_id: self.id, name: name)
+	end
 
+	def shared_interests(other_user)
+		user_i = []
+		self.interests.each { |i| user_i << i.name }
+
+		other_user_i = []
+		other_user.interests.each { |i| other_user_i << i.name }
+
+		return other_user_i & user_i
+	end
+
+	def match_percentage(other_user)
+		user_i = []
+		self.interests.each { |i| user_i << i.name }
+
+		other_user_i = []
+		other_user.interests.each { |i| other_user_i << i.name }
+
+		# match percentage is an artificial measure of how similar you are to 
+		# another user.  Arbitarily (*cough* I mean, using coitus cupid patented
+		# dating research) a perfect score is given to users with more than 17
+		# similar interests.  
+
+		percentage = (other_user_i & user_i).count / 17.0 * 100
+		if percentage > 100
+			return 100
+		else
+			return percentage.round(2)
+		end
+		
+
+	end
+
+
+
+# Match list methods
 	def match?(other_user)
 		relationships.find_by_match_id(other_user.id)
 	end
@@ -66,4 +104,35 @@ class User < ActiveRecord::Base
 		relationships.find_by_match_id(other_user.id).destroy
 	end
 
+# Location services
+	acts_as_gmappable :process_geocoding => false, :msg => "Sorry, not even Google could figure out where that is"
+
+	def gmaps4rails_address
+  	#"#{self.location}"
+  	"#{self.latitude}, #{self.longitude}"
+	end
+
+
+
 end
+
+# == Schema Information
+#
+# Table name: users
+#
+#  id                  :integer         not null, primary key
+#  created_at          :datetime        not null
+#  updated_at          :datetime        not null
+#  name                :string(255)
+#  email               :string(255)
+#  password_digest     :string(255)
+#  avatar_file_name    :string(255)
+#  avatar_content_type :string(255)
+#  avatar_file_size    :integer
+#  avatar_updated_at   :datetime
+#  dob                 :date
+#  gender              :string(255)
+#  location            :string(255)
+#  about               :string(255)
+#
+

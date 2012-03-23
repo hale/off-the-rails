@@ -1,11 +1,13 @@
+<%= content_for :sidebar do %>
 <section>
   <%= image_tag @user.avatar.url(:medium) %>
-  <h2><%= @user.name %></h1>
+  <h2><%= @user.name %></h2>
 </section>
 
 <section>
   <h3><%= render 'shared/match_stats' %></h3>
 </section>
+<% end -%>
 
 <% if @users.any? %>
   <ul class="users">

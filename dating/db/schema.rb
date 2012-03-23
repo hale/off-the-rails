@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120316025618) do
+ActiveRecord::Schema.define(:version => 20120316040455) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -110,6 +110,9 @@ ActiveRecord::Schema.define(:version => 20120316025618) do
     t.string   "about"
     t.string   "twitter"
     t.string   "status"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.boolean  "gmaps"
   end
 
 end

@@ -1,8 +1,11 @@
 <!-- Should also contain: match percentage, one of their interests.  Styling. -->
-<li>
+<li class="user_li">
   <%= image_tag user.avatar.url(:thumb) %>
   <%= link_to user.name, user %>
-  <%= "A: #{age(user.dob)}" %>
-  <%= "S: #{user.gender}" %>
-  <%= "L: #{user.location}" %>
+  <ul>
+    <li><%= "A: #{age(user.dob)}" %></li>
+    <li><%= "S: #{user.gender}" %></li>
+    <li><%= "L: #{user.location}" %></li>
+    <li><%= "M: #{user.match_percentage(User.find(session[:user_id]))}%"%></li>
+  </ul>
 </li>

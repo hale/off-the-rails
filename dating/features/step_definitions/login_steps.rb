@@ -37,7 +37,11 @@ Given /^I enter my username and password$/ do
 end
 
 Given /^I (?:visit|go to|am on) my (?:homepage|home page)$/ do
-  visit user_home_url( User.find_by_email('user@example.com') )
+  visit home_user_path( User.find_by_email('user@example.com') )
+end
+
+Given /^I (?:visit|go to|am on) my (?:profile page|profile-page)$/ do
+  visit user_path( User.find_by_email('user@example.com') )
 end
 
 Then /^I should be on my (?:home page|homepage)$/ do
@@ -46,8 +50,9 @@ end
 
 # NB: keep these steps at the bottom because they mess with syntax hilighting
 
-Given /^I click(?: on)? \'(.*)\'$/ do |button|
-  click_button button
+Given /^I click(?: on)? \'(.*)\'$/ do |thing|
+  # button or link
+  click_on thing
 end
 
 Given /^I enter \'(.*)\' as my (\w*)$/ do |content, field|

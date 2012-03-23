@@ -1,25 +1,24 @@
-<h1>Find new matches by answering questions!</h1>
+<h2>Add some interests to get more matches</h2>
+<%= form_for(:interest, :as => :post, :url => interests_path(@user)) do |f| -%>
+<div class="field">
+  <%= f.label :name, 'Interest' %>
+  <%= f.text_field :name %>
+</div>
 
-<%= form_for :interest, :action => 'create' do |f|%>
-  <div class="field">
-    <%= f.label :question %>
-    <h3>Do you like pasta?</h3>
-    <%= f.check_box :pasta, {}, 'likes_pasta', 'dislikes_pasta' %>
-  </div>
+<div class="actions">
+  <%= f.submit "Add" %>
+</div>
+<% end -%>
 
-  <div class="field">
-    <%= f.label :question %>
-    <h3>Are you a pet lover?</h3>
-    <%= f.check_box :pets, {}, 'likes_pets', 'dislikes_pets' %>
-  </div>
 
-  <div class="field">
-    <%= f.label :question %>
-    <h3>Do you eat meat?</h3>
-    <%= f.check_box :meat, {}, 'meat_eater', 'vegetarian' %>
-  </div>
+<br />
+<h3>Current interests</h3>
+<%= render 'users/user_interests' %>
 
-  <div class="actions">
-    <%= f.submit "Find matches" %>
-  </div>
-<% end %>
+<% content_for :sidebar do %>
+  <h3>Can't think of anything?</h3>
+  <p>Here are some interests entered by other users of <em>Coitus Cupid</em></p>
+  <%= render 'random_interests' %>
+<% end -%>
+
+

@@ -5,16 +5,26 @@ before_filter :confirm_logged_in, :except => [:create, :destroy]
 def show
 	# currently doesn't render if the user is not signed in. needs a before filter.
 	@user = User.find(params[:id])
+
+  @json = User.all.to_gmaps4rails
+
 	@current_user = User.find(session[:user_id])
 	if @user == @current_user 
-		flash.now[:info] = "This is your profile page."
+		flash.now[:info] = "This is your profile page. #{view_context.link_to('Click to edit profile', edit_user_path(@current_user))}".html_safe
 	end
   @title = @user.name
+  
+  Twitter.configure do |config|
+  config.consumer_key = "MjVwLYH2g497RAIZqBAOtQ"
+  config.consumer_secret = "VNYdkUCERELhlkGkJn30iTfepgpwI1hMD6L0Cl7cKw"
+  config.oauth_token = "48442779-Nyimp2WTO1fQufRgZPM91BQaSx7jTkh07h6E66K5j"
+  config.oauth_token_secret = "pwk0OJkXjHa1Ph0S0H2lPOnaLs7d5r3qEq6qvMwQ"
+  end
 end
 
 def index
 	@title = "All users"
-	@users = User.all
+	# @users = User.all
 end
 
 def create
@@ -24,7 +34,7 @@ def create
 		session[:user_id] = @user.id
     redirect_to home_user_path(@user)
 	else
-		redirect_to root_url
+    render 'pages/home'
 	end
 end
 
@@ -90,6 +100,28 @@ def search
   		@users = User.find(:all)
   	end
 end
+
+  def find_matches
+    @user = User.find(session[:user_id])
+    # don't include the current user in the possible matches 
+    @users = User.all - [@user]
+    # associate each user with the number of shared interests they have with @user
+    dates = {}
+    @users.each do |u|
+      dates[u.id] = @user.shared_interests(u).size
+    end
+
+    sorted_dates = dates.sort_by { |user, count| count }
+    suggested_matches = []
+    sorted_dates.each { |date| suggested_matches << date.first }
+    suggested_matches = suggested_matches.last(5).reverse
+
+    @suggested_matches = []
+    suggested_matches.each {|sm| @suggested_matches << User.find(sm) }
+
+
+    @title = "Suggested matches for #{@user.name}"
+  end
 
 
 

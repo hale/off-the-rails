@@ -26,10 +26,6 @@ describe "Users" do
         visit user_url(User.find_by_email('user@example.com'))
       end
 
-      xit "should have a default profile picture" do
-        # page.should_not have_selector('alt', )
-      end
-
     end
 
   end
