@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="37" version="2.0">
+<workbenchAdvisor/>
+<window height="817" width="1200" x="221" y="22">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout locked="0">
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="106" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="com.aptana.ui.globalActionSet" itemType="typeToolBarContribution" x="150" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="114" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="40" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="70" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="com.aptana.editor.erb.html" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.ruby" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page focus="true" label="Workspace - Web">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+<part id="17"/>
+<part id="18"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="com.aptana.editor.ruby" name="production.rb" partName="production.rb" title="production.rb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/config/environments/production.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/config/environments/production.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="469" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.ruby" name="20120316040455_add_location_to_users.rb" partName="20120316040455_add_location_to_users.rb" title="20120316040455_add_location_to_users.rb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/db/migrate/20120316040455_add_location_to_users.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/db/migrate/20120316040455_add_location_to_users.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="36" selectionOffset="68" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.erb.html" name="edit.html.erb" partName="edit.html.erb" title="edit.html.erb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/users/edit.html.erb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/users/edit.html.erb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="897" selectionTopPixel="161"/>
+</editor>
+<editor id="com.aptana.editor.ruby" name="application_controller.rb" partName="application_controller.rb" title="application_controller.rb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/controllers/application_controller.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/controllers/application_controller.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="392" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.erb.html" name="home.html.erb" partName="home.html.erb" title="home.html.erb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/pages/home.html.erb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/pages/home.html.erb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="190" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.erb.html" name="home.mobile.erb" partName="home.mobile.erb | pages" title="home.mobile.erb | pages" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/pages/home.mobile.erb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/pages/home.mobile.erb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="245" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.erb.html" name="_login.html.erb" partName="_login.html.erb" title="_login.html.erb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/sessions/_login.html.erb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/sessions/_login.html.erb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="374" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.erb.html" name="_error_messages.html.erb" partName="_error_messages.html.erb" title="_error_messages.html.erb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/shared/_error_messages.html.erb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/shared/_error_messages.html.erb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.erb.html" name="home.mobile.erb" partName="home.mobile.erb | users" title="home.mobile.erb | users" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/users/home.mobile.erb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/users/home.mobile.erb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="840" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.erb.html" name="show.mobile.erb" partName="show.mobile.erb" title="show.mobile.erb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/users/show.mobile.erb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/users/show.mobile.erb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="583" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.ruby" name="pages_controller.rb" partName="pages_controller.rb" title="pages_controller.rb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/controllers/pages_controller.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/controllers/pages_controller.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.ruby" name="schema.rb" partName="schema.rb" title="schema.rb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/db/schema.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/db/schema.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3952" selectionTopPixel="14"/>
+</editor>
+<editor id="com.aptana.editor.ruby" name="routes.rb" partName="routes.rb" title="routes.rb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/config/routes.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/config/routes.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="569" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.erb.html" name="_header.html.erb" partName="_header.html.erb" title="_header.html.erb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/layouts/_header.html.erb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/layouts/_header.html.erb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.erb.html" name="application.html.erb" partName="application.html.erb" title="application.html.erb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/layouts/application.html.erb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/layouts/application.html.erb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1431" selectionTopPixel="452"/>
+</editor>
+<editor id="com.aptana.editor.erb.html" name="outbox.html.erb" partName="outbox.html.erb" title="outbox.html.erb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/messages/outbox.html.erb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/messages/outbox.html.erb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.erb.html" name="show.html.erb" partName="show.html.erb | messages" title="show.html.erb | messages" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/messages/show.html.erb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/messages/show.html.erb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.aptana.editor.ruby" name="messages_controller_spec.rb" partName="messages_controller_spec.rb" title="messages_controller_spec.rb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/spec/controllers/messages_controller_spec.rb" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/spec/controllers/messages_controller_spec.rb"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2528" selectionTopPixel="438"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="com.aptana.terminal.views.terminal" partName="Terminal"/>
+<view id="com.aptana.samples.ui.SamplesView" partName="Samples"/>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems"/>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="com.aptana.editor.ruby" activePerspective="com.aptana.ui.WebPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.aptana.ui.internal.WebPerspectiveFactory" id="com.aptana.ui.WebPerspective" label="Web"/>
+<alwaysOnActionSet id="com.aptana.browser.actionSet"/>
+<alwaysOnActionSet id="com.aptana.ruby.debug.ui.RubyDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="com.aptana.editor.common.presentation"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="com.aptana.js.debug.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.presentation"/>
+<alwaysOnActionSet id="com.aptana.ui.globalActionSet"/>
+<alwaysOnActionSet id="com.aptana.terminal.actionSet"/>
+<show_view_action id="com.aptana.browser.views.webbrowser"/>
+<show_view_action id="com.aptana.explorer.view"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="com.aptana.ui.io.remoteview"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="com.aptana.samples.ui.SamplesView"/>
+<show_view_action id="com.aptana.terminal.views.terminal"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<new_wizard_action id="com.aptana.ui.wizards.NewWebProject"/>
+<new_wizard_action id="com.aptana.ruby.core.ui.rubyProjectWizard"/>
+<new_wizard_action id="com.aptana.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
+<new_wizard_action id="org.radrails.rails.ui.projectWizard"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="com.aptana.samples.ui.SamplesView"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="1024" id="terminalArea" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
+<fastViews>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
+<view id="com.aptana.terminal.views.terminal" ratio="0.3"/>
+<view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<layout>
+<mainWindow>
+<info folder="true" part="left">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<page content="com.aptana.explorer.view" label="LabelNotFound"/>
+<page content="com.aptana.ui.io.remoteview" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="894" ratioRight="298" relationship="2" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.19966443" ratioLeft="238" ratioRight="954" relationship="2" relative="left"/>
+<info folder="true" part="terminalArea" ratio="0.74901444" ratioLeft="570" ratioRight="191" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<page content="com.aptana.terminal.views.terminal" label="LabelNotFound"/>
+<page content="org.eclipse.pde.runtime.LogView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@2505b7" ratio="0.74901444" ratioLeft="570" ratioRight="191" relationship="4" relative="left">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="com.aptana.samples.ui.SamplesView" label="Samples"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/controllers/users_controller.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/users/show.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/models/user.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/db/schema.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/config/routes.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/layouts/application.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/messages/show.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/spec/controllers/messages_controller_spec.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/controllers/application_controller.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/controllers/pages_controller.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/controllers/relationships_controller.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/users/show.html.erb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/models/user.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/controllers/users_controller.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/controllers/messages_controller.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/models/message.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/db/seeds.rb"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/lib/tasks/sample_data.rake"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/Gemfile"/>
+</editors>
+<item historyLabel="show.html.erb | messages" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="application.html.erb" index="5">
+<position info="not_deleted" x="1431" y="0"/>
+</item>
+<item historyLabel="show.html.erb | users" index="1">
+<position info="not_deleted" x="760" y="0"/>
+</item>
+<item historyLabel="show.html.erb | users" index="1">
+<position info="not_deleted" x="1890" y="0"/>
+</item>
+<item historyLabel="users_controller.rb" index="0">
+<position info="not_deleted" x="234" y="0"/>
+</item>
+<item historyLabel="messages_controller_spec.rb" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="schema.rb" index="3">
+<position info="not_deleted" x="3952" y="0"/>
+</item>
+<item historyLabel="show.html.erb | users" index="1">
+<position info="not_deleted" x="1890" y="0"/>
+</item>
+<item historyLabel="users_controller.rb" index="0">
+<position info="not_deleted" x="234" y="0"/>
+</item>
+<item historyLabel="show.html.erb | users" index="1">
+<position info="not_deleted" x="1890" y="0"/>
+</item>
+<item historyLabel="messages_controller_spec.rb" index="7">
+<position info="not_deleted" x="2528" y="0"/>
+</item>
+<item historyLabel="routes.rb" index="4">
+<position info="not_deleted" x="451" y="0"/>
+</item>
+<item historyLabel="routes.rb" index="4">
+<position info="not_deleted" x="496" y="0"/>
+</item>
+<item historyLabel="routes.rb" index="4">
+<position info="not_deleted" x="496" y="0"/>
+</item>
+<item historyLabel="routes.rb" index="4">
+<position info="not_deleted" x="569" y="0"/>
+</item>
+<item historyLabel="users_controller.rb" index="0">
+<position info="not_deleted" x="234" y="0"/>
+</item>
+<item historyLabel="user.rb" index="2">
+<position info="not_deleted" x="2122" y="0"/>
+</item>
+<item historyLabel="application_controller.rb" index="8">
+<position info="not_deleted" x="392" y="0"/>
+</item>
+<item historyLabel="users_controller.rb" index="0">
+<position info="not_deleted" x="234" y="0"/>
+</item>
+<item historyLabel="pages_controller.rb" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="relationships_controller.rb" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="users_controller.rb" index="0">
+<position info="not_deleted" x="0" y="46"/>
+</item>
+<item historyLabel="application_controller.rb" index="8">
+<position info="not_deleted" x="392" y="0"/>
+</item>
+<item historyLabel="pages_controller.rb" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="routes.rb" index="4">
+<position info="not_deleted" x="569" y="0"/>
+</item>
+<item historyLabel="relationships_controller.rb" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="show.html.erb" index="11">
+<position info="not_deleted" x="2750" y="0"/>
+</item>
+<item historyLabel="show.html.erb" index="11">
+<position/>
+</item>
+<item historyLabel="user.rb" index="12">
+<position info="not_deleted" x="2122" y="0"/>
+</item>
+<item historyLabel="users_controller.rb" index="13">
+<position info="not_deleted" x="0" y="46"/>
+</item>
+<item historyLabel="messages_controller.rb" index="14">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="show.html.erb" index="11">
+<position/>
+</item>
+<item historyLabel="show.html.erb" index="11">
+<position/>
+</item>
+<item historyLabel="users_controller.rb" index="13">
+<position info="not_deleted" x="385" y="0"/>
+</item>
+<item historyLabel="message.rb" index="15">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="user.rb" index="12">
+<position info="not_deleted" x="2122" y="0"/>
+</item>
+<item historyLabel="message.rb" index="15">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="show.html.erb" index="11">
+<position info="not_deleted" x="1125" y="0"/>
+</item>
+<item historyLabel="users_controller.rb" index="13">
+<position info="not_deleted" x="385" y="0"/>
+</item>
+<item historyLabel="show.html.erb" index="11">
+<position info="not_deleted" x="1182" y="0"/>
+</item>
+<item historyLabel="seeds.rb" index="16">
+<position info="not_deleted" x="342" y="0"/>
+</item>
+<item historyLabel="show.html.erb" index="11">
+<position info="not_deleted" x="1182" y="0"/>
+</item>
+<item historyLabel="sample_data.rake" index="17">
+<position info="not_deleted" x="1646" y="0"/>
+</item>
+<item historyLabel="show.html.erb" index="11">
+<position info="not_deleted" x="1182" y="0"/>
+</item>
+<item historyLabel="users_controller.rb" index="13">
+<position info="not_deleted" x="827" y="1"/>
+</item>
+<item historyLabel="message.rb" index="15">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="user.rb" index="12">
+<position info="not_deleted" x="2122" y="0"/>
+</item>
+<item historyLabel="messages_controller.rb" index="14">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="relationships_controller.rb" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="Gemfile" index="18">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="terminalArea"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="sample_data.rake" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/lib/tasks/sample_data.rake">
+<persistable uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/lib/tasks/sample_data.rake"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="seeds.rb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/db/seeds.rb">
+<persistable uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/db/seeds.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="message.rb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/models/message.rb">
+<persistable uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/models/message.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="relationships_controller.rb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/controllers/relationships_controller.rb">
+<persistable uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/controllers/relationships_controller.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="messages_controller_spec.rb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/spec/controllers/messages_controller_spec.rb">
+<persistable uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/spec/controllers/messages_controller_spec.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="messages_controller.rb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/controllers/messages_controller.rb">
+<persistable uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/controllers/messages_controller.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="show.html.erb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/messages/show.html.erb">
+<persistable uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/messages/show.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="outbox.html.erb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/messages/outbox.html.erb">
+<persistable uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/messages/outbox.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="application.html.erb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/layouts/application.html.erb">
+<persistable uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/layouts/application.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="_header.html.erb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/layouts/_header.html.erb">
+<persistable uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/layouts/_header.html.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="routes.rb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/config/routes.rb">
+<persistable uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/config/routes.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="schema.rb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/db/schema.rb">
+<persistable uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/db/schema.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.ruby" name="pages_controller.rb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/controllers/pages_controller.rb">
+<persistable uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/controllers/pages_controller.rb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="show.mobile.erb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/users/show.mobile.erb">
+<persistable uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/users/show.mobile.erb"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.erb.html" name="home.mobile.erb" tooltip="/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/users/home.mobile.erb">
+<persistable uri="file:/Users/Joe/Documents/Uni/CS2512/off-the-rails/dating/app/views/users/home.mobile.erb"/>
+</file>
+</mruList>
+</workbench>
