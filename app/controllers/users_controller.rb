@@ -15,10 +15,11 @@ def show
   @title = @user.name
   
   Twitter.configure do |config|
-  config.consumer_key = "MjVwLYH2g497RAIZqBAOtQ"
-  config.consumer_secret = "VNYdkUCERELhlkGkJn30iTfepgpwI1hMD6L0Cl7cKw"
-  config.oauth_token = "48442779-Nyimp2WTO1fQufRgZPM91BQaSx7jTkh07h6E66K5j"
-  config.oauth_token_secret = "pwk0OJkXjHa1Ph0S0H2lPOnaLs7d5r3qEq6qvMwQ"
+    config.consumer_key = "MjVwLYH2g497RAIZqBAOtQ"
+    config.consumer_secret = "VNYdkUCERELhlkGkJn30iTfepgpwI1hMD6L0Cl7cKw"
+    config.oauth_token = "48442779-Nyimp2WTO1fQufRgZPM91BQaSx7jTkh07h6E66K5j"
+    canon f9 14600
+    teh3config.oauth_token_secret = "pwk0OJkXjHa1Ph0S0H2lPOnaLs7d5r3qEq6qvMwQ"
   end
 end
 

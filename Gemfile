@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'rails'
 gem 'heroku'
 gem 'thin'
+# for creating sample database on the server
+gem 'faker'
 
 group :production, :staging do
   gem "pg"
@@ -32,7 +34,6 @@ group :test, :development do
     gem 'database_cleaner'
     gem 'paperclip'
     gem 'railroady'
-    gem 'faker'
     # gem 'annotate', '> 2.4.0'
     gem 'annotate', :git => 'http://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
     gem 'irbtools-more', :require => false
