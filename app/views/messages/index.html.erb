@@ -1,31 +1,26 @@
-<h1>Listing messages</h1>
-
-<table>
-  <tr>
-    <th>Recipient</th>
-    <th>Sender</th>
-    <th>Read</th>
-    <th>Msg Type</th>
-    <th>Message</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @messages.each do |message| %>
-  <tr>
-    <td><%= message.user_id %></td>
-    <td><%= message.sender_id %></td>
-    <td><%= message.read %></td>
-    <td><%= message.msg_type %></td>
-    <td><%= message.message %></td>
-    <td><%= link_to 'Show', message %></td>
-    <td><%= link_to 'Edit', edit_message_path(message) %></td>
-    <td><%= link_to 'Destroy', message, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
+<h1>Messages</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>User</th>
+      <th>Created at</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @messages.each do |message| %>
+      <tr>
+        <td><%= message.id %></td>
+        <td><%= link_to message.user_id, message_path(message) %></td>
+        <td><%= message.created_at %></td>
+        <td>
+          <%= link_to 'Edit', edit_message_path(message), :class => 'btn btn-mini' %>
+          <%= link_to 'Destroy', message_path(message), :method => :delete, :confirm => 'Are you sure?', :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
 
-<br />
-
-<%= link_to 'New Message', new_message_path %>
+<%= link_to 'New', new_message_path, :class => 'btn btn-primary' %>

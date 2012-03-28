@@ -25,6 +25,7 @@ group :assets do
   gem "meta_search",    '>= 1.1.0.pre'
   gem 'coffee-rails'
   gem 'uglifier'
+  gem "twitter-bootstrap-rails"
 end
 
 group :test, :development do
