@@ -1,34 +1,60 @@
-<% content_for :header do %>
-  <div id="login">
-    <%= render( :partial => 'sessions/login' ) %>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <%= csrf_meta_tags %>
+
+  <!-- HTML5 shim to support IE6-8 -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+  <%= stylesheet_link_tag "application", :media => "all" %>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row"><br /></div>
+    <div class="row">
+      <div class="span8">
+        <%= flash_block %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span8">
+        <div class="well">
+          <div class="page-header">
+            <h1>Coitus Cupid
+            <small>Dating redefined</small>
+            </h1>
+          </div>
+
+          <%= render 'users/sign_up' %>
+          <%= error_messages_for( @user ) %>  
+          <br />
+        </div>
+      </div>
+      <div class="span4">
+      <%= image_tag "landing_logo.png", :alt => "sillhouette" %>
+      </div>          
+    </div> <!-- end row -->
+
+    <div class="row">
+      <div class="span8">
+        <%= render 'sessions/login' %>
+      </div>  
+    </div>       
   </div>
-<% end -%>
-
-<% content_for :sidebar do %>
-  <%= error_messages_for( @user ) %>  
-
-    <div class="signup">
-      <%= render( :partial => 'users/sign_up' ) %>
-    </div>
-<% end -%>
-
-
-  <div class = "banner"><%= link_to banner, root_path %></div>
-    
-  <div class="information">
-    <h3>About</h3>
-    <div class="info_box">
-      Sample Image 1
-    </div>
-    <div class="info_box">
-      Sample Image 2
-    </div>
-    <div class="info_box">
-      Sample Image 3
-    </div>
-  </div>
 
 
 
-<% content_for :footer do %>
-<% end -%>
+
+
+<!-- Loads faster with JS at the end -->
+<%= javascript_include_tag "application" %>
+<!-- <%= debug(params) if Rails.env.development? %> -->
+</body>
+</html>

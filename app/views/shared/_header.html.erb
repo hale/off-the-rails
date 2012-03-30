@@ -1,9 +1,0 @@
-
-<% if session[:user_id] %>
-  <li><%= link_to "Dashboard", home_user_path(session[:user_id] )  %></li>
-  <li><%= link_to "Show profile", user_path(session[:user_id] )  %></li>
-  <li><%= link_to "New Matches", find_matches_user_path(session[:user_id])  %></li>
-  <li><%= link_to "Inbox", inbox_path %></li>
-<% else %>
-  <%= render( :partial => 'sessions/login' ) %>  
-<% end %>

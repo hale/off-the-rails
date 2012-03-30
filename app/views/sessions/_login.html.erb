@@ -1,15 +1,5 @@
-<li>
-<%= form_for(:session, :url => {:action => 'create', :controller => 'sessions'}) do |f| %>
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.text_field :email, :size => 20 %>
-  </div>
-  <div class="field">
-    <%= f.label :password %>
-    <%= f.password_field :password, :size => 20 %>
-  </div>
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
+<%= form_for(:session, :url => {:action => 'create', :controller => 'sessions'}, :html => {:class => 'well form-inline'} ) do |f| %>
+    <%= f.text_field :email, :placeholder => "Email" %>
+    <%= f.password_field :password, :placeholder => "Password", :class => 'input-small'   %>
+    <%= f.button "Sign in", {:class => 'btn-small'} %>
 <% end %>
-</li>

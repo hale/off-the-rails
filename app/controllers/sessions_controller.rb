@@ -13,14 +13,14 @@ class SessionsController < ApplicationController
       redirect_to home_user_path user
     else
       #print an error
-      flash.now[:error] = "Invalid email or password."
+      flash[:error] = "Invalid email or password."
       # re-render the home page
-      render "pages/home"
+      redirect_to login_path
     end
   end
 
   def destroy
-    session[:user_id] = nil
+    session.delete(:user_id)
     redirect_to login_url, :notice => "Logged out!"
   end
 

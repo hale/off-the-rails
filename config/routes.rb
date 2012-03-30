@@ -14,6 +14,8 @@ Dating::Application.routes.draw do
   match '/user/:id', :to => 'users#show'
   match '/user/:id/search', :to => 'users#search'
 
+  match '/logout', :to => 'sessions#destroy', :as => :logout
+
   resources :users do
     member do
       get :home

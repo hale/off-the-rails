@@ -1,22 +1,23 @@
+<div class="signup">
+<%= form_for(User.new ) do |f| %>
+  <div class="field">
+    <%= f.text_field :name, :placeholder => 'Name' %>
+  </div>
 
-<%= form_for(User.new) do |f| %>
   <div class="field">
-      <%= f.label :name %>
-      <%= f.text_field :name, :size => 20 %>
+    <%= f.text_field :email, :placeholder => 'Email'%>
   </div>
+
   <div class="field">
-      <%= f.label :email %>
-      <%= f.text_field :email, :size => 20  %>
+    <%= f.password_field :password, :placeholder => 'Password' %>
   </div>
+
   <div class="field">
-      <%= f.label :password %>
-      <%= f.password_field :password, :size => 20  %>
+    <%= f.password_field :password_confirmation, :placeholder => "Password Confirmation"  %>
   </div>
+
   <div class="field">
-      <%= f.label :password_confirmation%>
-      <%= f.password_field :password_confirmation, :size => 20  %>
-  </div>
-  <div class="actions">
-    <%= f.submit "Sign up"%>
+    <%= f.button "Sign up", :class => "btn btn-primary btn-large" %>
   </div>
 <% end %>
+</div>

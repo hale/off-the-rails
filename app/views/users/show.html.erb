@@ -3,17 +3,11 @@
 
   <q class="loud large">"<%= @user.status %>"</q>
   <%= form_for(:user_for_status, :url => {:action => 'update_status',:id => session[:user_id],  :controller => 'users'}) do |f| %>
-    <div class="field">
       <%= f.text_field :status, :size => 25 %>
-    </div>
-    <div class="actions">
       <%= f.submit "Update status" %>
-    </div>
   <% end %>
 
-  <div id='avatar_side'>
-    <%= image_tag @user.avatar.url(:medium) %>
-  </div>
+  <%= image_tag @user.avatar.url(:medium) %>
 
 
   <ul id="info_side">
@@ -59,16 +53,6 @@
 <!-- location -->
 <section>
   <h3>Location: </h3>
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta charset="UTF-8">
-    <style type="text/css">
-      html, body, #map_canvas {
-        margin: 0;
-        padding: 0;
-        height: 200px;
-      }
-    </style>
 <script type="text/javascript"
         src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script type="text/javascript">
@@ -99,7 +83,7 @@
 <section>
   <h3>
     Interests
-    <%= link_to_if( @current_user.id == @user.id, "(add)", new_interest_path ) {} %>
+    <%= link_to_if( @current_user.id == @user.id, "Edit", new_interest_path ) {} %>
   </h3>
   <%= render 'user_interests' %>
 </section

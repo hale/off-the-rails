@@ -1,4 +1,13 @@
 GIT
+  remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
+  revision: e234cf2d07219d8bd4ff1796ac0423502eeb8a26
+  specs:
+    twitter-bootstrap-rails (2.0.4)
+      actionpack (>= 3.1)
+      less-rails (~> 2.1.6)
+      railties (>= 3.1)
+
+GIT
   remote: http://github.com/jeremyolliver/annotate_models.git
   revision: 4d57e4fe6360125f17886168120a48091a268e45
   branch: rake_compatibility
@@ -302,10 +311,6 @@ GEM
       faraday (~> 0.7)
       multi_json (~> 1.0)
       simple_oauth (~> 0.1)
-    twitter-bootstrap-rails (2.0.4)
-      actionpack (>= 3.1)
-      less-rails (~> 2.1.8)
-      railties (>= 3.1)
     tzinfo (0.3.32)
     uglifier (1.2.3)
       execjs (>= 0.3.0)
@@ -349,5 +354,5 @@ DEPENDENCIES
   therubyracer
   thin
   twitter
-  twitter-bootstrap-rails
+  twitter-bootstrap-rails!
   uglifier

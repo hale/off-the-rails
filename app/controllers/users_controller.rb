@@ -34,7 +34,9 @@ def create
 		session[:user_id] = @user.id
     redirect_to home_user_path(@user)
 	else
-    render 'pages/home'
+    # render 'pages/home'
+    flash[:error] = "Please check your details and try again."
+    redirect_to signup_path
 	end
 end
 

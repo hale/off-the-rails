@@ -14,41 +14,36 @@
   <%= stylesheet_link_tag "application", :media => "all" %>
 
 </head>
-<body>
-<div class="container-fluid">
-<div class="row-fluid">
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-          <div class="container-fluid">
-          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href=<%= root_url %>>Coitus Cupid</a>
-          <div class="container-fluid nav-collapse">
-            <ul class="nav">
-                <%= render 'shared/header' %>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
+<body>
+
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <%= link_to "Coitus Cupid", home_user_path(session[:user_id]), :class => 'brand' %> 
+        <ul class="nav">
+          <li><%= link_to "Dashboard", home_user_path(session[:user_id] )  %></li>
+          <li><%= link_to "Show profile", user_path(session[:user_id] )  %></li>
+          <li><%= link_to "New Matches", find_matches_user_path(session[:user_id])  %></li>
+          <li><%= link_to "Inbox", inbox_path %></li>
+          <li class="pull-right"><%= link_to "Logout", logout_path %></li>
+        </ul>
       </div>
     </div>
+  </div>
 
-    <div id="messages">
-      <%= render( :partial => 'shared/flash_messages' ) %>
-    </div>
 
-    <div class="container-fluid">
-      <div class="row-fluid">
+
+    <div class="container">
+      <div class="row">
         <div class="span2">
           <%= yield :sidebar %> 
-        </div><!--/span-->
+        </div>
         <div class="span10">
+          <%= flash_block %>
           <%= yield %>
         </div>
-      </div><!--/row-->
+      </div>
 
 
     <footer>
@@ -61,5 +56,7 @@
 
 
 <%= debug(params) if Rails.env.development? %>
+
+
 </body>
 </html>
