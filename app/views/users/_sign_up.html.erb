@@ -1,23 +1,21 @@
 <div class="signup">
 <%= form_for(User.new ) do |f| %>
-  <div class="field">
     <%= f.text_field :name, :placeholder => 'Name' %>
-  </div>
 
-  <div class="field">
     <%= f.text_field :email, :placeholder => 'Email'%>
-  </div>
 
-  <div class="field">
+
+
     <%= f.password_field :password, :placeholder => 'Password' %>
-  </div>
 
-  <div class="field">
+
+
     <%= f.password_field :password_confirmation, :placeholder => "Password Confirmation"  %>
-  </div>
 
-  <div class="field">
-    <%= f.button "Sign up", :class => "btn btn-primary btn-large" %>
-  </div>
+
+<div class="field">
+    <%= f.button "Sign up", :class => 'btn btn-primary' %>
+</div>
+
 <% end %>
 </div>
