@@ -2,10 +2,12 @@
   <h2><%= @user.name %></h2>
 
   <q class="loud large">"<%= @user.status %>"</q>
+  <% if @user.id == @current_user.id %>
   <%= form_for(:user_for_status, :url => {:action => 'update_status',:id => session[:user_id],  :controller => 'users'}) do |f| %>
       <%= f.text_field :status, :size => 25 %>
       <%= f.submit "Update status" %>
   <% end %>
+  <% end -%>
 
   <%= image_tag @user.avatar.url(:medium) %>
 
