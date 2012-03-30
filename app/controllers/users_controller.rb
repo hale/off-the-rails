@@ -105,7 +105,7 @@ end
   def find_matches
     @user = User.find(session[:user_id])
     # don't include the current user in the possible matches 
-    @users = User.all - [@user]
+    @users = User.all - [@user] - @user.matches
     # associate each user with the number of shared interests they have with @user
     dates = {}
     @users.each do |u|
@@ -115,7 +115,7 @@ end
     sorted_dates = dates.sort_by { |user, count| count }
     suggested_matches = []
     sorted_dates.each { |date| suggested_matches << date.first }
-    suggested_matches = suggested_matches.last(5).reverse
+    suggested_matches = suggested_matches.last(10).shuffle.first(3)
 
     @suggested_matches = []
     suggested_matches.each {|sm| @suggested_matches << User.find(sm) }

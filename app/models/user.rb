@@ -30,8 +30,8 @@ class User < ActiveRecord::Base
 	# User profile attributes
 
 	has_attached_file :avatar, :styles => { :medium => "150x150>",
-																				  :thumb => "50x50>" },
-														 :default_url => 'http://i.imgur.com/qOatH.png'
+																				  :thumb => "50x50>"},
+														 :default_url => 'http://i.imgur.com/sHZ3y.jpg'
 														 # :default_url => "images/avatar_:style.png"
 
 	validates_attachment_size :avatar, :less_than => 5.megabytes  
@@ -79,11 +79,12 @@ class User < ActiveRecord::Base
 		# dating research) a perfect score is given to users with more than 17
 		# similar interests.  
 
-		percentage = (other_user_i & user_i).count / 17.0 * 100
+		percentage = (other_user_i & user_i).count / 7.0 * 100
 		if percentage > 100
 			return 100
 		else
-			return percentage.round(2)
+
+			return (percentage.round(3) + rand*10.round(3)).round(2)
 		end
 		
 

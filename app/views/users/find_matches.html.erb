@@ -1,10 +1,10 @@
 <h3>The following users have similar interests to you.  Add them to your match list and see where fate takes you...</h3>
 
-<ul class="users">
+
   <% @suggested_matches.each do |user| %>
     <%= render user %>
   <% end %>
-</ul>
+
 
 <% content_for :sidebar do %>
   <h3>Want some more?</h3>

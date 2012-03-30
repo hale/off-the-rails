@@ -26,6 +26,7 @@ def make_users
     gender   = ['Male', 'Female'].at((rand(100).odd? ? 0 : 1))
     location = Faker::Lorem.words(1).first.capitalize
     about    = Faker::Lorem.paragraphs(1).first
+    status   = Faker::Lorem.words(6)
     User.create!(name: name,
                  email: email, 
                  password: password, 
@@ -33,7 +34,8 @@ def make_users
                  dob: dob,
                  gender: gender,
                  location: location,
-                 about: about )
+                 about: about,
+                 status: status )
   end
 end
 
