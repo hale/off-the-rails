@@ -5,6 +5,8 @@ gem 'heroku'
 gem 'thin'
 # for creating sample database on the server
 gem 'faker'
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+
 
 group :production, :staging do
   gem "pg"
