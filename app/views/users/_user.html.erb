@@ -18,7 +18,8 @@
       <h2><%= link_to user.name, user %> </h2>
 
       
-      <q><%= user.status %></q>
+      <i><%= tweet @user %></i>
+      <br />
       <ul id="user-ul">
         <h4><li><i class="icon-gift"></i>
             <%=age(user.dob)%></li></h4>

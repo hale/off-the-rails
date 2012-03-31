@@ -3,10 +3,12 @@ class UsersController < ApplicationController
 before_filter :confirm_logged_in, :except => [:create, :destroy]
 
 def show
-	# currently doesn't render if the user is not signed in. needs a before filter.
 	@user = User.find(params[:id])
 
-  @json = User.all.to_gmaps4rails
+  longlat = "#{@user.latitude},#{@user.longitude}"
+
+  @map_string = "http://maps.googleapis.com/maps/api/staticmap?zoom=8&size=370x370&
+markers=color:blue%7C#{ longlat }%7C&sensor=false"
 
 	@current_user = User.find(session[:user_id])
 	if @user == @current_user 

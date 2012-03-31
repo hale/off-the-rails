@@ -27,6 +27,7 @@ def make_users
     location = Faker::Lorem.words(1).first.capitalize
     about    = Faker::Lorem.paragraphs(1).first
     status   = Faker::Lorem.words(6)
+    looking_for = Faker::Lorem.paragraphs(1).first
     User.create!(name: name,
                  email: email, 
                  password: password, 
@@ -35,7 +36,8 @@ def make_users
                  gender: gender,
                  location: location,
                  about: about,
-                 status: status )
+                 status: status,
+                 looking_for: looking_for )
   end
 end
 

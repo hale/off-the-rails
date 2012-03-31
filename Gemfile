@@ -51,7 +51,6 @@ group :production do
 end
 
 gem 'jquery-rails'
-gem 'gmaps4rails'
 gem 'twitter'
 gem 'mobile-fu'
 gem 'geocoder'
