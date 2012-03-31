@@ -1,41 +1,14 @@
+<% content_for :heading do %>
+<div class="page-header">
+    <h1><%= @user.name %>
+    <small><%= @user.status %></small>
+  </h1>        
+</div>
+<% end -%>
+
 <% content_for :sidebar  do %>
-  <h2><%= @user.name %></h2>
 
-  <q>"<%= @user.status %>"</q>
-  <% if @user.id == @current_user.id %>
-  <%= form_for(:user_for_status, :url => {:action => 'update_status',:id => session[:user_id],  :controller => 'users'}) do |f| %>
-      <%= f.text_field :status, :size => 25 %>
-      <%= f.submit "Update status" %>
-  <% end %>
-  <% end -%>
-
-  <%= image_tag @user.avatar.url(:medium) %>
-
-
-  <ul id="info_side">
-    <strong>Age</strong>
-    <li><%= age(@user.dob) %></li>
-    <strong>Gender</strong>
-    <li><%= sanitize(@user.gender) %></li>
-    <strong>Location</strong>
-    <li><%= sanitize(@user.location) %></li>
-    <strong>Member since</strong>
-    <li><%= @user.created_at.to_date%></li>
-    <strong>Match stats</strong>
-    <li><%= render 'shared/match_stats' %></li>
-    <br />
-    <% unless @current_user.id == @user.id %>
-      <strong>Match &#37;</strong>
-      <li><%= "#{@user.match_percentage(@current_user)}%"%></li>
-      <br />
-      <% if @current_user.match?(@user) %>
-        <li><%= render 'remove_match' %></li>
-        <li>Click to remove from your match list</li>
-      <% else %>
-        <li><%= render 'add_match' %></li>
-        <li>Click to add to your match list</li>
-      <% end %>  
-    <% end %>
+  <%= render 'users/user' %>
 
 <% end %>
 <!-- Rest of content renders into main right section -->
@@ -48,7 +21,7 @@
 <section>
   <% if (@user.twitter) then %>
     <h3>Your Latest Tweet:</h3>
-    <%= Twitter.user_timeline(@user.twitter).first.text %>
+    <%= tweet @user %>
   <% end -%>
 </section>
 

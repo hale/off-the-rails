@@ -1,13 +1,17 @@
-<!-- Should also contain: match percentage, one of their interests.  Styling. -->
+<% user = @user if user.nil? %>
+<% profile = user == User.find(session[:user_id]) %>
 <div id="user-card" class="span4 well">
   <div class="row">
 
+    
     <div class="span2">
       <%= image_tag user.avatar.url(:medium) %>
-              <%= form_for User.find(session[:user_id]).relationships.build(:match_id => user.id) do |f| %>
-          <div><%= f.hidden_field :match_id %></div>
-          <%= f.button "Add", :class => 'btn btn-success btn-mini' %>
-        <% end %>      
+      <% unless profile %> <!-- don't show the add button on the user's own profile -->
+        <%= form_for User.find(session[:user_id]).relationships.build(:match_id => user.id) do |f| %>
+            <div><%= f.hidden_field :match_id %></div>
+            <%= f.button "Add", :class => 'btn btn-success btn-mini' %>
+        <% end %>
+      <% end -%>      
     </div>
 
     <div class="span2">

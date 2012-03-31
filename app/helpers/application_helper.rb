@@ -28,4 +28,11 @@ module ApplicationHelper
     now.year - dob.year - ((now.month > dob.month || (now.month == dob.month && now.day >= dob.day)) ? 0 : 1)
   end
 
+  # bad code that was in the view, moved here to be refactored at some point. 
+  # Should not rely on the model or user timeline. Gets the latest tweet for a user
+  def tweet(user)
+    Twitter.user_timeline(user.twitter).first.text 
+  end
+
+
 end

@@ -17,7 +17,6 @@
 
 <body>
   <div class="container">
-    <br />
    <div class="navbar">
     <div class="navbar-inner">
       <div class="container">
@@ -27,21 +26,34 @@
           <li><%= link_to "Show profile", user_path(session[:user_id] )  %></li>
           <li><%= link_to "New Matches", find_matches_user_path(session[:user_id])  %></li>
           <li><%= link_to "Inbox", inbox_path %></li>
-          <li class="pull-right"><%= link_to "Logout", logout_path %></li>
         </ul>
+        
+        <ul class="nav pull-right">
+          <li class="divider-vertical"></li>
+          <li><%= link_to "Logout", logout_path %></li>
+        </ul>
+        <%= render('users/search_form') %>
       </div>
 
   </div>
 </div>
 
-  <div class="row">
-    <div class="span4">
-      <%= yield :sidebar %> 
-    </div>
-    <div class="span8">
-      <%= flash_block %>
-      <%= yield %>
-    </div>
+
+<div class="row"><div class="span12"><%= flash_block %></div></div>
+
+<div class="row">
+<div class="span12">
+  <%= yield :heading %>
+</div>
+</div>
+
+<div class="row">
+  <div class="span6">
+    <%= yield :sidebar %> 
+  </div>
+  <div class="span6">
+    <%= yield %>
+  </div>
   </div>
 
 
