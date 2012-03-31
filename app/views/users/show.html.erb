@@ -9,27 +9,31 @@
 <% content_for :sidebar  do %>
 
   <%= render 'users/user' %>
+  <div class="span4 well">
   <%= image_tag @map_string %>
+</div>
 
 <% end %>
 <!-- Rest of content renders into main right section -->
   
 <!-- about me -->
+<div class="well">
 <h3>I am...</h3>
 <p><%= @user.about.nil? ? default_about_me : sanitize(@user.about) %><p>
 
   <!-- looking for -->
 <h3>I am looking for...</h3>
 <p><%= @user.looking_for %></p>
+</div>
 
 <!-- interests -->
-<section>
+<div class="well">
   <h3>
     Interests
     <%= link_to_if( @current_user.id == @user.id, "Edit", new_interest_path ) {} %>
   </h3>
   <%= render 'user_interests' %>
-</section>
+</div>
 
 
 

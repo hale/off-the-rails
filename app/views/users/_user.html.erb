@@ -31,8 +31,9 @@
             <%=user.location%></li></h4>
       
       </ul>  
-
+        <% unless profile %>
         <h3><%=user.match_percentage(User.find(session[:user_id]))%>%</h3>    
+        <% end -%>
     </div>
 
   </div>
