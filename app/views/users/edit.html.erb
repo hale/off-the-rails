@@ -48,7 +48,7 @@
 <div class="control-group">
     <%= f.label :avatar, :class => "control-label" %>
     <div class="controls">
-      <%= f.text_field :avatar %>
+      <%= f.file_field :avatar %>
     </div>
 </div>
 
@@ -65,34 +65,9 @@
     </div>
 </div>
 
+<br />
 
-
-    </div>
-
-    <div class="span5 offset1">
-      <h2>Details</h2>
-
-      <div class="control-group">
-    <%= f.label :about, :class => "control-label" %>
-    <div class="controls">
-      <%= f.text_area :about, :class => "span5", :rows => 5 %>
-      <p class="help-block">Here's some help</p>
-    </div>
-</div>
-
-<div class="control-group">
-    <%= f.label :looking_for, :class => "control-label" %>
-    <div class="controls">
-      <%= f.text_area :looking_for, :class => "span5", :rows => 5 %>
-    </div>
-</div>
-      
-    </div>
-
-
-  </div>
-
-        <h2>Account Settings</h2>
+  <h2>Account Settings</h2>
 
         <div class="control-group">
     <%= f.label :email, :class => "control-label" %>
@@ -101,22 +76,60 @@
     </div>
 </div>
 
-<div class="control-group">
+<div class="control-group success">
     <%= f.label :password, :class => "control-label" %>
     <div class="controls">
       <%= f.password_field :password %>
     </div>
 </div>
 
-<div class="control-group">
+<div class="control-group error">
     <%= f.label :password_confirmation, "Confirm", :class => "control-label" %>
     <div class="controls">
       <%= f.password_field :password_confirmation %>
+      <span class="help-inline">Please confirm changes with your password</span>
     </div>
 </div>
 
 
 
+    </div>
+
+    <div class="span5 offset1">
+      <h2> Profile </h2>
+      <p>
+        You can use markdown in these fields to format your text.  For help on how to do this, see <%= link_to "this tutorial", "http://www.simpleeditions.com/59001/markdown-an-introduction" %>.
+      </p>
+
+      <div class="control-group">
+    <%= f.label :about, "Who you are", :class => "control-label" %>
+    <div class="controls">
+      <%= f.text_area :about, :class => "span5", :rows => 15 %>
+    </div>
+</div>
+
+<div class="control-group">
+    <%= f.label :looking_for, "What you're looking for", :class => "control-label" %>
+    <div class="controls">
+      <%= f.text_area :looking_for, :class => "span5", :rows => 15 %>
+    </div>
+</div>
+
+
+
+
+      
+    </div>
+
+
+  </div>
+
+      
+
+
+<div class="form-actions">
+  <%= f.button "Update", :class => "btn btn-primary" %>
+</div>
 
 
 
@@ -126,9 +139,7 @@
 
   
 
-<div class="form-actions">
-  <%= f.button "Update", :class => "btn btn-primary" %>
-</div>
+
 
 
 </fieldset>

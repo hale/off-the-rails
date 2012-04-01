@@ -6,7 +6,7 @@ gem 'thin'
 # for creating sample database on the server
 gem 'faker'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
-
+gem 'redcarpet'
 
 group :production, :staging do
   gem "pg"

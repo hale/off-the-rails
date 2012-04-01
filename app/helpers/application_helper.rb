@@ -34,5 +34,16 @@ module ApplicationHelper
     Twitter.user_timeline(user.twitter).first.text 
   end
 
+  # parses mardkwon formatted text into HTML
+  def markdown(text)
+    options = [ :no_images => true,
+                :filter_html => true,
+                :safe_links_only => true,
+                :hard_wrap => true
+              ]
+
+    renderer = Redcarpet::Render::HTML.new(*options)
+    Redcarpet::Markdown.new( renderer, :no_intra_emphasis => true).render( text ).html_safe
+  end
 
 end
