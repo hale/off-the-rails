@@ -1,5 +1,9 @@
 <% if @users.any? %>
   <ul class="users">
-    <%= render @users %>
+    <% @users.each do |user| %>
+      <%= render user %>
+    <% end -%>
   </ul>
+<% else %>
+  <h2>No results found.</h2>
 <% end %>

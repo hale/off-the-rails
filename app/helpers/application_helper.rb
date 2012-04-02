@@ -31,7 +31,17 @@ module ApplicationHelper
   # bad code that was in the view, moved here to be refactored at some point. 
   # Should not rely on the model or user timeline. Gets the latest tweet for a user
   def tweet(user)
-    Twitter.user_timeline(user.twitter).first.text 
+    # 'no tweet
+      if user.twitter.nil?
+        "Ask #{user.name} to set up twitter!"
+      else
+        begin
+          Twitter.user_timeline(user.twitter).first.text 
+        rescue Exception
+          'Twitter is currently unavailable'
+        end
+      end
+    
   end
 
   # parses mardkwon formatted text into HTML

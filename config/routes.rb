@@ -10,9 +10,10 @@ Dating::Application.routes.draw do
   match '/signup',  :to => 'pages#home'
   match '/inbox',   :to => 'messages#index', :as => :inbox
   match '/outbox',  :to => 'messages#outbox', :as => :outbox
-  match '/message/:id', :to => 'messages#show'
-  match '/user/:id', :to => 'users#show'
-  match '/user/:id/search', :to => 'users#search'
+
+  # match '/message/:id', :to => 'messages#show'
+  # match '/user/:id', :to => 'users#show'
+  # match '/user/:id/search', :to => 'users#search'
 
   match '/logout', :to => 'sessions#destroy', :as => :logout
 
@@ -23,6 +24,10 @@ Dating::Application.routes.draw do
       get :find_matches
       resources :interests
     end
+    collection do
+      get 'search'
+    end
+
     resources :messages
   end
   

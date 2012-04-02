@@ -25,8 +25,8 @@ markers=color:blue%7C#{ longlat }%7C&sensor=false"
 end
 
 def index
-	@title = "All users"
-	# @users = User.all
+  @title = "All users"
+  @users = User.all
 end
 
 def create
@@ -97,11 +97,8 @@ def destroy
 end
 
 def search
-	if params[:user][:name]
-  		@users = User.find(:all, :conditions => ["name LIKE ?","%#{params[:user][:name]}%"])
-  	else
-  		@users = User.find(:all)
-  	end
+  # TODO this
+  @users = User.search( params[:user][:name] )
 end
 
   def find_matches

@@ -84,14 +84,9 @@ class User < ActiveRecord::Base
 		if percentage > 100
 			return 100
 		else
-
 			return (percentage.round(3) + rand*10.round(3)).round(2)
 		end
-		
-
 	end
-
-
 
 # Match list methods
 	def match?(other_user)

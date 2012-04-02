@@ -6,7 +6,10 @@ gem 'thin'
 # for creating sample database on the server
 gem 'faker'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+# parses markdown to html
 gem 'redcarpet'
+# exposes full text search capabilities from PostgreSQL
+gem 'texticle', '~> 2.0', :require => 'texticle/rails'
 
 group :production, :staging do
   gem "pg"
@@ -40,6 +43,7 @@ group :test, :development do
     # gem 'annotate', '> 2.4.0'
     gem 'annotate', :git => 'http://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
     gem 'irbtools-more', :require => false
+    gem 'ruby-debug19'
 end
 
 group :test do
