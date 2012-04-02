@@ -28,11 +28,11 @@
   <p><%= markdown( @user.looking_for ) %></p>
 </div>
 
-<div class="well">
-  <h3>
+  <h2>
     Interests
-    <%= link_to_if( @current_user.id == @user.id, "Edit", new_interest_path ) {} %>
+    <%= link_to_if( @current_user.id == @user.id, "(edit)", new_interest_path ) {} %>
   </h3>
+<div class="well">
   <%= render 'user_interests' %>
 </div>
 

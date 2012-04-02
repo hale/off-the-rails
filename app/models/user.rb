@@ -21,8 +21,6 @@ class User < ActiveRecord::Base
 												 :length => { :within => 6..25} 
 												 # :on => :create
 
-	validates :about,			:length => { :maximum => 100000 }
-
 
 
 
