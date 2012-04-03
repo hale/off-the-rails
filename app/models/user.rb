@@ -28,10 +28,18 @@ class User < ActiveRecord::Base
 
 	# User profile attributes
 
-	has_attached_file :avatar, :styles => { :medium => "150x150>",
-																				  :thumb => "50x50>"},
-														 :default_url => 'http://i.imgur.com/sHZ3y.jpg'
-														 # :default_url => "images/avatar_:style.png"
+	has_attached_file :avatar, 
+		:storage => :s3,
+		:bucket => ENV['S3_BUCKET_NAME'],
+		:s3_credentials => {
+			:access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+			:secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+		}
+		:styles => { 
+			:medium => "150x150>",
+			:thumb => "50x50>"
+		},
+		:default_url => 'http://i.imgur.com/sHZ3y.jpg'
 
 	validates_attachment_size :avatar, :less_than => 5.megabytes  
 	validates_attachment_content_type :avatar, :content_type => ['image/jpeg', 'image/png']  

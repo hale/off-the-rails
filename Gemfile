@@ -10,6 +10,8 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 gem 'redcarpet'
 # exposes full text search capabilities from PostgreSQL
 gem 'texticle', '~> 2.0', :require => 'texticle/rails'
+# for uploading files to amazon s3 through paperclip
+gem 'aws-s3'
 
 group :production, :staging do
   gem "pg"
@@ -56,7 +58,7 @@ end
 
 gem 'jquery-rails'
 gem 'twitter'
-gem 'mobile-fu'
+# gem 'mobile-fu'
 gem 'geocoder'
 gem 'randumb' # lets you get random records efficiently
 

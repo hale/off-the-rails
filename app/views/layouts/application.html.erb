@@ -16,10 +16,12 @@
 </head>
 
 <body>
-  <div class="container">
-   <div class="navbar">
+<div class="container">
+
+  <div class="navbar">
     <div class="navbar-inner">
       <div class="container">
+
         <%= link_to "Coitus Cupid", home_user_path(session[:user_id]), :class => 'brand' %> 
         <ul class="nav">
           <li><%= link_to "Dashboard", home_user_path(session[:user_id] )  %></li>
@@ -33,27 +35,31 @@
           <li><%= link_to "Logout", logout_path %></li>
         </ul>
         <%= render('users/search_form') %>
+
       </div>
-
+    </div>
   </div>
-</div>
 
 
-<div class="row"><div class="span12"><%= flash_block %></div></div>
-
-<div class="row">
-<div class="span12">
-  <%= yield :heading %>
-</div>
-</div>
-
-<div class="row">
-  <div class="span5">
-    <%= yield :sidebar %> 
+  <div class="row">
+    <div class="span12">
+      <%= flash_block %>
+    </div>
   </div>
-  <div class="span7">
-    <%= yield %>
+
+  <div class="row">
+    <div class="span12">
+      <%= yield :heading %>
+    </div>
   </div>
+
+  <div class="row">
+    <div class="span5">
+      <%= yield :sidebar %> 
+    </div>
+    <div class="span7">
+      <%= yield %>
+    </div>
   </div>
 
 
