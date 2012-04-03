@@ -1,8 +1,12 @@
-## Welcome fellow Off The Railers! :D
-This is our project GIT repo for the 
-CS2512 Group Assessment.
-Our application will be dating based. 
+## Coitus Cupid
+Welcome to the project page for _Coitus Cupid_.  Please read below for instructions for using or developing for this app.
 *****************************************
+
+### Development
+Developing locally requires the installation of a number of things.
+
+#### Profile pictures
+Profile pictures are uploaded to Amazon S3. (I don't want to put my secret key here obviously...not sure how to fo about this.)
 
 ###Members of the group:
 + Philip Hale

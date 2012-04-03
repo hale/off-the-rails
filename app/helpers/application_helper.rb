@@ -46,6 +46,8 @@ module ApplicationHelper
 
   # parses mardkwon formatted text into HTML
   def markdown(text)
+    return '' if text.nil?
+    
     options = [ :no_images => true,
                 :filter_html => true,
                 :safe_links_only => true,

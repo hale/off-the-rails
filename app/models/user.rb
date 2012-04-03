@@ -34,7 +34,8 @@ class User < ActiveRecord::Base
 		:s3_credentials => {
 			:access_key_id => ENV['AWS_ACCESS_KEY_ID'],
 			:secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
-		}
+		},
+		:path => "/:style/:id/:filename"
 		:styles => { 
 			:medium => "150x150>",
 			:thumb => "50x50>"

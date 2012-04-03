@@ -12,6 +12,7 @@ gem 'redcarpet'
 gem 'texticle', '~> 2.0', :require => 'texticle/rails'
 # for uploading files to amazon s3 through paperclip
 gem 'aws-s3'
+gem 'aws-sdk'
 
 group :production, :staging do
   gem "pg"
