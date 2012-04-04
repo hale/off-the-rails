@@ -8,7 +8,8 @@
 
 <% content_for :sidebar  do %>
 
-  <%= render 'users/user' %>
+  <% user = @user %>
+  <%= render user %>
   
   <div class="span4 well">
     <%= image_tag @map_string %>

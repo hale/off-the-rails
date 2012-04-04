@@ -11,8 +11,8 @@ def create
 
   @current_user.add_match! @user
   TimelineUpdates.new(:user_id => session[:user_id], :message => " added #{@user.name} as his/her match.").save
-  flash[:success] = "#{@user.name} has been added to your match list!"
-  redirect_to home_user_path @user
+  flash[:success] = "#{@user.name} has been added to your match list."
+  redirect_to @user
 end
 
 def new
@@ -26,6 +26,7 @@ def destroy
   @current_user = User.find session[:user_id]
 
   @current_user.remove_match! @user
+  flash[:success] = "#{@user.name} has been removed from your match list."
   redirect_to @user
 end
   

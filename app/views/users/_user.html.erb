@@ -1,26 +1,40 @@
-<% user = @user if user.nil? %>
-<% profile = user == User.find(session[:user_id]) %>
+<% # @user = @current_user if @user.nil? %>
+<% own_profile = (user == @current_user) %>
+
 <div id="user-card" class="span4 well">
   <div class="row">
-
     
     <div class="span2">
+      <!-- Profile image -->
       <%= image_tag user.avatar.url(:medium) %>
-      <% unless profile %> <!-- don't show the add button on the user's own profile -->
-        <% if @user.match? user %>
-          <%= render 'add_match' %>
-        <% else %>
-          <%= render 'remove_match' %>
+
+      <!-- Add/Remove button-->
+      <% unless own_profile %> <!-- don't show the add button on the user's own profile -->
+        <% if @current_user.match? user %>
+          <!-- Remove match -->
+          <%= form_for @current_user.relationships.find_by_match_id(user.id),
+             :html => { :method => :delete } do |f| %>
+            <%= f.button "Remove", :class => 'btn btn-danger btn-mini' %>
+          <% end %>
+        <% else %>          
+        <!-- Add match -->
+          <%= form_for @current_user.relationships.
+                          build(:match_id => user.id) do |f| %>
+            <div><%= f.hidden_field :match_id %></div>
+            <%= f.button "Add", :class => 'btn btn-success btn-mini' %>
+          <% end %>
         <% end -%>
       <% end -%>      
-    </div>
+    </div><!-- end span2 -->
 
     <div class="span2">
+      <!-- Name and Tweet -->
       <h2><%= link_to user.name, user %> </h2>
-
-      
       <i><%= tweet user %></i>
+      
       <br />
+
+      <!-- Age / Gender / Location -->
       <ul id="user-ul">
         <h4><li><i class="icon-gift"></i>
             <%=age(user.dob)%></li></h4>
@@ -31,11 +45,16 @@
         <h4><li><i class="icon-screenshot"></i>
             <%=user.location%></li></h4>
       
-      </ul>  
-        <% unless profile %>
-        <h3><%=user.match_percentage(User.find(session[:user_id]))%>%</h3>    
-        <% end -%>
-    </div>
+      </ul> 
+
+       <!-- Match percentage -->
+       <% unless own_profile %>
+         <h3>
+            <%= user.match_percentage( @current_user ) %>
+            %
+        </h3>    
+       <% end -%>
+    </div><!-- end span2 -->
 
   </div>
 </div>
