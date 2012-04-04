@@ -7,7 +7,7 @@
     <div class="span2">
       <!-- Profile image -->
       <%= image_tag user.avatar.url(:medium) %>
-
+      
       <!-- Add/Remove button-->
       <% unless own_profile %> <!-- don't show the add button on the user's own profile -->
         <% if @current_user.match? user %>
@@ -24,7 +24,7 @@
             <%= f.button "Add", :class => 'btn btn-success btn-mini' %>
           <% end %>
         <% end -%>
-      <% end -%>      
+      <% end -%>    
     </div><!-- end span2 -->
 
     <div class="span2">
@@ -32,7 +32,7 @@
       <h2><%= link_to user.name, user %> </h2>
       <i><%= tweet user %></i>
       
-      <br />
+      <br /><br />
 
       <!-- Age / Gender / Location -->
       <ul id="user-ul">

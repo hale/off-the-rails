@@ -92,7 +92,7 @@ def matches
 
   @current_user = User.find(session[:user_id])
 	@user = User.find(params[:id])
-  
+
 	@users = @user.matches
 	render 'show_matches'
 end
@@ -115,6 +115,7 @@ end
 
 def search
   # uses native postgresql indexing.
+  @current_user = User.find(session[:user_id])
   @users = User.search( params[:user][:name] )
 end
 

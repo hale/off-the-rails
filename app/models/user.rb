@@ -66,6 +66,8 @@ class User < ActiveRecord::Base
 	end
 
 	def shared_interests(other_user)
+	# TODO Cache this result and only run it every day / hour
+
 		user_i = []
 		self.interests.each { |i| user_i << i.name }
 
@@ -76,6 +78,8 @@ class User < ActiveRecord::Base
 	end
 
 	def match_percentage(other_user)
+		# TODO Cache this result and only run it every day
+
 		user_i = []
 		self.interests.each { |i| user_i << i.name }
 
@@ -91,7 +95,7 @@ class User < ActiveRecord::Base
 		if percentage > 100
 			return 100
 		else
-			return (percentage.round(3) + rand*10.round(3)).round(2)
+			return (percentage + rand*10).round
 		end
 	end
 
