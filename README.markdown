@@ -1,17 +1,15 @@
-## Welcome fellow Off The Railers! :D
-This is our project GIT repo for the 
-CS2512 Group Assessment.
-Our application will be dating based. 
+## Welcome!
+This is the repository for Coitus Cupid, a rails-powered dating application developed at the University of Aberdeen.
 *****************************************
 
-###Members of the group:
-+ Philip Hale
-+ Joseph Heskett
-+ Giedrius Lescinskas
+### Contributors:
++ Philip Hale (@hale)
++ Joseph Heskett (@josephheskett)
++ Giedrius Lescinskas (@logius)
 
-###Versions:
-+ Ruby: 1.9.3
-+ Rails: 3.2.1
-+ Gems/etc considered to be up-to-date
+**For further information, please see the wiki.  The issues page lists current problems and planned features.
+
+### Coming soon
++ Installation instructions for developers.
 
 [Markdown reference for editing this page](http://support.mashery.com/docs/customizing_your_portal/Markdown_Cheat_Sheet)
