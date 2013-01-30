@@ -5,25 +5,24 @@
   <h3><%= @status %></h3> 
 <% end %>
 <%= render('users/update_status') %>
-<%= render('users/search_form') %>
 <%= render('timeline/list') %>
 
 
 
 
 <% content_for :sidebar  do %>
-  <h2><%= @user.name %></h2>
+  <h2><%= @current_user.name %></h2>
   <div id='avatar_side'>
-    <%= image_tag @user.avatar.url(:medium) %>
+    <%= image_tag @current_user.avatar.url(:medium) %>
   </div>
 
     <ul id="info_side">
     <strong>Age</strong>
-    <li><%= age(@user.dob) %></li>
+    <li><%= age(@current_user.dob) %></li>
     <strong>Gender</strong>
-    <li><%= @user.gender %></li>
+    <li><%= @current_user.gender %></li>
     <strong>Location</strong>
-    <li><%= @user.location %></li>
+    <li><%= @current_user.location %></li>
     <strong>Match stats</strong>
     <li><%= render 'shared/match_stats' %></li>
     <br />

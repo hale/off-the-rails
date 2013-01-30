@@ -1,4 +1,4 @@
-<%= form_for @current_user.relationships.find_by_match_id(@user),
+<%= form_for @current_user.relationships.find_by_match_id(user),
              :html => { :method => :delete } do |f| %>
-  <%= f.submit "Remove" %>
+  <%= f.button "Remove", :class => 'btn btn-danger btn-mini' %>
 <% end %>

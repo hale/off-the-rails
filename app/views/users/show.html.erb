@@ -1,94 +1,41 @@
+<% content_for :heading do %>
+<div class="page-header">
+    <h1><%= @user.name %>
+    <small><%= @user.status %></small>
+  </h1>        
+</div>
+<% end -%>
+
 <% content_for :sidebar  do %>
-  <h2><%= @user.name %></h2>
 
-  <q>"<%= @user.status %>"</q>
-  <% if @user.id == @current_user.id %>
-  <%= form_for(:user_for_status, :url => {:action => 'update_status',:id => session[:user_id],  :controller => 'users'}) do |f| %>
-      <%= f.text_field :status, :size => 25 %>
-      <%= f.submit "Update status" %>
-  <% end %>
-  <% end -%>
-
-  <%= image_tag @user.avatar.url(:medium) %>
-
-
-  <ul id="info_side">
-    <strong>Age</strong>
-    <li><%= age(@user.dob) %></li>
-    <strong>Gender</strong>
-    <li><%= sanitize(@user.gender) %></li>
-    <strong>Location</strong>
-    <li><%= sanitize(@user.location) %></li>
-    <strong>Member since</strong>
-    <li><%= @user.created_at.to_date%></li>
-    <strong>Match stats</strong>
-    <li><%= render 'shared/match_stats' %></li>
-    <br />
-    <% unless @current_user.id == @user.id %>
-      <strong>Match &#37;</strong>
-      <li><%= "#{@user.match_percentage(@current_user)}%"%></li>
-      <br />
-      <% if @current_user.match?(@user) %>
-        <li><%= render 'remove_match' %></li>
-        <li>Click to remove from your match list</li>
-      <% else %>
-        <li><%= render 'add_match' %></li>
-        <li>Click to add to your match list</li>
-      <% end %>  
-    <% end %>
+  <% user = @user %>
+  <%= render user %>
+  
+  <div class="span4 well">
+    <%= image_tag @map_string %>
+  </div>
 
 <% end %>
 <!-- Rest of content renders into main right section -->
   
-<!-- about me -->
-<h3>About</h3>
-<p><%= @user.about.nil? ? default_about_me : sanitize(@user.about) %><p>
 
-<!-- twitter -->
-<section>
-  <% if (@user.twitter) then %>
-    <h3>Your Latest Tweet:</h3>
-    <%= Twitter.user_timeline(@user.twitter).first.text %>
-  <% end -%>
-</section>
+<h2>About Me</h2>
+<div class="well">
+  <p><%= markdown( @user.about ) %><p>
+</div>
 
-<!-- location -->
-<section>
-  <h3>Location: </h3>
-<script type="text/javascript"
-        src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script type="text/javascript">
-      var map;
-      var latlong = new google.maps.LatLng(<%= @user.latitude %>,<%= @user.longitude %>);
-      function initialize() {
-        var myOptions = {
-          zoom: 12,
-          center: latlong,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        map = new google.maps.Map(document.getElementById('map_canvas'),
-            myOptions);
-            
-       marker = new google.maps.Marker({
-       	 position: latlong,
-   		 map: map,
-   		 title:"Previous Location"
- 		 });
-      }
+<h2>About My Partner</h2>
+<div class="well">
+  <p><%= markdown( @user.looking_for ) %></p>
+</div>
 
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-    <div id="map_canvas"></div>
-</section>
-
-<!-- interests -->
-<section>
-  <h3>
+  <h2>
     Interests
-    <%= link_to_if( @current_user.id == @user.id, "Edit", new_interest_path ) {} %>
+    <%= link_to_if( @current_user.id == @user.id, "(edit)", new_interest_path ) {} %>
   </h3>
+<div class="well">
   <%= render 'user_interests' %>
-</section>
+</div>
 
 
 

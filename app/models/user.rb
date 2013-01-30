@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
 	attr_accessible :name, :email, :password, :password_confirmation, :avatar,
-									:dob, :gender, :location, :about, :latitude, :longitude, :twitter, :status
+									:dob, :gender, :location, :about, :latitude, :longitude,
+									:twitter, :status, :looking_for
 
 	#Rails 3.1 built in authentication
 	has_secure_password
@@ -20,8 +21,6 @@ class User < ActiveRecord::Base
 												 :length => { :within => 6..25} 
 												 # :on => :create
 
-	validates :about,			:length => { :maximum => 100000 }
-
 
 
 
@@ -29,10 +28,19 @@ class User < ActiveRecord::Base
 
 	# User profile attributes
 
-	has_attached_file :avatar, :styles => { :medium => "150x150>",
-																				  :thumb => "50x50>"},
-														 :default_url => 'http://i.imgur.com/sHZ3y.jpg'
-														 # :default_url => "images/avatar_:style.png"
+	has_attached_file :avatar, 
+		:storage => :s3,
+		:bucket => ENV['S3_BUCKET_NAME'],
+		:s3_credentials => {
+			:access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+			:secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+		},
+		:path => "/:style/:id/:filename",
+		:styles => { 
+			:medium => "150x150>",
+			:thumb => "50x50>"
+		},
+		:default_url => 'http://i.imgur.com/sHZ3y.jpg'
 
 	validates_attachment_size :avatar, :less_than => 5.megabytes  
 	validates_attachment_content_type :avatar, :content_type => ['image/jpeg', 'image/png']  
@@ -58,6 +66,8 @@ class User < ActiveRecord::Base
 	end
 
 	def shared_interests(other_user)
+	# TODO Cache this result and only run it every day / hour
+
 		user_i = []
 		self.interests.each { |i| user_i << i.name }
 
@@ -68,6 +78,8 @@ class User < ActiveRecord::Base
 	end
 
 	def match_percentage(other_user)
+		# TODO Cache this result and only run it every day
+
 		user_i = []
 		self.interests.each { |i| user_i << i.name }
 
@@ -83,14 +95,9 @@ class User < ActiveRecord::Base
 		if percentage > 100
 			return 100
 		else
-
-			return (percentage.round(3) + rand*10.round(3)).round(2)
+			return (percentage + rand*10).round
 		end
-		
-
 	end
-
-
 
 # Match list methods
 	def match?(other_user)
@@ -105,13 +112,9 @@ class User < ActiveRecord::Base
 		relationships.find_by_match_id(other_user.id).destroy
 	end
 
-# Location services
-	acts_as_gmappable :process_geocoding => false, :msg => "Sorry, not even Google could figure out where that is"
-
-	def gmaps4rails_address
-  	#"#{self.location}"
-  	"#{self.latitude}, #{self.longitude}"
-	end
+	# Maps
+	geocoded_by :location
+	after_validation :geocode
 
 
 

@@ -18,48 +18,47 @@
 <body>
   <div class="container">
     <br />
+    
 
-    <div class="row span8 well"> <!-- signup box -->
-      <div class="row">
-      <div class="span4 page-header">
-        <h1>Coitus Cupid
-          <small>Dating redefined</small>
-        </h1>        
-      </div>
-
-      <div class="span4 pull-right">
-        <%= render 'sessions/login' %>
-      </div>
-    </div>
+    <div class="row"> <!-- signup box -->
+      <div class="span8 offset2 well">
 
 
-      <%= flash_block %>
 
-      <div class="row">
-        <div class="span4">
-          <%= image_tag "landing_logo.png", :alt => "sillhouette" %>
+
+          <div class="row">
+            <div class="span4 page-header">
+              <h1>Coitus Cupid
+                <small>Dating redefined</small>
+              </h1>        
+            </div>
+            <div class="span4 pull-right">
+              <%= render 'sessions/login' %>
+            </div>
+          </div>
+          <%= flash_block %>
+          <div class="row">
+            <div class="span4">
+              <%= image_tag "landing_logo.png", :alt => "sillhouette" %>
+            </div>
+            <div class="span4">
+              <br /><br /><br />
+              <h2>See where fate might take you...</h2>
+              <br />
+              <%= render 'users/sign_up' %>
+            </div>
+          </div>
+
         </div>
-        <div class="span4">
-          <br /><br /><br />
-          <h2>See where fate might take you...</h1>
-          <br />
-          <%= render 'users/sign_up' %>  
-          
         </div>
-      </div>
-    </div>
-
-  </div>
 
 
 
 
-
-
-
-
-<!-- Loads faster with JS at the end -->
-<%= javascript_include_tag "application" %>
-<!-- <%= debug(params) if Rails.env.development? %> -->
+</div>
+<br />
+  <!-- Loads faster with JS at the end -->
+  <%= javascript_include_tag "application" %>
+  <!-- <%= debug(params) if Rails.env.development? %> -->
 </body>
 </html>

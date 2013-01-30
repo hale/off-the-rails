@@ -1,5 +1,5 @@
 <% if @users.any? %>
-  <ul class="users">
-    <%= render @users %>
-  </ul>
+  <% @users.each do |user| %>
+    <%= render user %>
+    <% end -%>
 <% end %>

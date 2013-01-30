@@ -3,16 +3,21 @@ class UsersController < ApplicationController
 before_filter :confirm_logged_in, :except => [:create, :destroy]
 
 def show
-	# currently doesn't render if the user is not signed in. needs a before filter.
 	@user = User.find(params[:id])
+  @current_user = User.find(session[:user_id])
 
-  @json = User.all.to_gmaps4rails
-
-	@current_user = User.find(session[:user_id])
-	if @user == @current_user 
-		flash.now[:info] = "This is your profile page. #{view_context.link_to('Click to edit profile', edit_user_path(@current_user))}".html_safe
-	end
   @title = @user.name
+
+  if @user == @current_user 
+    flash.now[:info] = "This is your profile page. #{view_context.link_to('Click to edit profile', edit_user_path(@current_user))}".html_safe
+  end
+
+  longlat = "#{@user.latitude},#{@user.longitude}"
+
+  @map_string = "http://maps.googleapis.com/maps/api/staticmap?zoom=8&size=370x370&
+markers=color:blue%7C#{ longlat }%7C&sensor=false"
+
+	
   
   Twitter.configure do |config|
     config.consumer_key = "MjVwLYH2g497RAIZqBAOtQ"
@@ -23,8 +28,9 @@ def show
 end
 
 def index
-	@title = "All users"
-	# @users = User.all
+  @title = "All users"
+  @users = User.all
+  @current_user = User.find(session[:user_id])
 end
 
 def create
@@ -41,11 +47,14 @@ def create
 end
 
 def home
-	@user = User.find(session[:user_id])
-	@status = @user.status
+  @current_user = User.find(session[:user_id])
+  @user = @current_user
+	@status = @current_user.status
 end
 
 def update_status
+  @current_user = User.find(session[:user_id])
+
 	@user_for_status = User.find(session[:user_id])
 	 if @user_for_status && @user_for_status.update_attribute(:status, params[:user_for_status][:status])
 	 	TimelineUpdates.create(:user_id => @user_for_status.id, :message => " posted new status message: #{params[:user_for_status][:status]}.")
@@ -58,11 +67,15 @@ def update_status
 end
 
 def edit
+  @current_user = User.find(session[:user_id])
+
 	@user = User.find(params[:id])
 	@title = "#{@user.name} - Edit"	
 end
 
 def update
+  @current_user = User.find(session[:user_id])
+
 	@user = User.find(params[:id])
 	if @user.update_attributes(params[:user])
 		TimelineUpdates.new(:user_id => session[:user_id], :message => " updated his/her profile").save
@@ -75,15 +88,21 @@ def update
 end
 
 def matches
-	@title = 'Matches'
+  @title = 'Matches'
+
+  @current_user = User.find(session[:user_id])
 	@user = User.find(params[:id])
+
 	@users = @user.matches
 	render 'show_matches'
 end
 
 def interested
-	@title = 'Interested Users'
-	@user = User.find(params[:id])
+  @title = 'Interested Users'
+
+  @current_user = User.find(session[:user_id])
+  @user = User.find(params[:id])
+	
 	@users = @user.interested_users
 	render 'show_matches'
 end
@@ -95,33 +114,36 @@ def destroy
 end
 
 def search
-	if params[:user][:name]
-  		@users = User.find(:all, :conditions => ["name LIKE ?","%#{params[:user][:name]}%"])
-  	else
-  		@users = User.find(:all)
-  	end
+  # uses native postgresql indexing.
+  @current_user = User.find(session[:user_id])
+  @users = User.search( params[:user][:name] )
 end
 
-  def find_matches
-    @user = User.find(session[:user_id])
-    # don't include the current user in the possible matches 
-    @users = User.all - [@user] - @user.matches
-    # associate each user with the number of shared interests they have with @user
-    dates = {}
-    @users.each do |u|
-      dates[u.id] = @user.shared_interests(u).size
+  # Finds and displays a few suggested matches fot the current (ie logged in) user
+  def find_matches    
+    @current_user = User.find(session[:user_id])
+    @user = @current_user
+
+    @title = "Suggested matches for #{@current_user.name}"
+
+    # don't include the current user or existing matches in the possible matches 
+    @users = (User.all - [@current_user]) - @current_user.matches
+
+    # associate each user with the number of shared interests they have with the current user
+    users_shared_interests = {}
+    @users.each do |user|
+      users_shared_interests[user.id] = @current_user.shared_interests(user).size
     end
 
-    sorted_dates = dates.sort_by { |user, count| count }
+
     suggested_matches = []
-    sorted_dates.each { |date| suggested_matches << date.first }
+    users_shared_interests.sort_by { |user, count| count }.each do |date|
+      suggested_matches << date.first
+    end
     suggested_matches = suggested_matches.last(10).shuffle.first(3)
 
     @suggested_matches = []
     suggested_matches.each {|sm| @suggested_matches << User.find(sm) }
-
-
-    @title = "Suggested matches for #{@user.name}"
   end
 
 
